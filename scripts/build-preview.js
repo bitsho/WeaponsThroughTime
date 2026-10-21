@@ -29,13 +29,18 @@ const ids = new Set(ac.map((a) => a.id));
 const bundle = { version: store.version, window: { from, to }, taxonomy, countries, aircraft: ac,
   lineage: lineage.filter((l) => ids.has(l.from) && ids.has(l.to)),
   conflicts: conflicts.filter((k) => (k.countries || []).includes('usa') && conflictSpan(k).start < to + 1 && conflictSpan(k).end >= from) };
+const font = (f) => `url(data:font/woff2;base64,${fs.readFileSync(path.join(ROOT, 'public', 'fonts', f)).toString('base64')}) format('woff2')`;
+const cjkFonts = `@font-face{font-family:'LMQYLuShuai';font-weight:100 900;font-display:swap;src:${font('lmqy-lushuai.woff2')}}
+@font-face{font-family:'SourceHanSans';font-weight:100 500;font-display:swap;src:${font('source-han-sans-400.woff2')}}
+@font-face{font-family:'SourceHanSans';font-weight:600 900;font-display:swap;src:${font('source-han-sans-700.woff2')}}
+`;
 const html = R('public/index.html');
 const body = html.slice(html.indexOf('<body>') + 6, html.indexOf('<script src="js/shared.js">'));
 const out = `<title>Carrier Aircraft Timeline</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Saira+Stencil+One&family=Share+Tech+Mono&family=ZCOOL+QingKe+HuangYou&display=swap">
-<style>${R('public/css/timeline.css')}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Saira+Stencil+One&family=Share+Tech+Mono&display=swap">
+<style>${cjkFonts}${R('public/css/timeline.css')}</style>
 ${body}
 <script>window.__WTT_BUNDLE__ = ${JSON.stringify(bundle)};</script>
 <script>${R('public/js/shared.js')}</script>

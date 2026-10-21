@@ -7,13 +7,13 @@
   --line: rgba(56, 225, 255, 0.12); --line2: rgba(56, 225, 255, 0.3); --grid: rgba(120, 170, 220, 0.07);
   --cyan: #38e1ff; --amber: #ffb547; --war: #ff6b4a; --mile: #9b8cff;
   --text: #d6ecff; --dim: #7790ab; --dimmer: #4d6580;
-  --f-title: 'Saira Stencil One', 'ZCOOL QingKe HuangYou', sans-serif;
-  --f-ui: 'Oxanium', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
-  --f-mono: 'Share Tech Mono', 'Oxanium', monospace;
+  --f-title: 'Saira Stencil One', 'LMQYLuShuai', sans-serif;
+  --f-ui: 'Oxanium', 'SourceHanSans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --f-mono: 'Share Tech Mono', 'Oxanium', 'SourceHanSans', monospace;
   --ease: cubic-bezier(.2, .8, .2, 1);
   --gutter: 176px; --axis-h: 38px;
 }
-html[data-lang="zh"] { --f-title: 'ZCOOL QingKe HuangYou', 'Saira Stencil One', sans-serif; }
+html[data-lang="zh"] { --f-title: 'LMQYLuShuai', 'Saira Stencil One', sans-serif; }
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: var(--f-ui); -webkit-font-smoothing: antialiased; }
 body { display: flex; flex-direction: column; overflow: hidden; }
@@ -125,7 +125,7 @@ html[data-lang="en"] .lang .opt[data-l="en"], html[data-lang="zh"] .lang .opt[da
 .lane-label { position: sticky; left: 0; z-index: 8; width: var(--gutter); height: 100%; float: left; display: flex; flex-direction: column; justify-content: center; gap: 6px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: 14px; background: linear-gradient(to right, rgba(3,6,11,.97) 80%, rgba(3,6,11,0)); }
 .lane-label .ln { --c: var(--cyan); font: 600 13px/1.25 var(--f-ui); letter-spacing: .08em; color: var(--c); text-transform: uppercase; text-shadow: 0 0 12px color-mix(in srgb, var(--c) 40%, transparent); }
-html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 17px; letter-spacing: .06em; }
+html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 15px; letter-spacing: .02em; }
 .lane-label .ls { font: 10px var(--f-mono); color: var(--dimmer); letter-spacing: .14em; }
 .lane-label .lbar { width: 34px; height: 2px; background: var(--c); box-shadow: 0 0 8px var(--c); }
 .lane-track { position: absolute; inset: 0; }
@@ -163,7 +163,7 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 @keyframes grow { from { transform: scaleX(0); } }
 .ac .lbl { position: absolute; left: calc(var(--iw) + 8px); bottom: 10px; height: 14px; display: flex; gap: 7px; align-items: baseline; white-space: nowrap; font-size: 11px; color: var(--dim); }
 .ac .lbl b { font: 600 12px var(--f-ui); color: #fff; letter-spacing: .03em; }
-.ac .lbl em { font-style: normal; color: color-mix(in srgb, var(--c) 80%, #fff); }
+.ac .lbl em { font-style: normal; font-weight: 700; color: color-mix(in srgb, var(--c) 80%, #fff); }
 .ac .lbl .n { font: 11px var(--f-mono); color: var(--dimmer); }
 .ac .since { position: absolute; left: 0; bottom: 24px; font: 10px var(--f-mono); color: var(--dimmer); white-space: nowrap; transform: translateY(100%); }
 .ac:hover .img, .ac.sel .img { transform: translateY(-6px) scale(1.06); filter: drop-shadow(0 16px 14px rgba(0,0,0,.6)) drop-shadow(0 0 14px color-mix(in srgb, var(--c) 55%, transparent)); }
@@ -278,3 +278,10 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 .p-grid .p-note { display: block; text-align: left; margin-top: 4px; }
+
+/* dossier: flush photo, close button floats over it */
+.panel { overflow: hidden; padding-top: 0; }
+.panel .panel-close { position: absolute; float: none; margin: 0; top: calc(10px + env(safe-area-inset-top, 0px)); right: calc(10px + env(safe-area-inset-right, 0px));
+  background: rgba(3, 8, 15, .62); backdrop-filter: blur(6px); border-color: rgba(56, 225, 255, .35); color: #cfe6f7; }
+.panel .panel-body { height: 100%; overflow-y: auto; overscroll-behavior: contain; padding-top: env(safe-area-inset-top, 0px); scrollbar-color: var(--line2) transparent; }
+.panel .p-photo:first-child { margin-top: 0; }

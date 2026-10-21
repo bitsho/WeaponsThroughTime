@@ -6,12 +6,12 @@
   --line: rgba(56, 225, 255, 0.14); --line2: rgba(56, 225, 255, 0.32);
   --cyan: #38e1ff; --cyan2: #7cf0ff; --amber: #ffb547; --red: #ff5a3c;
   --text: #d6ecff; --dim: #7790ab; --dimmer: #4a6079;
-  --f-title: 'Saira Stencil One', 'ZCOOL QingKe HuangYou', sans-serif;
-  --f-ui: 'Oxanium', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --f-title: 'Saira Stencil One', 'LMQYLuShuai', sans-serif;
+  --f-ui: 'Oxanium', 'PingFang SC', 'Microsoft YaHei', 'SourceHanSans', sans-serif;
   --f-mono: 'Share Tech Mono', 'Oxanium', monospace;
   --ease: cubic-bezier(.2, .8, .2, 1);
 }
-html[data-lang="zh"] { --f-title: 'ZCOOL QingKe HuangYou', 'Saira Stencil One', sans-serif; }
+html[data-lang="zh"] { --f-title: 'LMQYLuShuai', 'Saira Stencil One', sans-serif; }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--f-ui); -webkit-font-smoothing: antialiased; }
 body { min-height: 100vh; overflow-x: hidden; }

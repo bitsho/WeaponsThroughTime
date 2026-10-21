@@ -337,7 +337,7 @@
   function hideTip() { tip.classList.remove('on'); }
 
   /* ---------------- panel ---------------- */
-  function openPanel(html) { const p = $('#panel'); $('#panelBody').innerHTML = ''; $('#panelBody').appendChild(html); p.classList.add('open'); p.setAttribute('aria-hidden', 'false'); p.scrollTop = 0; requestAnimationFrame(() => $$('.pbar i', p).forEach((i) => { i.style.width = i.dataset.w + '%'; })); }
+  function openPanel(html) { const p = $('#panel'); $('#panelBody').innerHTML = ''; $('#panelBody').appendChild(html); p.classList.add('open'); p.setAttribute('aria-hidden', 'false'); $('#panelBody').scrollTop = 0; requestAnimationFrame(() => $$('.pbar i', p).forEach((i) => { i.style.width = i.dataset.w + '%'; })); }
   function closePanel() { const p = $('#panel'); p.classList.remove('open'); p.setAttribute('aria-hidden', 'true'); }
   function credit(m) {
     if (!m || !m.credit) return '';
@@ -355,7 +355,6 @@
     const cfs = CF.filter((c) => (a.conflicts || []).includes(c.id)).sort((p, q) => p._span.start - q._span.start);
     box.innerHTML = `
       ${m.photo ? `<div class="p-photo"><img src="${esc(m.photo)}" alt="${esc(L(a.name))}"><i class="scan"></i></div>${credit(m)}` : ''}
-      ${m.art ? `<p class="p-credit">${t('art_note')}${m.art.livery ? ' · ' + esc(m.art.livery) : ''}</p>` : ''}
       <div class="p-role">${esc(L(r.label))}<span class="tag">⚓ ${t('basing_carrier')}</span><span class="tag">${(a.branches || []).join(' / ')}</span><span class="tag">${esc(L((D.taxonomy.propulsion.find((x) => x.id === a.propulsion) || {}).label))}</span></div>
       <div class="p-name">${esc(L(a.name))}</div>
       <div class="p-sub">${esc(a.designation)}${L(a.nickname) ? ' · “' + esc(L(a.nickname)) + '”' : ''} · ${esc(L(a.manufacturer))}</div>

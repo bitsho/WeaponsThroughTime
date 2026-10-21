@@ -26,7 +26,7 @@ window.WTT_I18N = {
     leaderboard: 'Ranking', era_ww2: 'US AT WAR · 1941–45', types: 'types', in_service_at: 'in service',
     photo: 'Photo', license: 'License', source: 'Source', aircraft_in: 'Aircraft involved', fl_until: 'Frontline until',
     corner: 'ROLE', basing_carrier: 'Carrier-based', branch_all: 'All', reset: 'Reset view', dates: 'Dates',
-    second_line: 'Second-line', production_rank: 'Production rank', history: 'History', art_note: 'Timeline icon: illustration, not an exact record of the airframe'
+    second_line: 'Second-line', production_rank: 'Production rank', history: 'History'
   },
   zh: {
     title: '兵器演进',
@@ -54,6 +54,6 @@ window.WTT_I18N = {
     leaderboard: '排行', era_ww2: '美国参战 · 1941–45', types: '型', in_service_at: '在役',
     photo: '图片', license: '授权', source: '来源', aircraft_in: '参战机型', fl_until: '一线服役至',
     corner: '机种', basing_carrier: '舰载', branch_all: '全部', reset: '重置视图', dates: '时间',
-    second_line: '二线', production_rank: '产量排名', history: '服役史', art_note: '时间轴图标为插画示意，外形涂装非严格史料'
+    second_line: '二线', production_rank: '产量排名', history: '服役史'
   }
 };

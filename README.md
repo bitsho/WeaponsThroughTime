@@ -35,8 +35,8 @@ public/
   legacy/          3D hangar experiment (three.js procedural models), kept for later work
   js/shared.js     date helpers shared with the server
   vendor/three/    three.js r170 (MIT)
-  fonts/           Saira Stencil One · Oxanium · Share Tech Mono · ZCOOL QingKe HuangYou (OFL)
-scripts/           validate.js · build-static.js
+  fonts/           Saira Stencil One · Oxanium · Share Tech Mono · 联盟起艺卢帅正锐黑体 (headings) · 思源黑体 (body) — all OFL
+scripts/           validate.js · build-static.js · build-preview.js · build-fonts.py (subset Chinese fonts)
 ```
 
 ## API · 接口  (`/api/v1`)
