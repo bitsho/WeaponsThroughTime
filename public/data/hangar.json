@@ -1,5 +1,5 @@
 {
-  "version": "mvhub33d",
+  "version": "mvi1dejj",
   "taxonomy": {
     "version": 1,
     "roles": [
@@ -332,6 +332,23 @@
           "insigniaX": 26,
           "code": "22",
           "codeX": 64
+        },
+        "media": {
+          "photo": "img/aircraft/f4u.jpg",
+          "photoSmall": "img/aircraft/f4u-900.jpg",
+          "photoW": 960,
+          "photoH": 635,
+          "cutout": "img/aircraft/f4u-cut.webp",
+          "cutoutW": 760,
+          "cutoutH": 293,
+          "credit": {
+            "title": "F4U-1 Corsair in flight c1942.jpg",
+            "author": "U.S. Navy",
+            "license": "Public domain",
+            "year": "1942",
+            "source": "https://commons.wikimedia.org/wiki/File:F4U-1_Corsair_in_flight_c1942.jpg",
+            "caption": "A U.S. Navy Vought F4U-1 Corsair fighter in flight, circa 1942."
+          }
         }
       },
       "model": {
@@ -1054,6 +1071,23 @@
           "insigniaX": 40,
           "code": "104",
           "codeX": 62
+        },
+        "media": {
+          "photo": "img/aircraft/f9f.jpg",
+          "photoSmall": "img/aircraft/f9f-900.jpg",
+          "photoW": 1280,
+          "photoH": 959,
+          "cutout": "img/aircraft/f9f-cut.webp",
+          "cutoutW": 760,
+          "cutoutH": 374,
+          "credit": {
+            "title": "Grumman F9F-2 Panther in flight c1949.jpg",
+            "author": "U.S. Navy",
+            "license": "Public domain",
+            "year": "1949",
+            "source": "https://commons.wikimedia.org/wiki/File:Grumman_F9F-2_Panther_in_flight_c1949.jpg",
+            "caption": "A U.S. Navy Grumman F9F-2 Panther (BuNo 122567) in flight. 122567 was the eighth production aircraft."
+          }
         }
       },
       "model": {
@@ -1627,6 +1661,23 @@
           "insigniaX": 22,
           "code": "S-6",
           "codeX": 44
+        },
+        "media": {
+          "photo": "img/aircraft/sbd.jpg",
+          "photoSmall": "img/aircraft/sbd-900.jpg",
+          "photoW": 1280,
+          "photoH": 673,
+          "cutout": "img/aircraft/sbd-cut.webp",
+          "cutoutW": 535,
+          "cutoutH": 255,
+          "credit": {
+            "title": "Douglas SBDs of VS-51 in flight in October 1943.jpg",
+            "author": "U.S. Navy photo 80-G-K-1611",
+            "license": "Public domain",
+            "year": "1943",
+            "source": "https://commons.wikimedia.org/wiki/File:Douglas_SBDs_of_VS-51_in_flight_in_October_1943.jpg",
+            "caption": "Three U.S. Navy Douglas SBD-5 Dauntless scout bombers of Scouting Squadron 51 (VS-51) fly in formation over the Pacific Ocean in October 1943."
+          }
         }
       },
       "model": {

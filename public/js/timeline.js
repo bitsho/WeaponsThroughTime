@@ -28,8 +28,8 @@
   /* ---------------- image helpers ---------------- */
   const media = (a) => a.media || {};
   const icon = (a) => { const m = media(a); return m.cutout ? { src: m.cutout, w: m.cutoutW, h: m.cutoutH, cut: true } : m.photo ? { src: m.thumb || m.photo, w: m.photoW || 16, h: m.photoH || 10, cut: false } : null; };
-  const imgW = (a) => Math.round(62 + 178 * Math.sqrt(a.production / PMAX));
-  const imgH = (a) => { const ic = icon(a); const w = imgW(a); return ic ? Math.min(Math.round(w * (ic.h / ic.w)), Math.round(w * 0.62)) : Math.round(w * 0.32); };
+  const imgW = (a) => Math.round(58 + 168 * Math.sqrt(a.production / PMAX));
+  const imgH = (a) => { const ic = icon(a); const w = imgW(a); return ic ? Math.min(Math.round(w * (ic.h / ic.w)), Math.round(w * 0.55)) : Math.round(w * 0.32); };
 
   /* ---------------- boot ---------------- */
   async function boot() {
