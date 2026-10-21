@@ -1,13 +1,11 @@
 # Weapons Through Time · 兵器演进
 
 Interactive evolution timeline of military aircraft, inspired by [war-evo.com](https://war-evo.com/).
-Current scope: **US Navy carrier aircraft, 1935–1950**. This commit ships the **3D hangar demo** —
-three aircraft (F4U-4 Corsair, SBD-3 Dauntless, F9F-2 Panther) built as procedural 3D models
-in the War Thunder-style 3/4 overhead view, with switchable historical liveries.
+Current scope: **US Navy carrier aircraft, 1935–1950** — 26 types on one timeline with battles,
+production-scaled aircraft cut-outs (public-domain / CC photos), service bars, lineage links and dossiers.
 
-交互式军用飞机演进时间轴（参考 war-evo.com）。当前范围：**美国海军舰载机 1935–1950**。
-本次提交为 **3D 机库演示**：F4U-4“海盗”、SBD-3“无畏”、F9F-2“黑豹”三架程序化 3D 模型，
-45° 半俯视角，可切换历史涂装、360° 检视、发动机运转、蓝图模式。
+交互式军用飞机演进时间轴（参考 war-evo.com）。当前范围：**美国海军舰载机 1935–1950**，共 26 型：
+战役事件带、按产量缩放的去背景机体照片（公有领域/CC 授权）、服役条、谱系连线、详情档案、中英双语。
 
 > `APWH_Histography_V3_BILINGUAL_FINAL.html` and `Histography_Timeline_Skill_v1.0.zip` are earlier, unrelated files and are left untouched.
 
@@ -30,12 +28,12 @@ data/
   countries.json   enabled countries (add a country = add an entry + a folder)
   conflicts.json   wars, battles, milestones
   countries/usa/   aircraft.json (26 carrier types) · lineage.json
-  models/          3D model specs — one JSON per aircraft (geometry in metres + liveries)
+  models/          3D model specs (legacy hangar)
 public/
-  index.html       3D hangar demo
-  js/air3d/engine.js   procedural 3D engine (three.js): lofted fuselage, NACA wings, canopy,
-                       prop, radial engine, canvas-painted liveries, WT-style thumbnails, viewer
-  js/hangar.js     hangar page logic · js/shared.js date helpers (shared with the server)
+  index.html       carrier-aircraft timeline   ·  js/timeline.js · css/timeline.css
+  img/aircraft/    <id>.jpg photo · <id>-900.jpg panel size · <id>-cut.webp background-removed cut-out
+  legacy/          3D hangar experiment (three.js procedural models), kept for later work
+  js/shared.js     date helpers shared with the server
   vendor/three/    three.js r170 (MIT)
   fonts/           Saira Stencil One · Oxanium · Share Tech Mono · ZCOOL QingKe HuangYou (OFL)
 scripts/           validate.js · build-static.js
@@ -54,7 +52,14 @@ scripts/           validate.js · build-static.js
 | GET | `/models` · `/models/:id` · `/hangar` | 3D model specs |
 | POST/PATCH/DELETE | `/aircraft`, `/conflicts` | admin — `Authorization: Bearer $WTT_ADMIN_TOKEN` |
 
-## Adding a 3D aircraft · 新增 3D 机型
+## Photos · 图片
+
+Every aircraft record carries a `media` block (`photo`, `cutout`, sizes and `credit` with author, licence and
+Commons source page). Photos come from Wikimedia Commons, public domain first (US Navy / NARA, e.g. the 80-G-K
+Kodachrome series), CC BY / BY-SA otherwise. Cut-outs are generated with rembg (BiRefNet); the dossier always
+shows the original photo with its credit line.
+
+## Adding a 3D aircraft (legacy hangar) · 新增 3D 机型
 
 Create `data/models/<aircraft-id>.json` (the id must exist in `aircraft.json`). All values are in metres,
 `s` = distance aft of the nose, `y` = spanwise, `z` = height:

@@ -2,81 +2,81 @@
 <html lang="zh-CN" data-lang="zh">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Weapons Through Time · 兵器演进 — 3D Hangar</title>
-  <meta name="description" content="Procedural 3D models of US Navy carrier aircraft 1935–1950 with historical liveries." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Weapons Through Time · 兵器演进 — US Carrier Aircraft 1935–1950</title>
+  <meta name="description" content="Interactive timeline of US Navy carrier aircraft 1935–1950: service life, production, lineage and the battles that shaped them." />
   <meta name="theme-color" content="#03060b" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2303060b'/%3E%3Cpath d='M4 18h24M16 6v20M9 13l7-3 7 3' stroke='%2338e1ff' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="fonts/fonts.css" />
-  <link rel="stylesheet" href="css/hangar.css" />
-  <script type="importmap">
-    { "imports": { "three": "./vendor/three/three.module.min.js", "three/addons/": "./vendor/three/addons/" } }
-  </script>
+  <link rel="stylesheet" href="css/timeline.css" />
 </head>
 <body>
+  <div id="boot" aria-hidden="true">
+    <div class="boot-radar"><i class="sweep"></i><i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i><i class="blip b1"></i><i class="blip b2"></i><i class="blip b3"></i></div>
+    <div class="boot-text">
+      <div class="boot-title">WEAPONS THROUGH TIME</div>
+      <ol class="boot-lines"><li data-i18n="boot1"></li><li data-i18n="boot2"></li><li data-i18n="boot3"></li><li data-i18n="boot4"></li></ol>
+      <div class="boot-bar"><i></i></div>
+    </div>
+  </div>
   <div class="bg" aria-hidden="true"><div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-scan"></div></div>
 
   <header class="top">
     <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="21" class="bm-ring"/><circle cx="24" cy="24" r="14" class="bm-ring2"/>
-        <path d="M6 27h36M24 8v32M14 21l10-4 10 4" class="bm-plane"/>
-      </svg>
-      <div>
-        <h1 class="title" data-i18n="title"></h1>
-        <div class="subtitle"><span data-i18n="subtitle"></span><b>1935 — 1950</b></div>
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" class="bm-ring"/><circle cx="24" cy="24" r="14" class="bm-ring2"/><path d="M6 27h36M24 8v32M14 21l10-4 10 4" class="bm-plane"/></svg>
+      <div class="brand-text">
+        <h1 class="title" data-i18n="title" data-scramble></h1>
+        <div class="subtitle"><span data-i18n="subtitle" data-scramble></span><b>1935 — 1950</b></div>
       </div>
     </div>
-    <div class="top-right">
-      <span class="status"><i class="dot"></i><span id="status"></span></span>
+    <nav class="countries" aria-label="Country">
+      <button class="country active"><span class="flag">🇺🇸</span><span data-i18n="country_usa"></span></button>
+      <button class="country" disabled><span class="flag">🇯🇵</span><span>JPN</span><em data-i18n="soon"></em></button>
+      <button class="country" disabled><span class="flag">🇬🇧</span><span>UK</span><em data-i18n="soon"></em></button>
+    </nav>
+    <div class="tools">
+      <label class="search"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4.5 4.5"/></svg><input id="search" type="search" autocomplete="off" data-i18n-ph="search" /></label>
+      <div class="zoom">
+        <button id="zoomOut" data-i18n-title="zoom_out" aria-label="zoom out">−</button>
+        <button id="zoomFit" data-i18n="zoom_fit"></button>
+        <button id="zoomIn" data-i18n-title="zoom_in" aria-label="zoom in">+</button>
+      </div>
+      <button id="rankBtn" class="pill-btn"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 16h3V9H3zM8.5 16h3V4h-3zM14 16h3v-5h-3z"/></svg><span data-i18n="leaderboard"></span></button>
       <button id="langBtn" class="lang" aria-label="Language"><span class="opt" data-l="en">EN</span><span class="opt" data-l="zh">中</span><i class="knob"></i></button>
     </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <div class="kicker"><span class="kicker-line"></span><span data-i18n="kicker"></span></div>
-      <h2 data-i18n="headline"></h2>
-      <p data-i18n="lede"></p>
-    </section>
-    <section id="cards" class="cards" aria-live="polite"></section>
-    <footer class="foot">
-      <span data-i18n="foot1"></span>
-      <span class="sep">/</span>
-      <span data-i18n="foot2"></span>
-      <span class="sep">/</span>
-      <span id="srcNote"></span>
-    </footer>
-  </main>
-
-  <div id="bay" class="bay" hidden>
-    <div class="bay-stage" id="bayStage">
-      <div class="hud-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <div class="hud-cross" aria-hidden="true"></div>
-      <div class="hud-title" id="hudTitle"></div>
-      <div class="hud-read" id="hudRead"></div>
-      <div class="bay-toolbar">
-        <div class="seg" id="viewSeg">
-          <button data-view="wt" class="on">3/4</button>
-          <button data-view="side" data-i18n="v_side"></button>
-          <button data-view="top" data-i18n="v_top"></button>
-          <button data-view="front" data-i18n="v_front"></button>
-          <button data-view="rear" data-i18n="v_rear"></button>
-        </div>
-        <div class="seg toggles">
-          <button id="tSpin"><svg viewBox="0 0 20 20"><path d="M10 2v16M2 10h16" /><circle cx="10" cy="10" r="2.2"/></svg><span data-i18n="t_spin"></span></button>
-          <button id="tRotate"><svg viewBox="0 0 20 20"><path d="M16 10a6 6 0 1 1-2-4.5M16 3v3.5h-3.5"/></svg><span data-i18n="t_rotate"></span></button>
-          <button id="tBlue"><svg viewBox="0 0 20 20"><path d="M3 3h14v14H3zM3 8h14M8 3v14"/></svg><span data-i18n="t_blue"></span></button>
-        </div>
-      </div>
-      <div class="bay-liveries" id="bayLiv"></div>
-      <div class="bay-hint" data-i18n="hint"></div>
-      <div class="bay-loading" id="bayLoading"><i></i></div>
+  <section class="legend-bar">
+    <div class="chips" id="roleChips"><span class="chips-label" data-i18n="filters"></span></div>
+    <div class="chips" id="branchChips"><span class="chips-label" data-i18n="branches"></span></div>
+    <div class="legend">
+      <span class="lg"><i class="lg-bar"></i><span data-i18n="legend_frontline"></span></span>
+      <span class="lg"><i class="lg-bar hatched"></i><span data-i18n="legend_second"></span></span>
+      <span class="lg"><i class="lg-line"></i><span data-i18n="legend_derived"></span></span>
+      <span class="lg"><i class="lg-line dashed"></i><span data-i18n="legend_replaced"></span></span>
+      <span class="lg"><i class="lg-ac s"></i><i class="lg-ac l"></i><span data-i18n="legend_size"></span></span>
     </div>
-    <aside class="bay-panel" id="bayPanel"></aside>
-    <button class="bay-close" id="bayClose" aria-label="Close">✕</button>
-  </div>
+  </section>
 
-  <script type="module" src="js/hangar.js"></script>
+  <main id="scroller" tabindex="0" aria-label="Timeline">
+    <div id="world">
+      <div id="axis" class="axis"></div>
+      <div id="eras" class="eras" aria-hidden="true"></div>
+      <div id="bands"></div>
+      <svg id="links" class="links-layer" aria-hidden="true"></svg>
+      <div id="guide" class="guide" aria-hidden="true"></div>
+      <div id="cursor" class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+    </div>
+  </main>
+  <div class="help" data-i18n="help"></div>
+
+  <aside id="panel" class="panel" aria-hidden="true"><button class="panel-close" id="panelClose" aria-label="Close">✕</button><div class="panel-body" id="panelBody"></div></aside>
+  <aside id="rank" class="rank" aria-hidden="true"><button class="panel-close" id="rankClose" aria-label="Close">✕</button><h3 data-i18n="ranking"></h3><ol id="rankList"></ol></aside>
+  <div id="tooltip" role="tooltip"></div>
+
+  <script src="js/shared.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/timeline.js"></script>
 </body>
 </html>

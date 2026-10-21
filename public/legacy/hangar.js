@@ -43,8 +43,8 @@ const state = { livery: {}, viewer: null, current: null };
 
 async function loadData() {
   if (window.__WTT_HANGAR__) { SOURCE = 'inline'; return window.__WTT_HANGAR__; }
-  try { const r = await fetch('api/v1/hangar'); if (!r.ok) throw 0; SOURCE = 'api'; return await r.json(); }
-  catch { const r = await fetch('data/hangar.json'); SOURCE = 'static'; return r.json(); }
+  try { const r = await fetch('../api/v1/hangar'); if (!r.ok) throw 0; SOURCE = 'api'; return await r.json(); }
+  catch { const r = await fetch('../data/hangar.json'); SOURCE = 'static'; return r.json(); }
 }
 const roleOf = (id) => DATA.taxonomy.roles.find((r) => r.id === id) || { color: '#38e1ff', label: { en: id, zh: id } };
 

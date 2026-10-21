@@ -2,7 +2,7 @@
 window.WTT_I18N = {
   en: {
     title: 'WEAPONS THROUGH TIME',
-    subtitle: 'US NAVY CARRIER AVIATION',
+    subtitle: 'US NAVY CARRIER AIRCRAFT',
     tagline: 'Service life · production · lineage · the battles that shaped them',
     country_usa: 'USA', soon: 'SOON',
     search: 'Search aircraft…',
@@ -19,15 +19,18 @@ window.WTT_I18N = {
     predecessors: 'From', successors: 'To', wiki: 'Wikipedia', basing: 'Basing', branch: 'Operators', propulsion: 'Propulsion',
     no_combat: 'No combat in this period', of: 'of', close: 'Close', production_share: 'share of all units in view',
     tip_click: 'Click for dossier', event: 'EVENT', participants: 'aircraft involved', clear: 'Clear',
-    boot1: 'ESTABLISHING ARCHIVE LINK', boot2: 'DECRYPTING SERVICE RECORDS', boot3: 'RENDERING AIRFRAMES', boot4: 'READY',
+    boot1: 'ESTABLISHING ARCHIVE LINK', boot2: 'DECRYPTING SERVICE RECORDS', boot3: 'LOADING AIRFRAME IMAGERY', boot4: 'READY',
     since: 'since', until: 'until', data_offline: 'Offline mode — static data',
     help: 'Drag or scroll to pan · Ctrl + wheel to zoom · Click an aircraft or event',
     ranking: 'PRODUCTION RANKING', km: 'km', kmh: 'km/h', m: 'm', unknown: '—',
-    leaderboard: 'Ranking'
+    leaderboard: 'Ranking', era_ww2: 'US AT WAR · 1941–45', types: 'types', in_service_at: 'in service',
+    photo: 'Photo', license: 'License', source: 'Source', aircraft_in: 'Aircraft involved', fl_until: 'Frontline until',
+    corner: 'ROLE', basing_carrier: 'Carrier-based', branch_all: 'All', reset: 'Reset view', dates: 'Dates',
+    second_line: 'Second-line', production_rank: 'Production rank', history: 'History'
   },
   zh: {
     title: '兵器演进',
-    subtitle: '美国海军舰载航空兵',
+    subtitle: '美国海军舰载机',
     tagline: '服役年限 · 产量 · 谱系 · 塑造它们的战役',
     country_usa: '美国', soon: '即将',
     search: '搜索机型…',
@@ -44,10 +47,13 @@ window.WTT_I18N = {
     predecessors: '源自', successors: '发展为', wiki: '维基百科', basing: '部署方式', branch: '使用军种', propulsion: '动力类型',
     no_combat: '此时期内未参战', of: '/', close: '关闭', production_share: '占当前视图总产量',
     tip_click: '点击查看档案', event: '事件', participants: '架次机型参与', clear: '清除',
-    boot1: '正在连接档案库', boot2: '解密服役记录', boot3: '渲染机体模型', boot4: '就绪',
+    boot1: '正在连接档案库', boot2: '解密服役记录', boot3: '载入机体影像', boot4: '就绪',
     since: '始于', until: '止于', data_offline: '离线模式 — 静态数据',
     help: '拖拽或滚动平移 · Ctrl + 滚轮缩放 · 点击飞机或事件',
     ranking: '产量排行', km: '公里', kmh: '公里/时', m: '米', unknown: '—',
-    leaderboard: '排行'
+    leaderboard: '排行', era_ww2: '美国参战 · 1941–45', types: '型', in_service_at: '在役',
+    photo: '图片', license: '授权', source: '来源', aircraft_in: '参战机型', fl_until: '一线服役至',
+    corner: '机种', basing_carrier: '舰载', branch_all: '全部', reset: '重置视图', dates: '时间',
+    second_line: '二线', production_rank: '产量排名', history: '服役史'
   }
 };
