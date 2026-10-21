@@ -1,0 +1,2177 @@
+{
+  "version": "mvhsfmcj",
+  "taxonomy": {
+    "version": 1,
+    "roles": [
+      {
+        "id": "fighter",
+        "color": "#38bdf8",
+        "icon": "fighter",
+        "label": {
+          "en": "Carrier Fighter",
+          "zh": "舰载战斗机"
+        },
+        "short": {
+          "en": "FTR",
+          "zh": "战斗"
+        }
+      },
+      {
+        "id": "jetFighter",
+        "color": "#a78bfa",
+        "icon": "jet",
+        "label": {
+          "en": "Carrier Jet Fighter",
+          "zh": "舰载喷气战斗机"
+        },
+        "short": {
+          "en": "JET",
+          "zh": "喷气"
+        }
+      },
+      {
+        "id": "diveBomber",
+        "color": "#fbbf24",
+        "icon": "dive",
+        "label": {
+          "en": "Dive / Scout Bomber",
+          "zh": "俯冲 / 侦察轰炸机"
+        },
+        "short": {
+          "en": "DIVE",
+          "zh": "俯冲"
+        }
+      },
+      {
+        "id": "torpedoBomber",
+        "color": "#2dd4bf",
+        "icon": "torpedo",
+        "label": {
+          "en": "Torpedo Bomber",
+          "zh": "鱼雷轰炸机"
+        },
+        "short": {
+          "en": "TORP",
+          "zh": "鱼雷"
+        }
+      },
+      {
+        "id": "attack",
+        "color": "#fb7185",
+        "icon": "attack",
+        "label": {
+          "en": "Attack / ASW",
+          "zh": "舰载攻击 / 反潜机"
+        },
+        "short": {
+          "en": "ATK",
+          "zh": "攻击"
+        }
+      }
+    ],
+    "basing": [
+      {
+        "id": "carrier",
+        "label": {
+          "en": "Carrier-based",
+          "zh": "舰载"
+        },
+        "glyph": "⚓"
+      },
+      {
+        "id": "land",
+        "label": {
+          "en": "Land-based",
+          "zh": "陆基"
+        },
+        "glyph": "▲"
+      },
+      {
+        "id": "seaplane",
+        "label": {
+          "en": "Seaplane",
+          "zh": "水上"
+        },
+        "glyph": "≈"
+      }
+    ],
+    "branches": [
+      {
+        "id": "USN",
+        "label": {
+          "en": "US Navy",
+          "zh": "美国海军"
+        }
+      },
+      {
+        "id": "USMC",
+        "label": {
+          "en": "US Marine Corps",
+          "zh": "美国海军陆战队"
+        }
+      }
+    ],
+    "propulsion": [
+      {
+        "id": "piston",
+        "label": {
+          "en": "Piston",
+          "zh": "活塞"
+        }
+      },
+      {
+        "id": "jet",
+        "label": {
+          "en": "Jet",
+          "zh": "喷气"
+        }
+      },
+      {
+        "id": "mixed",
+        "label": {
+          "en": "Mixed piston + jet",
+          "zh": "活塞 + 喷气混合"
+        }
+      }
+    ],
+    "linkTypes": [
+      {
+        "id": "derived",
+        "label": {
+          "en": "Derived / developed into",
+          "zh": "衍生 / 发展为"
+        }
+      },
+      {
+        "id": "replaced",
+        "label": {
+          "en": "Replaced by",
+          "zh": "被替换为"
+        }
+      }
+    ],
+    "conflictTypes": [
+      {
+        "id": "war",
+        "label": {
+          "en": "War / campaign",
+          "zh": "战争 / 战役"
+        }
+      },
+      {
+        "id": "battle",
+        "label": {
+          "en": "Battle",
+          "zh": "会战"
+        }
+      },
+      {
+        "id": "milestone",
+        "label": {
+          "en": "Milestone",
+          "zh": "里程碑"
+        }
+      }
+    ]
+  },
+  "maxProduction": 12571,
+  "items": [
+    {
+      "aircraft": {
+        "country": "usa",
+        "id": "f4u",
+        "designation": "F4U-4",
+        "name": {
+          "en": "Vought F4U Corsair",
+          "zh": "沃特 F4U“海盗”"
+        },
+        "nickname": {
+          "en": "Corsair",
+          "zh": "海盗"
+        },
+        "manufacturer": {
+          "en": "Vought / Goodyear / Brewster",
+          "zh": "沃特 / 固特异 / 布鲁斯特"
+        },
+        "role": "fighter",
+        "basing": "carrier",
+        "branches": [
+          "USN",
+          "USMC"
+        ],
+        "propulsion": "piston",
+        "firstFlight": "1940-05",
+        "service": {
+          "start": "1942-12",
+          "frontlineEnd": "1953-07",
+          "end": "1955-12"
+        },
+        "production": 12571,
+        "specs": {
+          "length": 10.2,
+          "span": 12.5,
+          "maxSpeed": 718,
+          "range": 1617,
+          "ceiling": 12600,
+          "crew": 1,
+          "engine": {
+            "en": "P&W R-2800 Double Wasp, 2,100–2,450 hp",
+            "zh": "普惠 R-2800“双黄蜂”，2100–2450 马力"
+          },
+          "armament": {
+            "en": "6 × .50 MG or 4 × 20 mm, rockets, 4,000 lb bombs",
+            "zh": "6 挺 .50 机枪或 4 门 20 毫米炮，火箭弹，4000 磅炸弹"
+          }
+        },
+        "conflicts": [
+          "pacific-war",
+          "guadalcanal",
+          "iwo-jima",
+          "okinawa",
+          "korean-war",
+          "inchon",
+          "chosin"
+        ],
+        "desc": {
+          "en": "The inverted gull wing let a huge propeller clear the deck on short, strong landing gear. First flown by Marines from land bases, it qualified for carriers in 1944 and stayed in production until 1953 — the longest run of any US piston fighter.",
+          "zh": "倒海鸥翼让巨大的螺旋桨在短而结实的起落架上也能离开甲板。最初由陆战队在陆地基地使用，1944 年通过上舰资格，一直生产到 1953 年——美国活塞战斗机中生产时间最长的一种。"
+        },
+        "wiki": {
+          "en": "https://en.wikipedia.org/wiki/Vought_F4U_Corsair",
+          "zh": "https://zh.wikipedia.org/w/index.php?search=F4U+Corsair"
+        },
+        "shape": {
+          "body": "radial",
+          "depth": 17,
+          "paint": "gsb",
+          "insignia": "ww2b",
+          "blades": 4,
+          "profile": [
+            [
+              0,
+              0.22,
+              0.02
+            ],
+            [
+              8,
+              0.27,
+              -0.08
+            ],
+            [
+              22,
+              0.34,
+              -0.25
+            ],
+            [
+              38,
+              0.42,
+              -0.4
+            ],
+            [
+              50,
+              0.48,
+              -0.48
+            ],
+            [
+              60,
+              0.5,
+              -0.5
+            ],
+            [
+              72,
+              0.5,
+              -0.5
+            ],
+            [
+              86,
+              0.49,
+              -0.49
+            ],
+            [
+              95,
+              0.47,
+              -0.47
+            ],
+            [
+              100,
+              0.44,
+              -0.44
+            ]
+          ],
+          "canopy": {
+            "type": "bubble",
+            "x": 52,
+            "len": 15
+          },
+          "cowl": 86,
+          "wing": {
+            "pos": "low",
+            "x": 66,
+            "chord": 25,
+            "taper": 0.55,
+            "sweep": 3,
+            "dihedral": 9,
+            "round": 0.55,
+            "gull": {
+              "at": 0.32,
+              "dz": 3.5
+            }
+          },
+          "tail": {
+            "finH": 18,
+            "finX": 15,
+            "finChord": 16,
+            "finSweep": 8,
+            "finRound": 0.6
+          },
+          "guns": [
+            0.55,
+            0.6,
+            0.65
+          ],
+          "insigniaX": 26,
+          "code": "22",
+          "codeX": 64
+        }
+      },
+      "model": {
+        "id": "f4u",
+        "variant": "F4U-4",
+        "length": 10.27,
+        "span": 12.49,
+        "refs": {
+          "en": "Dimensions: F4U-4 manufacturer data (L 10.27 m, span 12.49 m, prop Ø 4.04 m). Cross-sections approximated from published three-view drawings.",
+          "zh": "尺寸依据 F4U-4 原厂数据（机长 10.27 米、翼展 12.49 米、桨径 4.04 米），截面依据公开三视图近似。"
+        },
+        "fuselage": {
+          "front": "engine",
+          "intakeDepth": 0.28,
+          "stations": [
+            {
+              "s": 0,
+              "w": 0.6,
+              "top": 0.6,
+              "bot": -0.62,
+              "n": 2
+            },
+            {
+              "s": 0.15,
+              "w": 0.655,
+              "top": 0.655,
+              "bot": -0.68,
+              "n": 2
+            },
+            {
+              "s": 0.6,
+              "w": 0.68,
+              "top": 0.69,
+              "bot": -0.72,
+              "n": 2
+            },
+            {
+              "s": 1.4,
+              "w": 0.68,
+              "top": 0.71,
+              "bot": -0.75,
+              "n": 2
+            },
+            {
+              "s": 2.2,
+              "w": 0.665,
+              "top": 0.73,
+              "bot": -0.79,
+              "n": 2.05,
+              "nb": 2.2
+            },
+            {
+              "s": 3,
+              "w": 0.64,
+              "top": 0.75,
+              "bot": -0.81,
+              "n": 2.1,
+              "nb": 2.4
+            },
+            {
+              "s": 3.8,
+              "w": 0.6,
+              "top": 0.77,
+              "bot": -0.82,
+              "n": 2.15,
+              "nb": 2.4
+            },
+            {
+              "s": 4.6,
+              "w": 0.555,
+              "top": 0.79,
+              "bot": -0.8,
+              "n": 2.2,
+              "nb": 2.4
+            },
+            {
+              "s": 5.5,
+              "w": 0.5,
+              "top": 0.8,
+              "bot": -0.74,
+              "n": 2.2,
+              "nb": 2.3
+            },
+            {
+              "s": 6.5,
+              "w": 0.42,
+              "top": 0.74,
+              "bot": -0.6,
+              "n": 2.15,
+              "nb": 2.2
+            },
+            {
+              "s": 7.5,
+              "w": 0.33,
+              "top": 0.66,
+              "bot": -0.44,
+              "n": 2.1
+            },
+            {
+              "s": 8.4,
+              "w": 0.24,
+              "top": 0.58,
+              "bot": -0.28,
+              "n": 2.05
+            },
+            {
+              "s": 9.2,
+              "w": 0.15,
+              "top": 0.52,
+              "bot": -0.13,
+              "n": 2
+            },
+            {
+              "s": 9.75,
+              "w": 0.06,
+              "top": 0.48,
+              "bot": -0.02,
+              "n": 2
+            },
+            {
+              "s": 9.95,
+              "w": 0.02,
+              "top": 0.46,
+              "bot": 0.03,
+              "n": 2
+            }
+          ]
+        },
+        "cowlEnd": 1.6,
+        "canopy": {
+          "n": 2.3,
+          "stations": [
+            {
+              "s": 4.4,
+              "w": 0.06,
+              "base": 0.76,
+              "top": 0.8
+            },
+            {
+              "s": 4.56,
+              "w": 0.36,
+              "base": 0.78,
+              "top": 1.12
+            },
+            {
+              "s": 4.86,
+              "w": 0.42,
+              "base": 0.79,
+              "top": 1.33
+            },
+            {
+              "s": 5.4,
+              "w": 0.43,
+              "base": 0.8,
+              "top": 1.4
+            },
+            {
+              "s": 5.95,
+              "w": 0.38,
+              "base": 0.79,
+              "top": 1.33
+            },
+            {
+              "s": 6.35,
+              "w": 0.25,
+              "base": 0.77,
+              "top": 1.12
+            },
+            {
+              "s": 6.6,
+              "w": 0.05,
+              "base": 0.74,
+              "top": 0.78
+            }
+          ],
+          "frames": [
+            4.57,
+            4.87
+          ],
+          "crew": [
+            {
+              "s": 5.35,
+              "z": 1.06
+            }
+          ]
+        },
+        "wing": {
+          "camber": 0.02,
+          "points": 34,
+          "tipRound": 0.5,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0,
+              "le": 2.15,
+              "chord": 3,
+              "z": -0.62,
+              "t": 0.18
+            },
+            {
+              "y": 0.55,
+              "le": 2.15,
+              "chord": 3,
+              "z": -0.66,
+              "t": 0.18
+            },
+            {
+              "y": 1.75,
+              "le": 2.18,
+              "chord": 2.88,
+              "z": -0.95,
+              "t": 0.17
+            },
+            {
+              "y": 3.4,
+              "le": 2.35,
+              "chord": 2.45,
+              "z": -0.73,
+              "t": 0.14,
+              "twist": -0.8
+            },
+            {
+              "y": 5.75,
+              "le": 2.65,
+              "chord": 1.62,
+              "z": -0.42,
+              "t": 0.1,
+              "twist": -2
+            }
+          ],
+          "controls": [
+            {
+              "type": "flap",
+              "y0": 0.66,
+              "y1": 3.55,
+              "at": 0.76
+            },
+            {
+              "type": "aileron",
+              "y0": 3.62,
+              "y1": 5.9,
+              "at": 0.74,
+              "tab": [
+                3.9,
+                4.5
+              ]
+            }
+          ],
+          "ribs": [
+            3.9,
+            4.2,
+            4.5,
+            4.8,
+            5.1,
+            5.4,
+            5.7
+          ]
+        },
+        "hstab": {
+          "camber": 0,
+          "points": 24,
+          "tipRound": 0.32,
+          "tipBias": 0.45,
+          "sections": [
+            {
+              "y": 0,
+              "le": 8.55,
+              "chord": 1.55,
+              "z": 0.36,
+              "t": 0.11
+            },
+            {
+              "y": 2.35,
+              "le": 8.95,
+              "chord": 0.98,
+              "z": 0.4,
+              "t": 0.09
+            }
+          ],
+          "controls": [
+            {
+              "type": "elevator",
+              "y0": 0.2,
+              "y1": 2.4,
+              "at": 0.62
+            }
+          ]
+        },
+        "fin": {
+          "points": 24,
+          "tipRound": 0.26,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0.42,
+              "le": 7.3,
+              "chord": 2.8,
+              "t": 0.11
+            },
+            {
+              "y": 0.9,
+              "le": 8.05,
+              "chord": 2.18,
+              "t": 0.11
+            },
+            {
+              "y": 1.5,
+              "le": 8.6,
+              "chord": 1.64,
+              "t": 0.1
+            },
+            {
+              "y": 1.86,
+              "le": 8.95,
+              "chord": 1.22,
+              "t": 0.09
+            }
+          ],
+          "hinge": [
+            [
+              9.45,
+              0.48
+            ],
+            [
+              9.4,
+              2.06
+            ]
+          ]
+        },
+        "engine": {
+          "type": "radial",
+          "s": 0.05,
+          "r": 0.84,
+          "cyl": 18,
+          "inset": 0.1
+        },
+        "prop": {
+          "s": -0.32,
+          "diameter": 4.04,
+          "blades": 4,
+          "chord": 0.27,
+          "hub": "dome",
+          "hubR": 0.21,
+          "phase": 0.5
+        },
+        "panels": {
+          "frames": [
+            0.55,
+            1.12,
+            1.62,
+            2.4,
+            3.3,
+            4.2,
+            6.75,
+            7.35,
+            7.95,
+            8.55,
+            9.1
+          ],
+          "longerons": [
+            [
+              1.62,
+              4.35,
+              0.42
+            ],
+            [
+              6.7,
+              9.6,
+              0.35
+            ],
+            [
+              1.62,
+              9.6,
+              -0.35
+            ]
+          ]
+        },
+        "walkways": [
+          {
+            "y0": 0.62,
+            "y1": 1.35,
+            "a": 0.18,
+            "b": 0.62
+          }
+        ],
+        "details": [
+          {
+            "type": "scoop",
+            "s": 0.22,
+            "len": 0.95,
+            "r": 0.13,
+            "wide": 1.7,
+            "dz": 0.02
+          },
+          {
+            "type": "exhaust",
+            "s": 1.3,
+            "n": 3,
+            "gap": 0.17,
+            "h": 0.28,
+            "out": 0.97
+          },
+          {
+            "type": "guns",
+            "y": [
+              2.95,
+              3.2,
+              3.45
+            ],
+            "len": 0.38,
+            "r": 0.022,
+            "dz": 0.05
+          },
+          {
+            "type": "oilCooler",
+            "y": 0.7,
+            "w": 0.95,
+            "h": 0.17
+          },
+          {
+            "type": "mast",
+            "s": 6.8,
+            "h": 0.5,
+            "rake": 12,
+            "wireTo": [
+              9.15,
+              1.98
+            ]
+          },
+          {
+            "type": "hook",
+            "s": 8.9,
+            "len": 0.75
+          }
+        ],
+        "liveries": [
+          {
+            "id": "gsb45",
+            "year": 1945,
+            "name": {
+              "en": "1945 · Glossy Sea Blue",
+              "zh": "1945 · 光泽海蓝"
+            },
+            "note": {
+              "en": "Overall Glossy Sea Blue (ANA 623) adopted for carrier fighters from 1944.",
+              "zh": "1944 年起舰载战斗机统一采用的全身光泽海蓝（ANA 623）。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#1b2a48"
+            },
+            "finish": "gloss",
+            "insignia": {
+              "era": "ww2b",
+              "fuselage": {
+                "s": 7.05,
+                "z": 0.12,
+                "r": 0.34
+              },
+              "wingY": 4.5,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "117",
+                "s": 3.25,
+                "z": 0.05,
+                "h": 0.42,
+                "color": "#eef0ec"
+              }
+            ]
+          },
+          {
+            "id": "vmf214",
+            "year": 1950,
+            "name": {
+              "en": "1950 · VMF-214 \"Black Sheep\", Korea",
+              "zh": "1950 · VMF-214“黑羊”中队，朝鲜"
+            },
+            "note": {
+              "en": "Marine F4U-4Bs flew close support from USS Sicily; post-1947 insignia with red bar, 'WE' tail code.",
+              "zh": "陆战队 F4U-4B 从“西西里”号起飞执行近距支援；1947 年后带红条的国徽，尾码“WE”。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#1b2a48"
+            },
+            "finish": "gloss",
+            "insignia": {
+              "era": "usn47",
+              "fuselage": {
+                "s": 7.05,
+                "z": 0.12,
+                "r": 0.32
+              },
+              "wingY": 4.5,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "WE",
+                "s": 9.05,
+                "z": 1.32,
+                "h": 0.42,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "MARINES",
+                "s": 8.65,
+                "z": 0.12,
+                "h": 0.15,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "13",
+                "s": 2.05,
+                "z": 0.08,
+                "h": 0.42,
+                "color": "#eef0ec"
+              }
+            ]
+          },
+          {
+            "id": "vf53",
+            "year": 1950,
+            "name": {
+              "en": "1950 · VF-53, USS Valley Forge",
+              "zh": "1950 · VF-53 中队，“福吉谷”号"
+            },
+            "note": {
+              "en": "Air Group 5 ('S' code) flew the first US carrier strikes of the Korean War on 3 July 1950.",
+              "zh": "第 5 舰载机大队（尾码“S”）于 1950 年 7 月 3 日执行了朝鲜战争中美国航母的首次空袭。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#1b2a48"
+            },
+            "finish": "gloss",
+            "insignia": {
+              "era": "usn47",
+              "fuselage": {
+                "s": 7.05,
+                "z": 0.12,
+                "r": 0.32
+              },
+              "wingY": 4.5,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "S",
+                "s": 9.05,
+                "z": 1.3,
+                "h": 0.55,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "NAVY",
+                "s": 8.65,
+                "z": 0.12,
+                "h": 0.17,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "305",
+                "s": 2.05,
+                "z": 0.08,
+                "h": 0.4,
+                "color": "#eef0ec"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aircraft": {
+        "country": "usa",
+        "id": "f9f",
+        "designation": "F9F-2",
+        "name": {
+          "en": "Grumman F9F Panther",
+          "zh": "格鲁曼 F9F“黑豹”"
+        },
+        "nickname": {
+          "en": "Panther",
+          "zh": "黑豹"
+        },
+        "manufacturer": {
+          "en": "Grumman",
+          "zh": "格鲁曼"
+        },
+        "role": "jetFighter",
+        "basing": "carrier",
+        "branches": [
+          "USN",
+          "USMC"
+        ],
+        "propulsion": "jet",
+        "firstFlight": "1947-11",
+        "service": {
+          "start": "1949-05",
+          "frontlineEnd": "1956-10",
+          "end": "1958-12"
+        },
+        "production": 1382,
+        "specs": {
+          "length": 11.35,
+          "span": 11.58,
+          "maxSpeed": 925,
+          "range": 2100,
+          "ceiling": 13600,
+          "crew": 1,
+          "engine": {
+            "en": "P&W J42 (licensed Rolls-Royce Nene), 5,000 lbf",
+            "zh": "普惠 J42（罗罗“尼恩”授权版），5000 磅推力"
+          },
+          "armament": {
+            "en": "4 × 20 mm, 2,000 lb of bombs or rockets",
+            "zh": "4 门 20 毫米炮，2000 磅炸弹或火箭弹"
+          }
+        },
+        "conflicts": [
+          "korean-war",
+          "inchon",
+          "chosin"
+        ],
+        "desc": {
+          "en": "Grumman's first jet and the Navy's most widely used jet of the Korean War. On 3 July 1950 a VF-51 Panther from USS Valley Forge scored the US Navy's first jet air-to-air kill. John Glenn and Ted Williams both flew it with the Marines.",
+          "zh": "格鲁曼的第一种喷气机，也是朝鲜战争中海军使用最广的喷气机。1950 年 7 月 3 日，“福吉谷”号上 VF-51 中队的“黑豹”取得美国海军首个喷气机空战战果。约翰·格伦与棒球明星泰德·威廉斯都曾在陆战队驾驶它作战。"
+        },
+        "wiki": {
+          "en": "https://en.wikipedia.org/wiki/Grumman_F9F_Panther",
+          "zh": "https://zh.wikipedia.org/w/index.php?search=F9F+Panther"
+        },
+        "shape": {
+          "body": "jet",
+          "engine": "jet",
+          "jet": true,
+          "depth": 14,
+          "paint": "gsb",
+          "insignia": "usaf47",
+          "antenna": false,
+          "profile": [
+            [
+              0,
+              0.22,
+              -0.12
+            ],
+            [
+              10,
+              0.28,
+              -0.22
+            ],
+            [
+              26,
+              0.37,
+              -0.36
+            ],
+            [
+              44,
+              0.46,
+              -0.47
+            ],
+            [
+              58,
+              0.5,
+              -0.52
+            ],
+            [
+              70,
+              0.5,
+              -0.5
+            ],
+            [
+              82,
+              0.45,
+              -0.44
+            ],
+            [
+              92,
+              0.34,
+              -0.32
+            ],
+            [
+              98,
+              0.18,
+              -0.16
+            ],
+            [
+              100,
+              0.04,
+              -0.04
+            ]
+          ],
+          "canopy": {
+            "type": "bubble",
+            "x": 82,
+            "len": 14
+          },
+          "wing": {
+            "pos": "low",
+            "x": 60,
+            "chord": 29,
+            "taper": 0.62,
+            "sweep": 2,
+            "dihedral": 3,
+            "round": 0.3
+          },
+          "intake": "root",
+          "tipTanks": true,
+          "tail": {
+            "finH": 20,
+            "finX": 18,
+            "finChord": 19,
+            "finSweep": 6,
+            "finTopChord": 9,
+            "finRound": 0.35
+          },
+          "insigniaX": 40,
+          "code": "104",
+          "codeX": 62
+        }
+      },
+      "model": {
+        "id": "f9f",
+        "variant": "F9F-2",
+        "length": 11.35,
+        "span": 11.58,
+        "refs": {
+          "en": "Dimensions: F9F-2 (L 11.35 m, span over tip tanks 11.58 m). Cross-sections approximated from published three-view drawings.",
+          "zh": "尺寸依据 F9F-2（机长 11.35 米、含翼尖油箱翼展 11.58 米），截面依据公开三视图近似。"
+        },
+        "fuselage": {
+          "front": "nose",
+          "tail": "open",
+          "nozzleDepth": 0.5,
+          "stations": [
+            {
+              "s": 0,
+              "w": 0.03,
+              "top": 0.03,
+              "bot": -0.02,
+              "n": 2
+            },
+            {
+              "s": 0.25,
+              "w": 0.24,
+              "top": 0.24,
+              "bot": -0.22,
+              "n": 2
+            },
+            {
+              "s": 0.7,
+              "w": 0.38,
+              "top": 0.4,
+              "bot": -0.38,
+              "n": 2
+            },
+            {
+              "s": 1.4,
+              "w": 0.5,
+              "top": 0.52,
+              "bot": -0.5,
+              "n": 2.05
+            },
+            {
+              "s": 2.2,
+              "w": 0.57,
+              "top": 0.6,
+              "bot": -0.57,
+              "n": 2.1
+            },
+            {
+              "s": 3,
+              "w": 0.62,
+              "top": 0.66,
+              "bot": -0.62,
+              "n": 2.2
+            },
+            {
+              "s": 4,
+              "w": 0.7,
+              "top": 0.66,
+              "bot": -0.66,
+              "n": 2.4
+            },
+            {
+              "s": 5.2,
+              "w": 0.72,
+              "top": 0.62,
+              "bot": -0.66,
+              "n": 2.4
+            },
+            {
+              "s": 6.4,
+              "w": 0.66,
+              "top": 0.58,
+              "bot": -0.62,
+              "n": 2.3
+            },
+            {
+              "s": 7.6,
+              "w": 0.56,
+              "top": 0.53,
+              "bot": -0.55,
+              "n": 2.2
+            },
+            {
+              "s": 8.8,
+              "w": 0.46,
+              "top": 0.47,
+              "bot": -0.46,
+              "n": 2.1
+            },
+            {
+              "s": 10,
+              "w": 0.39,
+              "top": 0.4,
+              "bot": -0.39,
+              "n": 2
+            },
+            {
+              "s": 10.95,
+              "w": 0.35,
+              "top": 0.36,
+              "bot": -0.35,
+              "n": 2
+            }
+          ]
+        },
+        "canopy": {
+          "n": 2.2,
+          "stations": [
+            {
+              "s": 2.5,
+              "w": 0.05,
+              "base": 0.58,
+              "top": 0.62
+            },
+            {
+              "s": 2.7,
+              "w": 0.34,
+              "base": 0.62,
+              "top": 0.95
+            },
+            {
+              "s": 3,
+              "w": 0.4,
+              "base": 0.64,
+              "top": 1.13
+            },
+            {
+              "s": 3.6,
+              "w": 0.41,
+              "base": 0.66,
+              "top": 1.2
+            },
+            {
+              "s": 4.2,
+              "w": 0.36,
+              "base": 0.66,
+              "top": 1.1
+            },
+            {
+              "s": 4.6,
+              "w": 0.2,
+              "base": 0.65,
+              "top": 0.85
+            },
+            {
+              "s": 4.85,
+              "w": 0.04,
+              "base": 0.64,
+              "top": 0.67
+            }
+          ],
+          "frames": [
+            2.72,
+            3.02
+          ],
+          "crew": [
+            {
+              "s": 3.55,
+              "z": 0.94
+            }
+          ]
+        },
+        "wing": {
+          "camber": 0.01,
+          "points": 34,
+          "tipRound": 0.06,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0,
+              "le": 3.75,
+              "chord": 3.1,
+              "z": -0.25,
+              "t": 0.12
+            },
+            {
+              "y": 0.75,
+              "le": 3.8,
+              "chord": 3,
+              "z": -0.27,
+              "t": 0.12
+            },
+            {
+              "y": 5.4,
+              "le": 4.45,
+              "chord": 1.6,
+              "z": -0.02,
+              "t": 0.1,
+              "twist": -1.5
+            }
+          ],
+          "controls": [
+            {
+              "type": "flap",
+              "y0": 0.9,
+              "y1": 3.6,
+              "at": 0.75
+            },
+            {
+              "type": "aileron",
+              "y0": 3.65,
+              "y1": 5.3,
+              "at": 0.75,
+              "tab": [
+                3.8,
+                4.3
+              ]
+            }
+          ]
+        },
+        "hstab": {
+          "camber": 0,
+          "points": 24,
+          "tipRound": 0.2,
+          "tipBias": 0.45,
+          "sections": [
+            {
+              "y": 0,
+              "le": 9.25,
+              "chord": 1.5,
+              "z": 0.48,
+              "t": 0.09
+            },
+            {
+              "y": 2.25,
+              "le": 9.75,
+              "chord": 0.82,
+              "z": 0.62,
+              "t": 0.08
+            }
+          ],
+          "controls": [
+            {
+              "type": "elevator",
+              "y0": 0.3,
+              "y1": 2.3,
+              "at": 0.66
+            }
+          ]
+        },
+        "fin": {
+          "points": 24,
+          "tipRound": 0.15,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0.45,
+              "le": 8.35,
+              "chord": 2.6,
+              "t": 0.09
+            },
+            {
+              "y": 1.2,
+              "le": 9.15,
+              "chord": 1.75,
+              "t": 0.09
+            },
+            {
+              "y": 1.85,
+              "le": 9.85,
+              "chord": 1.05,
+              "t": 0.08
+            },
+            {
+              "y": 2.1,
+              "le": 10.15,
+              "chord": 0.75,
+              "t": 0.08
+            }
+          ],
+          "hinge": [
+            [
+              10.55,
+              0.55
+            ],
+            [
+              10.6,
+              2.12
+            ]
+          ]
+        },
+        "panels": {
+          "frames": [
+            0.9,
+            1.8,
+            2.45,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "longerons": [
+            [
+              0.9,
+              2.4,
+              0.1
+            ],
+            [
+              5,
+              10.9,
+              0.25
+            ],
+            [
+              0.9,
+              10.9,
+              -0.3
+            ]
+          ]
+        },
+        "sideDots": [
+          {
+            "s": 0.95,
+            "z": 0.12,
+            "r": 0.03
+          },
+          {
+            "s": 1.05,
+            "z": -0.04,
+            "r": 0.03
+          },
+          {
+            "s": 0.95,
+            "z": -0.2,
+            "r": 0.03
+          },
+          {
+            "s": 1.05,
+            "z": 0.28,
+            "r": 0.03
+          }
+        ],
+        "details": [
+          {
+            "type": "intake",
+            "s": 3.78,
+            "y": 1.02,
+            "z": -0.24,
+            "w": 0.62,
+            "h": 0.22
+          },
+          {
+            "type": "tipTank",
+            "s": 3.55,
+            "y": 5.55,
+            "z": -0.02,
+            "len": 3.35,
+            "dia": 0.58
+          },
+          {
+            "type": "nozzle",
+            "s": 10.9,
+            "z": 0,
+            "r": 0.31
+          },
+          {
+            "type": "hook",
+            "s": 9.6,
+            "len": 0.8
+          }
+        ],
+        "liveries": [
+          {
+            "id": "vf51",
+            "year": 1950,
+            "name": {
+              "en": "1950 · VF-51, USS Valley Forge",
+              "zh": "1950 · VF-51 中队，“福吉谷”号"
+            },
+            "note": {
+              "en": "On 3 July 1950 a VF-51 Panther scored the US Navy's first jet air-to-air victory, over Korea.",
+              "zh": "1950 年 7 月 3 日，VF-51 的“黑豹”在朝鲜上空取得美国海军首个喷气机空战战果。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#1b2a48"
+            },
+            "finish": "gloss",
+            "insignia": {
+              "era": "usn47",
+              "fuselage": {
+                "s": 7.35,
+                "z": 0.05,
+                "r": 0.33
+              },
+              "wingY": 3.4,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "S",
+                "s": 10,
+                "z": 1.38,
+                "h": 0.5,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "NAVY",
+                "s": 9.05,
+                "z": -0.05,
+                "h": 0.2,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "104",
+                "s": 1.75,
+                "z": 0.06,
+                "h": 0.36,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "VF-51",
+                "s": 5.4,
+                "z": -0.32,
+                "h": 0.12,
+                "color": "#eef0ec"
+              }
+            ]
+          },
+          {
+            "id": "vmf311",
+            "year": 1951,
+            "name": {
+              "en": "1951 · VMF-311, Korea",
+              "zh": "1951 · VMF-311 中队，朝鲜"
+            },
+            "note": {
+              "en": "Marine Panthers flew ground attack from K-3 Pohang; John Glenn and Ted Williams both flew with VMF-311.",
+              "zh": "陆战队“黑豹”从浦项 K-3 机场出击执行对地攻击；约翰·格伦和泰德·威廉斯都曾在 VMF-311 服役。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#1b2a48"
+            },
+            "finish": "gloss",
+            "insignia": {
+              "era": "usn47",
+              "fuselage": {
+                "s": 7.35,
+                "z": 0.05,
+                "r": 0.33
+              },
+              "wingY": 3.4,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "WL",
+                "s": 10,
+                "z": 1.38,
+                "h": 0.42,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "MARINES",
+                "s": 9.05,
+                "z": -0.05,
+                "h": 0.17,
+                "color": "#eef0ec"
+              },
+              {
+                "text": "9",
+                "s": 1.75,
+                "z": 0.06,
+                "h": 0.38,
+                "color": "#eef0ec"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aircraft": {
+        "country": "usa",
+        "id": "sbd",
+        "designation": "SBD-3",
+        "name": {
+          "en": "Douglas SBD Dauntless",
+          "zh": "道格拉斯 SBD“无畏”"
+        },
+        "nickname": {
+          "en": "Dauntless",
+          "zh": "无畏"
+        },
+        "manufacturer": {
+          "en": "Douglas",
+          "zh": "道格拉斯"
+        },
+        "role": "diveBomber",
+        "basing": "carrier",
+        "branches": [
+          "USN",
+          "USMC"
+        ],
+        "propulsion": "piston",
+        "firstFlight": "1940-05",
+        "service": {
+          "start": "1940-12",
+          "frontlineEnd": "1944-07",
+          "end": "1945-12"
+        },
+        "production": 5936,
+        "specs": {
+          "length": 10.09,
+          "span": 12.66,
+          "maxSpeed": 410,
+          "range": 1795,
+          "ceiling": 7780,
+          "crew": 2,
+          "engine": {
+            "en": "Wright R-1820 Cyclone, 1,200 hp",
+            "zh": "莱特 R-1820“旋风”，1200 马力"
+          },
+          "armament": {
+            "en": "2 × .50 + 2 × .30 MG, 2,250 lb bombs",
+            "zh": "2 挺 .50 与 2 挺 .30 机枪，2250 磅炸弹"
+          }
+        },
+        "conflicts": [
+          "pacific-war",
+          "pearl-harbor",
+          "coral-sea",
+          "midway",
+          "guadalcanal",
+          "eastern-solomons",
+          "santa-cruz",
+          "torch",
+          "philippine-sea"
+        ],
+        "desc": {
+          "en": "Slow, stable and deadly accurate. On 4 June 1942 Dauntlesses from Enterprise and Yorktown sank Akagi, Kaga, Sōryū and Hiryū — the single most decisive day of the Pacific War. Its perforated split flaps let it dive vertically without overspeeding.",
+          "zh": "速度不快，但稳定而精准。1942 年 6 月 4 日，“企业”号与“约克城”号的“无畏”击沉了赤城、加贺、苍龙、飞龙四艘航母——太平洋战争中最具决定性的一天。带孔的开裂式襟翼让它能垂直俯冲而不超速。"
+        },
+        "wiki": {
+          "en": "https://en.wikipedia.org/wiki/Douglas_SBD_Dauntless",
+          "zh": "https://zh.wikipedia.org/w/index.php?search=SBD+Dauntless"
+        },
+        "shape": {
+          "body": "radial",
+          "depth": 16,
+          "paint": "blueGray",
+          "insignia": "prewar",
+          "rudder": "stripes42",
+          "canopy": {
+            "type": "greenhouse",
+            "x": 70,
+            "len": 34,
+            "frames": 6
+          },
+          "wing": {
+            "pos": "low",
+            "x": 69,
+            "chord": 29,
+            "taper": 0.48,
+            "sweep": 7,
+            "dihedral": 7,
+            "round": 0.6
+          },
+          "tail": {
+            "finH": 18,
+            "finX": 16,
+            "finChord": 18,
+            "finSweep": 7
+          },
+          "insigniaX": 22,
+          "code": "S-6",
+          "codeX": 44
+        }
+      },
+      "model": {
+        "id": "sbd",
+        "variant": "SBD-3",
+        "length": 10.09,
+        "span": 12.66,
+        "refs": {
+          "en": "Dimensions: SBD-3 (L 10.09 m, span 12.66 m, prop Ø 3.3 m). Cross-sections approximated from published three-view drawings.",
+          "zh": "尺寸依据 SBD-3（机长 10.09 米、翼展 12.66 米、桨径 3.3 米），截面依据公开三视图近似。"
+        },
+        "fuselage": {
+          "front": "engine",
+          "intakeDepth": 0.26,
+          "stations": [
+            {
+              "s": 0,
+              "w": 0.62,
+              "top": 0.62,
+              "bot": -0.62,
+              "n": 2
+            },
+            {
+              "s": 0.15,
+              "w": 0.68,
+              "top": 0.68,
+              "bot": -0.69,
+              "n": 2
+            },
+            {
+              "s": 0.6,
+              "w": 0.7,
+              "top": 0.71,
+              "bot": -0.74,
+              "n": 2
+            },
+            {
+              "s": 1.3,
+              "w": 0.69,
+              "top": 0.73,
+              "bot": -0.77,
+              "n": 2.05
+            },
+            {
+              "s": 2.1,
+              "w": 0.65,
+              "top": 0.74,
+              "bot": -0.8,
+              "n": 2.15,
+              "nb": 2.4
+            },
+            {
+              "s": 3,
+              "w": 0.6,
+              "top": 0.73,
+              "bot": -0.8,
+              "n": 2.3,
+              "nb": 2.6
+            },
+            {
+              "s": 4,
+              "w": 0.55,
+              "top": 0.72,
+              "bot": -0.74,
+              "n": 2.3,
+              "nb": 2.6
+            },
+            {
+              "s": 5,
+              "w": 0.5,
+              "top": 0.71,
+              "bot": -0.66,
+              "n": 2.3,
+              "nb": 2.5
+            },
+            {
+              "s": 6,
+              "w": 0.44,
+              "top": 0.67,
+              "bot": -0.56,
+              "n": 2.25,
+              "nb": 2.4
+            },
+            {
+              "s": 7,
+              "w": 0.36,
+              "top": 0.61,
+              "bot": -0.44,
+              "n": 2.2
+            },
+            {
+              "s": 8,
+              "w": 0.27,
+              "top": 0.54,
+              "bot": -0.3,
+              "n": 2.1
+            },
+            {
+              "s": 8.9,
+              "w": 0.17,
+              "top": 0.47,
+              "bot": -0.16,
+              "n": 2
+            },
+            {
+              "s": 9.5,
+              "w": 0.08,
+              "top": 0.42,
+              "bot": -0.05,
+              "n": 2
+            },
+            {
+              "s": 9.75,
+              "w": 0.03,
+              "top": 0.4,
+              "bot": 0,
+              "n": 2
+            }
+          ]
+        },
+        "cowlEnd": 1.35,
+        "canopy": {
+          "n": 2.6,
+          "stations": [
+            {
+              "s": 2.5,
+              "w": 0.06,
+              "base": 0.7,
+              "top": 0.74
+            },
+            {
+              "s": 2.68,
+              "w": 0.4,
+              "base": 0.72,
+              "top": 1.05
+            },
+            {
+              "s": 2.95,
+              "w": 0.45,
+              "base": 0.73,
+              "top": 1.24
+            },
+            {
+              "s": 3.6,
+              "w": 0.47,
+              "base": 0.73,
+              "top": 1.29
+            },
+            {
+              "s": 4.6,
+              "w": 0.46,
+              "base": 0.72,
+              "top": 1.29
+            },
+            {
+              "s": 5.4,
+              "w": 0.43,
+              "base": 0.71,
+              "top": 1.25
+            },
+            {
+              "s": 5.85,
+              "w": 0.35,
+              "base": 0.69,
+              "top": 1.1
+            },
+            {
+              "s": 6.1,
+              "w": 0.05,
+              "base": 0.66,
+              "top": 0.7
+            }
+          ],
+          "frames": [
+            2.7,
+            2.97,
+            3.5,
+            3.95,
+            4.4,
+            4.85,
+            5.35,
+            5.78
+          ],
+          "rail": [
+            2.7,
+            5.8
+          ],
+          "sideRails": [
+            7
+          ],
+          "crew": [
+            {
+              "s": 3.45,
+              "z": 1
+            },
+            {
+              "s": 5.1,
+              "z": 0.98
+            }
+          ]
+        },
+        "wing": {
+          "camber": 0.02,
+          "points": 34,
+          "tipRound": 0.38,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0,
+              "le": 2.05,
+              "chord": 3.35,
+              "z": -0.6,
+              "t": 0.18
+            },
+            {
+              "y": 1.55,
+              "le": 2.1,
+              "chord": 3.25,
+              "z": -0.62,
+              "t": 0.17
+            },
+            {
+              "y": 5.95,
+              "le": 3.15,
+              "chord": 1.45,
+              "z": -0.15,
+              "t": 0.1,
+              "twist": -2
+            }
+          ],
+          "controls": [
+            {
+              "type": "diveflap",
+              "y0": 0.55,
+              "y1": 4.35,
+              "at": 0.76,
+              "perforated": true
+            },
+            {
+              "type": "aileron",
+              "y0": 4.42,
+              "y1": 5.95,
+              "at": 0.74,
+              "tab": [
+                4.6,
+                5.1
+              ]
+            }
+          ]
+        },
+        "hstab": {
+          "camber": 0,
+          "points": 24,
+          "tipRound": 0.3,
+          "tipBias": 0.45,
+          "sections": [
+            {
+              "y": 0,
+              "le": 8.25,
+              "chord": 1.6,
+              "z": 0.34,
+              "t": 0.11
+            },
+            {
+              "y": 2.3,
+              "le": 8.75,
+              "chord": 0.95,
+              "z": 0.38,
+              "t": 0.09
+            }
+          ],
+          "controls": [
+            {
+              "type": "elevator",
+              "y0": 0.2,
+              "y1": 2.35,
+              "at": 0.64
+            }
+          ]
+        },
+        "fin": {
+          "points": 24,
+          "tipRound": 0.22,
+          "tipBias": 0.5,
+          "sections": [
+            {
+              "y": 0.42,
+              "le": 7,
+              "chord": 3,
+              "t": 0.11
+            },
+            {
+              "y": 0.9,
+              "le": 7.75,
+              "chord": 2.3,
+              "t": 0.11
+            },
+            {
+              "y": 1.45,
+              "le": 8.4,
+              "chord": 1.62,
+              "t": 0.1
+            },
+            {
+              "y": 1.76,
+              "le": 8.8,
+              "chord": 1.15,
+              "t": 0.09
+            }
+          ],
+          "hinge": [
+            [
+              9.35,
+              0.45
+            ],
+            [
+              9.3,
+              1.9
+            ]
+          ]
+        },
+        "engine": {
+          "type": "radial",
+          "s": 0.05,
+          "r": 0.84,
+          "cyl": 9,
+          "inset": 0.1
+        },
+        "prop": {
+          "s": -0.3,
+          "diameter": 3.3,
+          "blades": 3,
+          "chord": 0.26,
+          "hub": "dome",
+          "hubR": 0.2,
+          "phase": 0.2
+        },
+        "panels": {
+          "frames": [
+            0.6,
+            1.35,
+            2.2,
+            6.4,
+            7,
+            7.6,
+            8.2,
+            8.8
+          ],
+          "longerons": [
+            [
+              1.35,
+              2.45,
+              0.45
+            ],
+            [
+              6.2,
+              9.4,
+              0.3
+            ],
+            [
+              1.35,
+              9.4,
+              -0.32
+            ]
+          ]
+        },
+        "walkways": [
+          {
+            "y0": 0.62,
+            "y1": 1.4,
+            "a": 0.2,
+            "b": 0.6
+          }
+        ],
+        "details": [
+          {
+            "type": "sight",
+            "s": 1.75,
+            "len": 1.1,
+            "z": 0.86,
+            "r": 0.035
+          },
+          {
+            "type": "exhaust",
+            "s": 1.38,
+            "n": 2,
+            "gap": 0.2,
+            "h": 0.32,
+            "out": 0.97
+          },
+          {
+            "type": "rearGuns",
+            "s": 5.55,
+            "z": 1.12,
+            "elev": 0.12
+          },
+          {
+            "type": "mast",
+            "s": 6.35,
+            "h": 0.42,
+            "rake": 10,
+            "wireTo": [
+              8.9,
+              1.8
+            ]
+          },
+          {
+            "type": "bomb",
+            "s": 2.55,
+            "z": -1.08,
+            "len": 1.75,
+            "dia": 0.47
+          },
+          {
+            "type": "hook",
+            "s": 8.8,
+            "len": 0.7
+          }
+        ],
+        "liveries": [
+          {
+            "id": "lightgray41",
+            "year": 1941,
+            "name": {
+              "en": "1941 · Overall Light Gray",
+              "zh": "1941 · 全身浅灰"
+            },
+            "note": {
+              "en": "Neutrality-era scheme (early 1941): non-specular light gray, red-centred stars in all four wing positions, black codes.",
+              "zh": "中立时期涂装（1941 年初）：哑光浅灰，机翼四处均为带红心的国徽，黑色机号。"
+            },
+            "scheme": {
+              "type": "solid",
+              "color": "#b7bcc0"
+            },
+            "finish": "matte",
+            "frame": "#8f959a",
+            "insignia": {
+              "era": "prewar",
+              "allFour": true,
+              "fuselage": {
+                "s": 6.7,
+                "z": 0.08,
+                "r": 0.34
+              },
+              "wingY": 4.6,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "6-S-7",
+                "s": 4.55,
+                "z": -0.12,
+                "h": 0.3,
+                "color": "#16181b"
+              }
+            ]
+          },
+          {
+            "id": "bluegray42",
+            "year": 1942,
+            "name": {
+              "en": "Early 1942 · Blue-Gray, Enterprise",
+              "zh": "1942 年初 · 蓝灰，“企业”号"
+            },
+            "note": {
+              "en": "Jan–May 1942: blue-gray over light gray, red/white rudder stripes and red-centred stars (removed in May, just before Midway).",
+              "zh": "1942 年 1–5 月：上蓝灰下浅灰，红白方向舵条纹与带红心国徽（5 月取消，中途岛战前不久）。"
+            },
+            "scheme": {
+              "type": "two",
+              "top": "#5d7184",
+              "low": "#c7ccd1",
+              "y": -0.18
+            },
+            "finish": "matte",
+            "rudder": "stripes42",
+            "insignia": {
+              "era": "prewar",
+              "allFour": true,
+              "fuselage": {
+                "s": 6.7,
+                "z": 0.08,
+                "r": 0.34
+              },
+              "wingY": 4.6,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "6-S-7",
+                "s": 4.55,
+                "z": -0.12,
+                "h": 0.3,
+                "color": "#f2f2ee"
+              }
+            ]
+          },
+          {
+            "id": "tri43",
+            "year": 1943,
+            "name": {
+              "en": "Late 1943 · Tri-color",
+              "zh": "1943 年末 · 三色迷彩"
+            },
+            "note": {
+              "en": "Sea blue / intermediate blue / insignia white with the blue-bordered star-and-bar of September 1943.",
+              "zh": "海蓝 / 中蓝 / 白三色，配 1943 年 9 月启用的蓝边星条国徽。"
+            },
+            "scheme": {
+              "type": "tri",
+              "top": "#2b405c",
+              "mid": "#4f6b8a",
+              "low": "#e6e9ec",
+              "y1": 0.46,
+              "y2": -0.32,
+              "wingTop": "#2b405c",
+              "wingLow": "#e6e9ec",
+              "fin": "#4f6b8a",
+              "finFrom": 7,
+              "finAbove": 0.48
+            },
+            "finish": "matte",
+            "insignia": {
+              "era": "ww2b",
+              "fuselage": {
+                "s": 6.7,
+                "z": 0.08,
+                "r": 0.32
+              },
+              "wingY": 4.6,
+              "wingR": 0.3
+            },
+            "markings": [
+              {
+                "text": "39",
+                "s": 4.6,
+                "z": -0.05,
+                "h": 0.36,
+                "color": "#f2f2ee"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

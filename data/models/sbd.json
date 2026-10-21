@@ -1,0 +1,114 @@
+{
+  "id": "sbd",
+  "variant": "SBD-3",
+  "length": 10.09,
+  "span": 12.66,
+  "refs": { "en": "Dimensions: SBD-3 (L 10.09 m, span 12.66 m, prop Ø 3.3 m). Cross-sections approximated from published three-view drawings.", "zh": "尺寸依据 SBD-3（机长 10.09 米、翼展 12.66 米、桨径 3.3 米），截面依据公开三视图近似。" },
+  "fuselage": {
+    "front": "engine", "intakeDepth": 0.26,
+    "stations": [
+      { "s": 0.00, "w": 0.62, "top": 0.62, "bot": -0.62, "n": 2.0 },
+      { "s": 0.15, "w": 0.68, "top": 0.68, "bot": -0.69, "n": 2.0 },
+      { "s": 0.60, "w": 0.70, "top": 0.71, "bot": -0.74, "n": 2.0 },
+      { "s": 1.30, "w": 0.69, "top": 0.73, "bot": -0.77, "n": 2.05 },
+      { "s": 2.10, "w": 0.65, "top": 0.74, "bot": -0.80, "n": 2.15, "nb": 2.4 },
+      { "s": 3.00, "w": 0.60, "top": 0.73, "bot": -0.80, "n": 2.3,  "nb": 2.6 },
+      { "s": 4.00, "w": 0.55, "top": 0.72, "bot": -0.74, "n": 2.3,  "nb": 2.6 },
+      { "s": 5.00, "w": 0.50, "top": 0.71, "bot": -0.66, "n": 2.3,  "nb": 2.5 },
+      { "s": 6.00, "w": 0.44, "top": 0.67, "bot": -0.56, "n": 2.25, "nb": 2.4 },
+      { "s": 7.00, "w": 0.36, "top": 0.61, "bot": -0.44, "n": 2.2 },
+      { "s": 8.00, "w": 0.27, "top": 0.54, "bot": -0.30, "n": 2.1 },
+      { "s": 8.90, "w": 0.17, "top": 0.47, "bot": -0.16, "n": 2.0 },
+      { "s": 9.50, "w": 0.08, "top": 0.42, "bot": -0.05, "n": 2.0 },
+      { "s": 9.75, "w": 0.03, "top": 0.40, "bot": 0.00, "n": 2.0 }
+    ]
+  },
+  "cowlEnd": 1.35,
+  "canopy": {
+    "n": 2.6,
+    "stations": [
+      { "s": 2.50, "w": 0.06, "base": 0.70, "top": 0.74 },
+      { "s": 2.68, "w": 0.40, "base": 0.72, "top": 1.05 },
+      { "s": 2.95, "w": 0.45, "base": 0.73, "top": 1.24 },
+      { "s": 3.60, "w": 0.47, "base": 0.73, "top": 1.29 },
+      { "s": 4.60, "w": 0.46, "base": 0.72, "top": 1.29 },
+      { "s": 5.40, "w": 0.43, "base": 0.71, "top": 1.25 },
+      { "s": 5.85, "w": 0.35, "base": 0.69, "top": 1.10 },
+      { "s": 6.10, "w": 0.05, "base": 0.66, "top": 0.70 }
+    ],
+    "frames": [2.7, 2.97, 3.5, 3.95, 4.4, 4.85, 5.35, 5.78], "rail": [2.7, 5.8], "sideRails": [7],
+    "crew": [{ "s": 3.45, "z": 1.0 }, { "s": 5.1, "z": 0.98 }]
+  },
+  "wing": {
+    "camber": 0.02, "points": 34, "tipRound": 0.38, "tipBias": 0.5,
+    "sections": [
+      { "y": 0.00, "le": 2.05, "chord": 3.35, "z": -0.60, "t": 0.18 },
+      { "y": 1.55, "le": 2.10, "chord": 3.25, "z": -0.62, "t": 0.17 },
+      { "y": 5.95, "le": 3.15, "chord": 1.45, "z": -0.15, "t": 0.10, "twist": -2 }
+    ],
+    "controls": [
+      { "type": "diveflap", "y0": 0.55, "y1": 4.35, "at": 0.76, "perforated": true },
+      { "type": "aileron", "y0": 4.42, "y1": 5.95, "at": 0.74, "tab": [4.6, 5.1] }
+    ]
+  },
+  "hstab": {
+    "camber": 0, "points": 24, "tipRound": 0.3, "tipBias": 0.45,
+    "sections": [
+      { "y": 0.0, "le": 8.25, "chord": 1.6, "z": 0.34, "t": 0.11 },
+      { "y": 2.3, "le": 8.75, "chord": 0.95, "z": 0.38, "t": 0.09 }
+    ],
+    "controls": [{ "type": "elevator", "y0": 0.2, "y1": 2.35, "at": 0.64 }]
+  },
+  "fin": {
+    "points": 24, "tipRound": 0.22, "tipBias": 0.5,
+    "sections": [
+      { "y": 0.42, "le": 7.00, "chord": 3.00, "t": 0.11 },
+      { "y": 0.90, "le": 7.75, "chord": 2.30, "t": 0.11 },
+      { "y": 1.45, "le": 8.40, "chord": 1.62, "t": 0.10 },
+      { "y": 1.76, "le": 8.80, "chord": 1.15, "t": 0.09 }
+    ],
+    "hinge": [[9.35, 0.45], [9.30, 1.9]]
+  },
+  "engine": { "type": "radial", "s": 0.05, "r": 0.84, "cyl": 9, "inset": 0.1 },
+  "prop": { "s": -0.3, "diameter": 3.3, "blades": 3, "chord": 0.26, "hub": "dome", "hubR": 0.2, "phase": 0.2 },
+  "panels": {
+    "frames": [0.6, 1.35, 2.2, 6.4, 7.0, 7.6, 8.2, 8.8],
+    "longerons": [[1.35, 2.45, 0.45], [6.2, 9.4, 0.3], [1.35, 9.4, -0.32]]
+  },
+  "walkways": [{ "y0": 0.62, "y1": 1.4, "a": 0.2, "b": 0.6 }],
+  "details": [
+    { "type": "sight", "s": 1.75, "len": 1.1, "z": 0.86, "r": 0.035 },
+    { "type": "exhaust", "s": 1.38, "n": 2, "gap": 0.2, "h": 0.32, "out": 0.97 },
+    { "type": "rearGuns", "s": 5.55, "z": 1.12, "elev": 0.12 },
+    { "type": "mast", "s": 6.35, "h": 0.42, "rake": 10, "wireTo": [8.9, 1.8] },
+    { "type": "bomb", "s": 2.55, "z": -1.08, "len": 1.75, "dia": 0.47 },
+    { "type": "hook", "s": 8.8, "len": 0.7 }
+  ],
+  "liveries": [
+    {
+      "id": "lightgray41", "year": 1941,
+      "name": { "en": "1941 · Overall Light Gray", "zh": "1941 · 全身浅灰" },
+      "note": { "en": "Neutrality-era scheme (early 1941): non-specular light gray, red-centred stars in all four wing positions, black codes.", "zh": "中立时期涂装（1941 年初）：哑光浅灰，机翼四处均为带红心的国徽，黑色机号。" },
+      "scheme": { "type": "solid", "color": "#b7bcc0" }, "finish": "matte", "frame": "#8f959a",
+      "insignia": { "era": "prewar", "allFour": true, "fuselage": { "s": 6.7, "z": 0.08, "r": 0.34 }, "wingY": 4.6, "wingR": 0.3 },
+      "markings": [ { "text": "6-S-7", "s": 4.55, "z": -0.12, "h": 0.3, "color": "#16181b" } ]
+    },
+    {
+      "id": "bluegray42", "year": 1942,
+      "name": { "en": "Early 1942 · Blue-Gray, Enterprise", "zh": "1942 年初 · 蓝灰，“企业”号" },
+      "note": { "en": "Jan–May 1942: blue-gray over light gray, red/white rudder stripes and red-centred stars (removed in May, just before Midway).", "zh": "1942 年 1–5 月：上蓝灰下浅灰，红白方向舵条纹与带红心国徽（5 月取消，中途岛战前不久）。" },
+      "scheme": { "type": "two", "top": "#5d7184", "low": "#c7ccd1", "y": -0.18 }, "finish": "matte", "rudder": "stripes42",
+      "insignia": { "era": "prewar", "allFour": true, "fuselage": { "s": 6.7, "z": 0.08, "r": 0.34 }, "wingY": 4.6, "wingR": 0.3 },
+      "markings": [ { "text": "6-S-7", "s": 4.55, "z": -0.12, "h": 0.3, "color": "#f2f2ee" } ]
+    },
+    {
+      "id": "tri43", "year": 1943,
+      "name": { "en": "Late 1943 · Tri-color", "zh": "1943 年末 · 三色迷彩" },
+      "note": { "en": "Sea blue / intermediate blue / insignia white with the blue-bordered star-and-bar of September 1943.", "zh": "海蓝 / 中蓝 / 白三色，配 1943 年 9 月启用的蓝边星条国徽。" },
+      "scheme": { "type": "tri", "top": "#2b405c", "mid": "#4f6b8a", "low": "#e6e9ec", "y1": 0.46, "y2": -0.32, "wingTop": "#2b405c", "wingLow": "#e6e9ec", "fin": "#4f6b8a", "finFrom": 7.0, "finAbove": 0.48 },
+      "finish": "matte",
+      "insignia": { "era": "ww2b", "fuselage": { "s": 6.7, "z": 0.08, "r": 0.32 }, "wingY": 4.6, "wingR": 0.3 },
+      "markings": [ { "text": "39", "s": 4.6, "z": -0.05, "h": 0.36, "color": "#f2f2ee" } ]
+    }
+  ]
+}

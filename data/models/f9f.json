@@ -1,0 +1,106 @@
+{
+  "id": "f9f",
+  "variant": "F9F-2",
+  "length": 11.35,
+  "span": 11.58,
+  "refs": { "en": "Dimensions: F9F-2 (L 11.35 m, span over tip tanks 11.58 m). Cross-sections approximated from published three-view drawings.", "zh": "尺寸依据 F9F-2（机长 11.35 米、含翼尖油箱翼展 11.58 米），截面依据公开三视图近似。" },
+  "fuselage": {
+    "front": "nose", "tail": "open", "nozzleDepth": 0.5,
+    "stations": [
+      { "s": 0.00, "w": 0.03, "top": 0.03,  "bot": -0.02, "n": 2.0 },
+      { "s": 0.25, "w": 0.24, "top": 0.24,  "bot": -0.22, "n": 2.0 },
+      { "s": 0.70, "w": 0.38, "top": 0.40,  "bot": -0.38, "n": 2.0 },
+      { "s": 1.40, "w": 0.50, "top": 0.52,  "bot": -0.50, "n": 2.05 },
+      { "s": 2.20, "w": 0.57, "top": 0.60,  "bot": -0.57, "n": 2.1 },
+      { "s": 3.00, "w": 0.62, "top": 0.66,  "bot": -0.62, "n": 2.2 },
+      { "s": 4.00, "w": 0.70, "top": 0.66,  "bot": -0.66, "n": 2.4 },
+      { "s": 5.20, "w": 0.72, "top": 0.62,  "bot": -0.66, "n": 2.4 },
+      { "s": 6.40, "w": 0.66, "top": 0.58,  "bot": -0.62, "n": 2.3 },
+      { "s": 7.60, "w": 0.56, "top": 0.53,  "bot": -0.55, "n": 2.2 },
+      { "s": 8.80, "w": 0.46, "top": 0.47,  "bot": -0.46, "n": 2.1 },
+      { "s": 10.00,"w": 0.39, "top": 0.40,  "bot": -0.39, "n": 2.0 },
+      { "s": 10.95,"w": 0.35, "top": 0.36,  "bot": -0.35, "n": 2.0 }
+    ]
+  },
+  "canopy": {
+    "n": 2.2,
+    "stations": [
+      { "s": 2.50, "w": 0.05, "base": 0.58, "top": 0.62 },
+      { "s": 2.70, "w": 0.34, "base": 0.62, "top": 0.95 },
+      { "s": 3.00, "w": 0.40, "base": 0.64, "top": 1.13 },
+      { "s": 3.60, "w": 0.41, "base": 0.66, "top": 1.20 },
+      { "s": 4.20, "w": 0.36, "base": 0.66, "top": 1.10 },
+      { "s": 4.60, "w": 0.20, "base": 0.65, "top": 0.85 },
+      { "s": 4.85, "w": 0.04, "base": 0.64, "top": 0.67 }
+    ],
+    "frames": [2.72, 3.02], "crew": [{ "s": 3.55, "z": 0.94 }]
+  },
+  "wing": {
+    "camber": 0.01, "points": 34, "tipRound": 0.06, "tipBias": 0.5,
+    "sections": [
+      { "y": 0.00, "le": 3.75, "chord": 3.10, "z": -0.25, "t": 0.12 },
+      { "y": 0.75, "le": 3.80, "chord": 3.00, "z": -0.27, "t": 0.12 },
+      { "y": 5.40, "le": 4.45, "chord": 1.60, "z": -0.02, "t": 0.10, "twist": -1.5 }
+    ],
+    "controls": [
+      { "type": "flap", "y0": 0.9, "y1": 3.6, "at": 0.75 },
+      { "type": "aileron", "y0": 3.65, "y1": 5.3, "at": 0.75, "tab": [3.8, 4.3] }
+    ]
+  },
+  "hstab": {
+    "camber": 0, "points": 24, "tipRound": 0.2, "tipBias": 0.45,
+    "sections": [
+      { "y": 0.0, "le": 9.25, "chord": 1.5, "z": 0.48, "t": 0.09 },
+      { "y": 2.25, "le": 9.75, "chord": 0.82, "z": 0.62, "t": 0.08 }
+    ],
+    "controls": [{ "type": "elevator", "y0": 0.3, "y1": 2.3, "at": 0.66 }]
+  },
+  "fin": {
+    "points": 24, "tipRound": 0.15, "tipBias": 0.5,
+    "sections": [
+      { "y": 0.45, "le": 8.35, "chord": 2.60, "t": 0.09 },
+      { "y": 1.20, "le": 9.15, "chord": 1.75, "t": 0.09 },
+      { "y": 1.85, "le": 9.85, "chord": 1.05, "t": 0.08 },
+      { "y": 2.10, "le": 10.15, "chord": 0.75, "t": 0.08 }
+    ],
+    "hinge": [[10.55, 0.55], [10.6, 2.12]]
+  },
+  "panels": {
+    "frames": [0.9, 1.8, 2.45, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+    "longerons": [[0.9, 2.4, 0.1], [5.0, 10.9, 0.25], [0.9, 10.9, -0.3]]
+  },
+  "sideDots": [ { "s": 0.95, "z": 0.12, "r": 0.03 }, { "s": 1.05, "z": -0.04, "r": 0.03 }, { "s": 0.95, "z": -0.2, "r": 0.03 }, { "s": 1.05, "z": 0.28, "r": 0.03 } ],
+  "details": [
+    { "type": "intake", "s": 3.78, "y": 1.02, "z": -0.24, "w": 0.62, "h": 0.22 },
+    { "type": "tipTank", "s": 3.55, "y": 5.55, "z": -0.02, "len": 3.35, "dia": 0.58 },
+    { "type": "nozzle", "s": 10.9, "z": 0.0, "r": 0.31 },
+    { "type": "hook", "s": 9.6, "len": 0.8 }
+  ],
+  "liveries": [
+    {
+      "id": "vf51", "year": 1950,
+      "name": { "en": "1950 · VF-51, USS Valley Forge", "zh": "1950 · VF-51 中队，“福吉谷”号" },
+      "note": { "en": "On 3 July 1950 a VF-51 Panther scored the US Navy's first jet air-to-air victory, over Korea.", "zh": "1950 年 7 月 3 日，VF-51 的“黑豹”在朝鲜上空取得美国海军首个喷气机空战战果。" },
+      "scheme": { "type": "solid", "color": "#1b2a48" }, "finish": "gloss",
+      "insignia": { "era": "usn47", "fuselage": { "s": 7.35, "z": 0.05, "r": 0.33 }, "wingY": 3.4, "wingR": 0.3 },
+      "markings": [
+        { "text": "S", "s": 10.0, "z": 1.38, "h": 0.5, "color": "#eef0ec" },
+        { "text": "NAVY", "s": 9.05, "z": -0.05, "h": 0.2, "color": "#eef0ec" },
+        { "text": "104", "s": 1.75, "z": 0.06, "h": 0.36, "color": "#eef0ec" },
+        { "text": "VF-51", "s": 5.4, "z": -0.32, "h": 0.12, "color": "#eef0ec" }
+      ]
+    },
+    {
+      "id": "vmf311", "year": 1951,
+      "name": { "en": "1951 · VMF-311, Korea", "zh": "1951 · VMF-311 中队，朝鲜" },
+      "note": { "en": "Marine Panthers flew ground attack from K-3 Pohang; John Glenn and Ted Williams both flew with VMF-311.", "zh": "陆战队“黑豹”从浦项 K-3 机场出击执行对地攻击；约翰·格伦和泰德·威廉斯都曾在 VMF-311 服役。" },
+      "scheme": { "type": "solid", "color": "#1b2a48" }, "finish": "gloss",
+      "insignia": { "era": "usn47", "fuselage": { "s": 7.35, "z": 0.05, "r": 0.33 }, "wingY": 3.4, "wingR": 0.3 },
+      "markings": [
+        { "text": "WL", "s": 10.0, "z": 1.38, "h": 0.42, "color": "#eef0ec" },
+        { "text": "MARINES", "s": 9.05, "z": -0.05, "h": 0.17, "color": "#eef0ec" },
+        { "text": "9", "s": 1.75, "z": 0.06, "h": 0.38, "color": "#eef0ec" }
+      ]
+    }
+  ]
+}

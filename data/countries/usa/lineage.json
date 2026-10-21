@@ -1,0 +1,20 @@
+[
+  { "from": "f4b",  "to": "f2f",  "type": "replaced" },
+  { "from": "f2f",  "to": "f3f",  "type": "derived" },
+  { "from": "f3f",  "to": "f4f",  "type": "derived",  "note": { "en": "XF4F-1 began as a biplane development of the F3F", "zh": "XF4F-1 最初是 F3F 的双翼发展型" } },
+  { "from": "f2a",  "to": "f4f",  "type": "replaced" },
+  { "from": "f4f",  "to": "f6f",  "type": "derived" },
+  { "from": "f6f",  "to": "f8f",  "type": "derived" },
+  { "from": "sbu",  "to": "sbc",  "type": "replaced" },
+  { "from": "sbc",  "to": "sb2c", "type": "replaced", "note": { "en": "Curtiss passed the 'Helldiver' name to its monoplane successor", "zh": "寇蒂斯把“地狱俯冲者”之名传给了单翼继任者" } },
+  { "from": "bt1",  "to": "sbd",  "type": "derived",  "note": { "en": "XBT-2 redesigned by Douglas into the SBD", "zh": "XBT-2 经道格拉斯改进为 SBD" } },
+  { "from": "sb2u", "to": "sbd",  "type": "replaced" },
+  { "from": "tbd",  "to": "tbf",  "type": "replaced" },
+  { "from": "sbd",  "to": "sb2c", "type": "replaced" },
+  { "from": "sbd",  "to": "ad",   "type": "derived",  "note": { "en": "Same Douglas El Segundo team under Ed Heinemann", "zh": "同一支由海涅曼领导的道格拉斯埃尔塞贡多团队" } },
+  { "from": "sb2c", "to": "ad",   "type": "replaced" },
+  { "from": "tbf",  "to": "ad",   "type": "replaced" },
+  { "from": "tbf",  "to": "af",   "type": "replaced" },
+  { "from": "fh1",  "to": "f2h",  "type": "derived" },
+  { "from": "f6f",  "to": "f9f",  "type": "replaced" }
+]

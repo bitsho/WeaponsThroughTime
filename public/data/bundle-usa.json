@@ -1,0 +1,3885 @@
+{
+  "version": "mvhsfmcj",
+  "window": {
+    "from": 1935,
+    "to": 1950
+  },
+  "taxonomy": {
+    "version": 1,
+    "roles": [
+      {
+        "id": "fighter",
+        "color": "#38bdf8",
+        "icon": "fighter",
+        "label": {
+          "en": "Carrier Fighter",
+          "zh": "舰载战斗机"
+        },
+        "short": {
+          "en": "FTR",
+          "zh": "战斗"
+        }
+      },
+      {
+        "id": "jetFighter",
+        "color": "#a78bfa",
+        "icon": "jet",
+        "label": {
+          "en": "Carrier Jet Fighter",
+          "zh": "舰载喷气战斗机"
+        },
+        "short": {
+          "en": "JET",
+          "zh": "喷气"
+        }
+      },
+      {
+        "id": "diveBomber",
+        "color": "#fbbf24",
+        "icon": "dive",
+        "label": {
+          "en": "Dive / Scout Bomber",
+          "zh": "俯冲 / 侦察轰炸机"
+        },
+        "short": {
+          "en": "DIVE",
+          "zh": "俯冲"
+        }
+      },
+      {
+        "id": "torpedoBomber",
+        "color": "#2dd4bf",
+        "icon": "torpedo",
+        "label": {
+          "en": "Torpedo Bomber",
+          "zh": "鱼雷轰炸机"
+        },
+        "short": {
+          "en": "TORP",
+          "zh": "鱼雷"
+        }
+      },
+      {
+        "id": "attack",
+        "color": "#fb7185",
+        "icon": "attack",
+        "label": {
+          "en": "Attack / ASW",
+          "zh": "舰载攻击 / 反潜机"
+        },
+        "short": {
+          "en": "ATK",
+          "zh": "攻击"
+        }
+      }
+    ],
+    "basing": [
+      {
+        "id": "carrier",
+        "label": {
+          "en": "Carrier-based",
+          "zh": "舰载"
+        },
+        "glyph": "⚓"
+      },
+      {
+        "id": "land",
+        "label": {
+          "en": "Land-based",
+          "zh": "陆基"
+        },
+        "glyph": "▲"
+      },
+      {
+        "id": "seaplane",
+        "label": {
+          "en": "Seaplane",
+          "zh": "水上"
+        },
+        "glyph": "≈"
+      }
+    ],
+    "branches": [
+      {
+        "id": "USN",
+        "label": {
+          "en": "US Navy",
+          "zh": "美国海军"
+        }
+      },
+      {
+        "id": "USMC",
+        "label": {
+          "en": "US Marine Corps",
+          "zh": "美国海军陆战队"
+        }
+      }
+    ],
+    "propulsion": [
+      {
+        "id": "piston",
+        "label": {
+          "en": "Piston",
+          "zh": "活塞"
+        }
+      },
+      {
+        "id": "jet",
+        "label": {
+          "en": "Jet",
+          "zh": "喷气"
+        }
+      },
+      {
+        "id": "mixed",
+        "label": {
+          "en": "Mixed piston + jet",
+          "zh": "活塞 + 喷气混合"
+        }
+      }
+    ],
+    "linkTypes": [
+      {
+        "id": "derived",
+        "label": {
+          "en": "Derived / developed into",
+          "zh": "衍生 / 发展为"
+        }
+      },
+      {
+        "id": "replaced",
+        "label": {
+          "en": "Replaced by",
+          "zh": "被替换为"
+        }
+      }
+    ],
+    "conflictTypes": [
+      {
+        "id": "war",
+        "label": {
+          "en": "War / campaign",
+          "zh": "战争 / 战役"
+        }
+      },
+      {
+        "id": "battle",
+        "label": {
+          "en": "Battle",
+          "zh": "会战"
+        }
+      },
+      {
+        "id": "milestone",
+        "label": {
+          "en": "Milestone",
+          "zh": "里程碑"
+        }
+      }
+    ]
+  },
+  "countries": [
+    {
+      "id": "usa",
+      "flag": "🇺🇸",
+      "name": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "accent": "#38bdf8",
+      "enabled": true,
+      "datasets": [
+        "aircraft"
+      ],
+      "range": {
+        "from": 1935,
+        "to": 1950
+      }
+    }
+  ],
+  "aircraft": [
+    {
+      "country": "usa",
+      "id": "f4b",
+      "designation": "F4B-4",
+      "name": {
+        "en": "Boeing F4B",
+        "zh": "波音 F4B"
+      },
+      "nickname": {
+        "en": "",
+        "zh": ""
+      },
+      "manufacturer": {
+        "en": "Boeing",
+        "zh": "波音"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1928-06",
+      "service": {
+        "start": "1929-06",
+        "frontlineEnd": "1937-06",
+        "end": "1941-12"
+      },
+      "production": 186,
+      "productionNote": {
+        "en": "Navy F4B variants; 586 including the Army P-12 family",
+        "zh": "海军 F4B 各型；含陆军 P-12 系列共 586 架"
+      },
+      "specs": {
+        "length": 6.12,
+        "span": 9.14,
+        "maxSpeed": 303,
+        "range": 595,
+        "ceiling": 8200,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-1340 Wasp, 550 hp",
+          "zh": "普惠 R-1340“黄蜂”，550 马力"
+        },
+        "armament": {
+          "en": "2 × .30 / .50 MG, 2 × 116 lb bombs",
+          "zh": "2 挺 .30/.50 机枪，2 枚 116 磅炸弹"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The classic inter-war Navy biplane fighter. By 1935 it was being replaced by Grumman's enclosed-cockpit designs, but it trained the generation of pilots who would fight the Pacific War.",
+        "zh": "两次大战之间海军的经典双翼战斗机。1935 年前后开始被格鲁曼封闭座舱战斗机取代，却培养了日后参加太平洋战争的一代飞行员。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Boeing_F4B",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Boeing+F4B"
+      },
+      "shape": {
+        "body": "biplane",
+        "depth": 24,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#1f63d1",
+        "cowlColor": "#1f63d1",
+        "canopy": {
+          "type": "open",
+          "x": 60,
+          "len": 12
+        },
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 22,
+          "taper": 0.95,
+          "sweep": 0,
+          "dihedral": 2,
+          "round": 0.6
+        },
+        "biplane": {
+          "gap": 9,
+          "stagger": 6,
+          "chord": 23,
+          "lowerSpan": 0.95
+        },
+        "gear": "fixed",
+        "gearX": 70,
+        "tail": {
+          "finH": 18,
+          "finX": 14,
+          "finChord": 14,
+          "finSweep": 6
+        },
+        "insigniaX": 32,
+        "antenna": false
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f2f",
+      "designation": "F2F-1",
+      "name": {
+        "en": "Grumman F2F",
+        "zh": "格鲁曼 F2F"
+      },
+      "nickname": {
+        "en": "Flying Barrel",
+        "zh": "飞行木桶"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1933-10",
+      "service": {
+        "start": "1935-02",
+        "frontlineEnd": "1940-09",
+        "end": "1940-12"
+      },
+      "production": 55,
+      "specs": {
+        "length": 6.53,
+        "span": 8.69,
+        "maxSpeed": 372,
+        "range": 1585,
+        "ceiling": 8380,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-1535 Twin Wasp Jr., 700 hp",
+          "zh": "普惠 R-1535“小双黄蜂”，700 马力"
+        },
+        "armament": {
+          "en": "2 × .30 MG",
+          "zh": "2 挺 .30 机枪"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "Single-seat derivative of Grumman's FF-1, with an enclosed cockpit and hand-cranked landing gear retracting into the barrel-shaped fuselage — the template for every Grumman fighter that followed.",
+        "zh": "格鲁曼 FF-1 的单座衍生型，采用封闭座舱和手摇收放、缩入桶形机身的起落架，奠定了此后所有格鲁曼战斗机的基本样式。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F2F",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Grumman+F2F"
+      },
+      "shape": {
+        "body": "biplane",
+        "depth": 27,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#e8e8e8",
+        "canopy": {
+          "type": "framed",
+          "x": 62,
+          "len": 15
+        },
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 22,
+          "taper": 0.92,
+          "sweep": 0,
+          "dihedral": 2,
+          "round": 0.7
+        },
+        "biplane": {
+          "gap": 7,
+          "stagger": 7,
+          "chord": 24,
+          "lowerSpan": 0.93
+        },
+        "tail": {
+          "finH": 19,
+          "finX": 15,
+          "finChord": 15,
+          "finSweep": 5
+        },
+        "insigniaX": 30
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f3f",
+      "designation": "F3F-2",
+      "name": {
+        "en": "Grumman F3F",
+        "zh": "格鲁曼 F3F"
+      },
+      "nickname": {
+        "en": "Flying Barrel",
+        "zh": "飞行木桶"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1935-03",
+      "service": {
+        "start": "1936-04",
+        "frontlineEnd": "1941-10",
+        "end": "1943-11"
+      },
+      "production": 147,
+      "specs": {
+        "length": 7.06,
+        "span": 9.75,
+        "maxSpeed": 425,
+        "range": 1577,
+        "ceiling": 10180,
+        "crew": 1,
+        "engine": {
+          "en": "Wright R-1820 Cyclone, 950 hp",
+          "zh": "莱特 R-1820“旋风”，950 马力"
+        },
+        "armament": {
+          "en": "1 × .30 + 1 × .50 MG",
+          "zh": ".30 与 .50 机枪各 1 挺"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The last biplane fighter delivered to the US Navy. Retired from the fleet only weeks before Pearl Harbor, its design team went straight on to the F4F Wildcat.",
+        "zh": "美国海军装备的最后一种双翼战斗机。在珍珠港事件前几周才退出一线，其设计团队随后直接转向了 F4F“野猫”。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F3F",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Grumman+F3F"
+      },
+      "shape": {
+        "body": "biplane",
+        "depth": 25,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#d3242f",
+        "canopy": {
+          "type": "framed",
+          "x": 63,
+          "len": 17
+        },
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 21,
+          "taper": 0.9,
+          "sweep": 1,
+          "dihedral": 2,
+          "round": 0.7
+        },
+        "biplane": {
+          "gap": 7,
+          "stagger": 8,
+          "chord": 23,
+          "lowerSpan": 0.93
+        },
+        "tail": {
+          "finH": 19,
+          "finX": 15,
+          "finChord": 15,
+          "finSweep": 5
+        },
+        "insigniaX": 30
+      }
+    },
+    {
+      "country": "usa",
+      "id": "sbu",
+      "designation": "SBU-1",
+      "name": {
+        "en": "Vought SBU Corsair",
+        "zh": "沃特 SBU"
+      },
+      "nickname": {
+        "en": "Corsair",
+        "zh": "海盗（初代）"
+      },
+      "manufacturer": {
+        "en": "Vought",
+        "zh": "沃特"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1933-05",
+      "service": {
+        "start": "1935-11",
+        "frontlineEnd": "1941-06",
+        "end": "1941-12"
+      },
+      "production": 125,
+      "specs": {
+        "length": 8.49,
+        "span": 10.14,
+        "maxSpeed": 330,
+        "range": 885,
+        "ceiling": 7300,
+        "crew": 2,
+        "engine": {
+          "en": "P&W R-1535 Twin Wasp Jr., 700 hp",
+          "zh": "普惠 R-1535“小双黄蜂”，700 马力"
+        },
+        "armament": {
+          "en": "2 × .30 MG, 500 lb bomb",
+          "zh": "2 挺 .30 机枪，500 磅炸弹"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "Two-seat biplane scout bomber with a long enclosed canopy. It carried the 'Corsair' name that Vought would later give to its far more famous F4U.",
+        "zh": "带长封闭座舱的双座双翼侦察轰炸机。“海盗”这个名字后来被沃特用在了名气大得多的 F4U 上。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Vought_SBU_Corsair",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Vought+SBU"
+      },
+      "shape": {
+        "body": "biplane",
+        "depth": 20,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#2f8f4e",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 68,
+          "len": 28,
+          "frames": 5
+        },
+        "wing": {
+          "pos": "low",
+          "x": 68,
+          "chord": 20,
+          "taper": 0.92,
+          "sweep": 0,
+          "dihedral": 2,
+          "round": 0.7
+        },
+        "biplane": {
+          "gap": 8,
+          "stagger": 6,
+          "chord": 21,
+          "lowerSpan": 0.95
+        },
+        "gear": "fixed",
+        "gearX": 72,
+        "tail": {
+          "finH": 17,
+          "finX": 15,
+          "finChord": 15,
+          "finSweep": 6
+        },
+        "insigniaX": 28
+      }
+    },
+    {
+      "country": "usa",
+      "id": "sbc",
+      "designation": "SBC-4",
+      "name": {
+        "en": "Curtiss SBC Helldiver",
+        "zh": "寇蒂斯 SBC"
+      },
+      "nickname": {
+        "en": "Helldiver",
+        "zh": "地狱俯冲者（初代）"
+      },
+      "manufacturer": {
+        "en": "Curtiss-Wright",
+        "zh": "寇蒂斯-莱特"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1935-12",
+      "service": {
+        "start": "1937-07",
+        "frontlineEnd": "1942-03",
+        "end": "1943-06"
+      },
+      "production": 257,
+      "specs": {
+        "length": 8.57,
+        "span": 10.36,
+        "maxSpeed": 381,
+        "range": 950,
+        "ceiling": 7300,
+        "crew": 2,
+        "engine": {
+          "en": "Wright R-1820 Cyclone, 950 hp",
+          "zh": "莱特 R-1820“旋风”，950 马力"
+        },
+        "armament": {
+          "en": "2 × .30 MG, 1,000 lb bomb",
+          "zh": "2 挺 .30 机枪，1000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war"
+      ],
+      "desc": {
+        "en": "The last combat biplane bought by the US Navy. It was still aboard USS Hornet in early 1942; fifty were diverted to France in 1940 and ended up in Martinique and with the RAF.",
+        "zh": "美国海军采购的最后一种双翼作战飞机。1942 年初仍在“大黄蜂”号上服役；1940 年有 50 架转交法国，最终流落马提尼克岛和英国皇家空军。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Curtiss_SBC_Helldiver",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Curtiss+SBC"
+      },
+      "shape": {
+        "body": "biplane",
+        "depth": 20,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#111111",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 68,
+          "len": 30,
+          "frames": 6
+        },
+        "wing": {
+          "pos": "low",
+          "x": 68,
+          "chord": 21,
+          "taper": 0.85,
+          "sweep": 1,
+          "dihedral": 2,
+          "round": 0.7
+        },
+        "biplane": {
+          "gap": 8,
+          "stagger": 5,
+          "chord": 22,
+          "lowerSpan": 0.95
+        },
+        "tail": {
+          "finH": 17,
+          "finX": 16,
+          "finChord": 16,
+          "finSweep": 6
+        },
+        "insigniaX": 28
+      }
+    },
+    {
+      "country": "usa",
+      "id": "tbd",
+      "designation": "TBD-1",
+      "name": {
+        "en": "Douglas TBD Devastator",
+        "zh": "道格拉斯 TBD“毁灭者”"
+      },
+      "nickname": {
+        "en": "Devastator",
+        "zh": "毁灭者"
+      },
+      "manufacturer": {
+        "en": "Douglas",
+        "zh": "道格拉斯"
+      },
+      "role": "torpedoBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1935-04",
+      "service": {
+        "start": "1937-10",
+        "frontlineEnd": "1942-06",
+        "end": "1944-11"
+      },
+      "production": 130,
+      "specs": {
+        "length": 10.67,
+        "span": 15.24,
+        "maxSpeed": 331,
+        "range": 700,
+        "ceiling": 6000,
+        "crew": 3,
+        "engine": {
+          "en": "P&W R-1830 Twin Wasp, 900 hp",
+          "zh": "普惠 R-1830“双黄蜂”，900 马力"
+        },
+        "armament": {
+          "en": "2 × .30 MG, Mk 13 torpedo or 1,000 lb bomb",
+          "zh": "2 挺 .30 机枪，Mk 13 鱼雷或 1000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "coral-sea",
+        "midway"
+      ],
+      "desc": {
+        "en": "The Navy's first all-metal monoplane carrier aircraft — advanced in 1937, obsolete by 1942. At Midway, 35 of 41 Devastators were shot down, but their attack drew the Japanese fighters down to sea level just before the Dauntlesses arrived.",
+        "zh": "美国海军第一种全金属单翼舰载机，1937 年时先进，到 1942 年已过时。中途岛之战中 41 架“毁灭者”被击落 35 架，但它们的攻击把日军战斗机吸引到了低空，恰好为随后赶到的“无畏”打开了通道。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Douglas_TBD_Devastator",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=TBD+Devastator"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 15,
+        "paint": "blueGray",
+        "insignia": "prewar",
+        "rudder": "stripes42",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 76,
+          "len": 46,
+          "frames": 8
+        },
+        "wing": {
+          "pos": "low",
+          "x": 70,
+          "chord": 26,
+          "taper": 0.45,
+          "sweep": 6,
+          "dihedral": 6,
+          "round": 0.6
+        },
+        "tail": {
+          "finH": 17,
+          "finX": 16,
+          "finChord": 17,
+          "finSweep": 7
+        },
+        "insigniaX": 22,
+        "code": "6-T-9",
+        "codeX": 44
+      }
+    },
+    {
+      "country": "usa",
+      "id": "sb2u",
+      "designation": "SB2U-1",
+      "name": {
+        "en": "Vought SB2U Vindicator",
+        "zh": "沃特 SB2U“辩护者”"
+      },
+      "nickname": {
+        "en": "Vindicator",
+        "zh": "辩护者"
+      },
+      "manufacturer": {
+        "en": "Vought",
+        "zh": "沃特"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1936-01",
+      "service": {
+        "start": "1937-12",
+        "frontlineEnd": "1942-06",
+        "end": "1943-09"
+      },
+      "production": 260,
+      "specs": {
+        "length": 10.36,
+        "span": 12.8,
+        "maxSpeed": 391,
+        "range": 1800,
+        "ceiling": 7200,
+        "crew": 2,
+        "engine": {
+          "en": "P&W R-1535 Twin Wasp Jr., 825 hp",
+          "zh": "普惠 R-1535“小双黄蜂”，825 马力"
+        },
+        "armament": {
+          "en": "2 × .50 MG, 1,000 lb bomb",
+          "zh": "2 挺 .50 机枪，1000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "midway"
+      ],
+      "desc": {
+        "en": "The Navy's first monoplane dive bomber. Fabric-covered rear fuselage earned it the nickname 'Wind Indicator'; Marine Vindicators attacked the Japanese fleet at Midway.",
+        "zh": "美国海军第一种单翼俯冲轰炸机。后机身为蒙布结构，被戏称为“风向标”；陆战队的“辩护者”曾在中途岛攻击日本舰队。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Vought_SB2U_Vindicator",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=SB2U+Vindicator"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 15,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#d3242f",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 72,
+          "len": 34,
+          "frames": 6
+        },
+        "wing": {
+          "pos": "low",
+          "x": 68,
+          "chord": 25,
+          "taper": 0.5,
+          "sweep": 5,
+          "dihedral": 6,
+          "round": 0.6
+        },
+        "tail": {
+          "finH": 17,
+          "finX": 15,
+          "finChord": 16,
+          "finSweep": 6
+        },
+        "insigniaX": 24
+      }
+    },
+    {
+      "country": "usa",
+      "id": "bt1",
+      "designation": "BT-1",
+      "name": {
+        "en": "Northrop BT-1",
+        "zh": "诺斯罗普 BT-1"
+      },
+      "nickname": {
+        "en": "",
+        "zh": ""
+      },
+      "manufacturer": {
+        "en": "Northrop",
+        "zh": "诺斯罗普"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1935-08",
+      "service": {
+        "start": "1938-04",
+        "frontlineEnd": "1941-06",
+        "end": "1941-12"
+      },
+      "production": 55,
+      "specs": {
+        "length": 9.65,
+        "span": 12.65,
+        "maxSpeed": 357,
+        "range": null,
+        "ceiling": null,
+        "crew": 2,
+        "engine": {
+          "en": "P&W R-1535 Twin Wasp Jr., 825 hp",
+          "zh": "普惠 R-1535“小双黄蜂”，825 马力"
+        },
+        "armament": {
+          "en": ".50 + .30 MG, 1,000 lb bomb",
+          "zh": ".50 与 .30 机枪各 1 挺，1000 磅炸弹"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "A short-lived dive bomber with one great legacy: when Northrop's El Segundo plant became part of Douglas, Ed Heinemann's team reworked the XBT-2 into the SBD Dauntless.",
+        "zh": "服役时间不长的俯冲轰炸机，却留下了重要遗产：诺斯罗普埃尔塞贡多工厂并入道格拉斯后，海涅曼团队将 XBT-2 改造成了 SBD“无畏”。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Northrop_BT",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Northrop+BT-1"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 15,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#1f63d1",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 70,
+          "len": 30,
+          "frames": 5
+        },
+        "wing": {
+          "pos": "low",
+          "x": 68,
+          "chord": 27,
+          "taper": 0.5,
+          "sweep": 6,
+          "dihedral": 7,
+          "round": 0.6
+        },
+        "tail": {
+          "finH": 16,
+          "finX": 16,
+          "finChord": 17,
+          "finSweep": 7
+        },
+        "insigniaX": 24
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f2a",
+      "designation": "F2A-3",
+      "name": {
+        "en": "Brewster F2A Buffalo",
+        "zh": "布鲁斯特 F2A“水牛”"
+      },
+      "nickname": {
+        "en": "Buffalo",
+        "zh": "水牛"
+      },
+      "manufacturer": {
+        "en": "Brewster",
+        "zh": "布鲁斯特"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1937-12",
+      "service": {
+        "start": "1939-04",
+        "frontlineEnd": "1942-06",
+        "end": "1942-12"
+      },
+      "production": 509,
+      "productionNote": {
+        "en": "Including export Buffalos for Finland, Britain and the Netherlands",
+        "zh": "含出口芬兰、英国、荷兰的型号"
+      },
+      "specs": {
+        "length": 8.03,
+        "span": 10.67,
+        "maxSpeed": 517,
+        "range": 1553,
+        "ceiling": 10100,
+        "crew": 1,
+        "engine": {
+          "en": "Wright R-1820 Cyclone, 1,200 hp",
+          "zh": "莱特 R-1820“旋风”，1200 马力"
+        },
+        "armament": {
+          "en": "4 × .50 MG",
+          "zh": "4 挺 .50 机枪"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "midway"
+      ],
+      "desc": {
+        "en": "The Navy's first monoplane fighter, chosen over the original Grumman biplane design. Heavy US variants fared badly at Midway, yet lighter export Buffalos became an ace-maker in Finnish service.",
+        "zh": "美国海军第一种单翼战斗机，击败了格鲁曼最初的双翼方案。加重的美军型号在中途岛表现惨淡，而较轻的出口型在芬兰却造就了大批王牌。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Brewster_F2A_Buffalo",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F2A+Buffalo"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 23,
+        "paint": "prewarNavy",
+        "insignia": "prewar",
+        "rudder": "navyStripes",
+        "tailColor": "#d3242f",
+        "profile": [
+          [
+            0,
+            0.18,
+            0.02
+          ],
+          [
+            8,
+            0.24,
+            -0.1
+          ],
+          [
+            22,
+            0.33,
+            -0.28
+          ],
+          [
+            38,
+            0.42,
+            -0.42
+          ],
+          [
+            52,
+            0.49,
+            -0.5
+          ],
+          [
+            64,
+            0.53,
+            -0.53
+          ],
+          [
+            76,
+            0.53,
+            -0.53
+          ],
+          [
+            88,
+            0.5,
+            -0.5
+          ],
+          [
+            96,
+            0.47,
+            -0.47
+          ],
+          [
+            100,
+            0.44,
+            -0.44
+          ]
+        ],
+        "canopy": {
+          "type": "framed",
+          "x": 66,
+          "len": 20
+        },
+        "wing": {
+          "pos": "mid",
+          "x": 66,
+          "chord": 27,
+          "taper": 0.6,
+          "sweep": 4,
+          "dihedral": 6,
+          "round": 0.7
+        },
+        "tail": {
+          "finH": 21,
+          "finX": 16,
+          "finChord": 17,
+          "finSweep": 6
+        },
+        "guns": [
+          0.42
+        ],
+        "insigniaX": 30
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f4f",
+      "designation": "F4F-4",
+      "name": {
+        "en": "Grumman F4F Wildcat",
+        "zh": "格鲁曼 F4F“野猫”"
+      },
+      "nickname": {
+        "en": "Wildcat",
+        "zh": "野猫"
+      },
+      "manufacturer": {
+        "en": "Grumman / General Motors (FM)",
+        "zh": "格鲁曼 / 通用汽车（FM 型）"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1937-09",
+      "service": {
+        "start": "1940-12",
+        "frontlineEnd": "1945-08",
+        "end": "1945-12"
+      },
+      "production": 7885,
+      "productionNote": {
+        "en": "Including 5,000+ FM-1/FM-2 built by General Motors",
+        "zh": "含通用汽车制造的 5000 余架 FM-1/FM-2"
+      },
+      "specs": {
+        "length": 8.76,
+        "span": 11.58,
+        "maxSpeed": 515,
+        "range": 1337,
+        "ceiling": 10400,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-1830 Twin Wasp, 1,200 hp",
+          "zh": "普惠 R-1830“双黄蜂”，1200 马力"
+        },
+        "armament": {
+          "en": "6 × .50 MG, 2 × 100 lb bombs",
+          "zh": "6 挺 .50 机枪，2 枚 100 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "wake-island",
+        "coral-sea",
+        "midway",
+        "guadalcanal",
+        "eastern-solomons",
+        "santa-cruz",
+        "torch",
+        "atlantic-cve",
+        "leyte-gulf"
+      ],
+      "desc": {
+        "en": "Slower than the Zero but rugged and well-armed, the Wildcat held the line through 1942 using team tactics like the Thach Weave. General Motors' lightweight FM-2 kept it flying from escort carriers until VJ-Day.",
+        "zh": "速度不及零战，但坚固耐用、火力强大。1942 年凭借“萨奇剪”等编队战术顶住了日军攻势。通用汽车的轻量化 FM-2 让它在护航航母上一直服役到对日战争胜利。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F4F_Wildcat",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F4F+Wildcat"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 21,
+        "paint": "blueGray",
+        "insignia": "prewar",
+        "rudder": "stripes42",
+        "profile": [
+          [
+            0,
+            0.2,
+            0.03
+          ],
+          [
+            8,
+            0.25,
+            -0.08
+          ],
+          [
+            22,
+            0.33,
+            -0.25
+          ],
+          [
+            38,
+            0.42,
+            -0.4
+          ],
+          [
+            52,
+            0.49,
+            -0.5
+          ],
+          [
+            64,
+            0.53,
+            -0.55
+          ],
+          [
+            76,
+            0.52,
+            -0.55
+          ],
+          [
+            88,
+            0.49,
+            -0.5
+          ],
+          [
+            96,
+            0.46,
+            -0.46
+          ],
+          [
+            100,
+            0.43,
+            -0.43
+          ]
+        ],
+        "canopy": {
+          "type": "framed",
+          "x": 64,
+          "len": 16
+        },
+        "wing": {
+          "pos": "mid",
+          "x": 65,
+          "chord": 28,
+          "taper": 0.55,
+          "sweep": 3,
+          "dihedral": 3,
+          "round": 0.25
+        },
+        "tail": {
+          "finH": 22,
+          "finX": 17,
+          "finChord": 18,
+          "finSweep": 5,
+          "finTopChord": 10,
+          "finRound": 0.3
+        },
+        "guns": [
+          0.42,
+          0.48,
+          0.54
+        ],
+        "insigniaX": 30,
+        "code": "F-12",
+        "codeX": 48
+      }
+    },
+    {
+      "country": "usa",
+      "id": "sbd",
+      "designation": "SBD-3",
+      "name": {
+        "en": "Douglas SBD Dauntless",
+        "zh": "道格拉斯 SBD“无畏”"
+      },
+      "nickname": {
+        "en": "Dauntless",
+        "zh": "无畏"
+      },
+      "manufacturer": {
+        "en": "Douglas",
+        "zh": "道格拉斯"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1940-05",
+      "service": {
+        "start": "1940-12",
+        "frontlineEnd": "1944-07",
+        "end": "1945-12"
+      },
+      "production": 5936,
+      "specs": {
+        "length": 10.09,
+        "span": 12.66,
+        "maxSpeed": 410,
+        "range": 1795,
+        "ceiling": 7780,
+        "crew": 2,
+        "engine": {
+          "en": "Wright R-1820 Cyclone, 1,200 hp",
+          "zh": "莱特 R-1820“旋风”，1200 马力"
+        },
+        "armament": {
+          "en": "2 × .50 + 2 × .30 MG, 2,250 lb bombs",
+          "zh": "2 挺 .50 与 2 挺 .30 机枪，2250 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "pearl-harbor",
+        "coral-sea",
+        "midway",
+        "guadalcanal",
+        "eastern-solomons",
+        "santa-cruz",
+        "torch",
+        "philippine-sea"
+      ],
+      "desc": {
+        "en": "Slow, stable and deadly accurate. On 4 June 1942 Dauntlesses from Enterprise and Yorktown sank Akagi, Kaga, Sōryū and Hiryū — the single most decisive day of the Pacific War. Its perforated split flaps let it dive vertically without overspeeding.",
+        "zh": "速度不快，但稳定而精准。1942 年 6 月 4 日，“企业”号与“约克城”号的“无畏”击沉了赤城、加贺、苍龙、飞龙四艘航母——太平洋战争中最具决定性的一天。带孔的开裂式襟翼让它能垂直俯冲而不超速。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Douglas_SBD_Dauntless",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=SBD+Dauntless"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 16,
+        "paint": "blueGray",
+        "insignia": "prewar",
+        "rudder": "stripes42",
+        "canopy": {
+          "type": "greenhouse",
+          "x": 70,
+          "len": 34,
+          "frames": 6
+        },
+        "wing": {
+          "pos": "low",
+          "x": 69,
+          "chord": 29,
+          "taper": 0.48,
+          "sweep": 7,
+          "dihedral": 7,
+          "round": 0.6
+        },
+        "tail": {
+          "finH": 18,
+          "finX": 16,
+          "finChord": 18,
+          "finSweep": 7
+        },
+        "insigniaX": 22,
+        "code": "S-6",
+        "codeX": 44
+      }
+    },
+    {
+      "country": "usa",
+      "id": "tbf",
+      "designation": "TBM-3",
+      "name": {
+        "en": "Grumman TBF/TBM Avenger",
+        "zh": "格鲁曼 TBF/TBM“复仇者”"
+      },
+      "nickname": {
+        "en": "Avenger",
+        "zh": "复仇者"
+      },
+      "manufacturer": {
+        "en": "Grumman / General Motors (TBM)",
+        "zh": "格鲁曼 / 通用汽车（TBM 型）"
+      },
+      "role": "torpedoBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1941-08",
+      "service": {
+        "start": "1942-03",
+        "frontlineEnd": "1954-06",
+        "end": "1954-12"
+      },
+      "production": 9839,
+      "specs": {
+        "length": 12.48,
+        "span": 16.51,
+        "maxSpeed": 442,
+        "range": 1610,
+        "ceiling": 9170,
+        "crew": 3,
+        "engine": {
+          "en": "Wright R-2600 Cyclone 14, 1,900 hp",
+          "zh": "莱特 R-2600“旋风 14”，1900 马力"
+        },
+        "armament": {
+          "en": "3 × .50 + 1 × .30 MG, torpedo or 2,000 lb bombs",
+          "zh": "3 挺 .50 与 1 挺 .30 机枪，鱼雷或 2000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "midway",
+        "eastern-solomons",
+        "guadalcanal",
+        "santa-cruz",
+        "atlantic-cve",
+        "philippine-sea",
+        "leyte-gulf",
+        "iwo-jima",
+        "okinawa",
+        "ten-go"
+      ],
+      "desc": {
+        "en": "The heaviest single-engine aircraft of the war when introduced, with an internal bomb bay and a powered turret. Avengers helped sink Musashi and Yamato, hunted U-boats from escort carriers, and served on as ASW and airborne-early-warning aircraft into the 1950s.",
+        "zh": "问世时是二战中最重的单发飞机，拥有内置弹舱和动力炮塔。“复仇者”参与击沉了“武藏”与“大和”，在护航航母上猎杀潜艇，战后作为反潜和预警机一直服役到 1950 年代。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_TBF_Avenger",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=TBF+Avenger"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 22,
+        "paint": "navy3",
+        "insignia": "ww2b",
+        "belly": {
+          "x": 56,
+          "w": 22,
+          "d": -4.5
+        },
+        "canopy": {
+          "type": "greenhouse",
+          "x": 74,
+          "len": 32,
+          "frames": 6,
+          "h": 7
+        },
+        "bumps": [
+          {
+            "x": 40,
+            "r": 4.6
+          }
+        ],
+        "wing": {
+          "pos": "mid",
+          "x": 67,
+          "chord": 27,
+          "taper": 0.5,
+          "sweep": 3,
+          "dihedral": 5,
+          "round": 0.4
+        },
+        "tail": {
+          "finH": 21,
+          "finX": 18,
+          "finChord": 19,
+          "finSweep": 7,
+          "finTopChord": 9,
+          "finRound": 0.35
+        },
+        "insigniaX": 24,
+        "code": "T-21",
+        "codeX": 54
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f4u",
+      "designation": "F4U-4",
+      "name": {
+        "en": "Vought F4U Corsair",
+        "zh": "沃特 F4U“海盗”"
+      },
+      "nickname": {
+        "en": "Corsair",
+        "zh": "海盗"
+      },
+      "manufacturer": {
+        "en": "Vought / Goodyear / Brewster",
+        "zh": "沃特 / 固特异 / 布鲁斯特"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1940-05",
+      "service": {
+        "start": "1942-12",
+        "frontlineEnd": "1953-07",
+        "end": "1955-12"
+      },
+      "production": 12571,
+      "specs": {
+        "length": 10.2,
+        "span": 12.5,
+        "maxSpeed": 718,
+        "range": 1617,
+        "ceiling": 12600,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-2800 Double Wasp, 2,100–2,450 hp",
+          "zh": "普惠 R-2800“双黄蜂”，2100–2450 马力"
+        },
+        "armament": {
+          "en": "6 × .50 MG or 4 × 20 mm, rockets, 4,000 lb bombs",
+          "zh": "6 挺 .50 机枪或 4 门 20 毫米炮，火箭弹，4000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "guadalcanal",
+        "iwo-jima",
+        "okinawa",
+        "korean-war",
+        "inchon",
+        "chosin"
+      ],
+      "desc": {
+        "en": "The inverted gull wing let a huge propeller clear the deck on short, strong landing gear. First flown by Marines from land bases, it qualified for carriers in 1944 and stayed in production until 1953 — the longest run of any US piston fighter.",
+        "zh": "倒海鸥翼让巨大的螺旋桨在短而结实的起落架上也能离开甲板。最初由陆战队在陆地基地使用，1944 年通过上舰资格，一直生产到 1953 年——美国活塞战斗机中生产时间最长的一种。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Vought_F4U_Corsair",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F4U+Corsair"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 17,
+        "paint": "gsb",
+        "insignia": "ww2b",
+        "blades": 4,
+        "profile": [
+          [
+            0,
+            0.22,
+            0.02
+          ],
+          [
+            8,
+            0.27,
+            -0.08
+          ],
+          [
+            22,
+            0.34,
+            -0.25
+          ],
+          [
+            38,
+            0.42,
+            -0.4
+          ],
+          [
+            50,
+            0.48,
+            -0.48
+          ],
+          [
+            60,
+            0.5,
+            -0.5
+          ],
+          [
+            72,
+            0.5,
+            -0.5
+          ],
+          [
+            86,
+            0.49,
+            -0.49
+          ],
+          [
+            95,
+            0.47,
+            -0.47
+          ],
+          [
+            100,
+            0.44,
+            -0.44
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 52,
+          "len": 15
+        },
+        "cowl": 86,
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 25,
+          "taper": 0.55,
+          "sweep": 3,
+          "dihedral": 9,
+          "round": 0.55,
+          "gull": {
+            "at": 0.32,
+            "dz": 3.5
+          }
+        },
+        "tail": {
+          "finH": 18,
+          "finX": 15,
+          "finChord": 16,
+          "finSweep": 8,
+          "finRound": 0.6
+        },
+        "guns": [
+          0.55,
+          0.6,
+          0.65
+        ],
+        "insigniaX": 26,
+        "code": "22",
+        "codeX": 64
+      }
+    },
+    {
+      "country": "usa",
+      "id": "sb2c",
+      "designation": "SB2C-4",
+      "name": {
+        "en": "Curtiss SB2C Helldiver",
+        "zh": "寇蒂斯 SB2C“地狱俯冲者”"
+      },
+      "nickname": {
+        "en": "Helldiver",
+        "zh": "地狱俯冲者"
+      },
+      "manufacturer": {
+        "en": "Curtiss-Wright / Fairchild / CC&F",
+        "zh": "寇蒂斯-莱特 / 费尔柴尔德 / 加拿大汽车铸造"
+      },
+      "role": "diveBomber",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1940-12",
+      "service": {
+        "start": "1943-11",
+        "frontlineEnd": "1949-06",
+        "end": "1950-06"
+      },
+      "production": 7140,
+      "specs": {
+        "length": 11.18,
+        "span": 15.15,
+        "maxSpeed": 475,
+        "range": 1875,
+        "ceiling": 8870,
+        "crew": 2,
+        "engine": {
+          "en": "Wright R-2600 Cyclone 14, 1,900 hp",
+          "zh": "莱特 R-2600“旋风 14”，1900 马力"
+        },
+        "armament": {
+          "en": "2 × 20 mm, 2 × .30 MG, 2,000 lb bombs",
+          "zh": "2 门 20 毫米炮，2 挺 .30 机枪，2000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "philippine-sea",
+        "leyte-gulf",
+        "iwo-jima",
+        "okinawa",
+        "ten-go"
+      ],
+      "desc": {
+        "en": "Bigger, faster and longer-ranged than the Dauntless, but plagued by handling problems — crews called it 'the Beast'. Once matured it became the main Navy dive bomber of 1944–45 and helped sink Musashi and Yamato.",
+        "zh": "比“无畏”更大、更快、航程更远，但早期操控问题不断，机组人员称它为“野兽”。成熟后成为 1944–45 年海军主力俯冲轰炸机，参与击沉了“武藏”和“大和”。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Curtiss_SB2C_Helldiver",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=SB2C+Helldiver"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 18,
+        "paint": "navy3",
+        "insignia": "ww2b",
+        "blades": 4,
+        "canopy": {
+          "type": "greenhouse",
+          "x": 68,
+          "len": 32,
+          "frames": 6
+        },
+        "wing": {
+          "pos": "low",
+          "x": 65,
+          "chord": 30,
+          "taper": 0.55,
+          "sweep": 4,
+          "dihedral": 6,
+          "round": 0.4
+        },
+        "tail": {
+          "finH": 24,
+          "finX": 18,
+          "finChord": 20,
+          "finSweep": 5,
+          "finTopChord": 11,
+          "finRound": 0.3
+        },
+        "insigniaX": 24,
+        "code": "B-9",
+        "codeX": 48
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f6f",
+      "designation": "F6F-5",
+      "name": {
+        "en": "Grumman F6F Hellcat",
+        "zh": "格鲁曼 F6F“地狱猫”"
+      },
+      "nickname": {
+        "en": "Hellcat",
+        "zh": "地狱猫"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1942-06",
+      "service": {
+        "start": "1943-01",
+        "frontlineEnd": "1948-06",
+        "end": "1954-12"
+      },
+      "production": 12275,
+      "specs": {
+        "length": 10.24,
+        "span": 13.06,
+        "maxSpeed": 629,
+        "range": 1520,
+        "ceiling": 11370,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-2800 Double Wasp, 2,000 hp",
+          "zh": "普惠 R-2800“双黄蜂”，2000 马力"
+        },
+        "armament": {
+          "en": "6 × .50 MG, rockets, 2,000 lb bombs",
+          "zh": "6 挺 .50 机枪，火箭弹，2000 磅炸弹"
+        }
+      },
+      "conflicts": [
+        "pacific-war",
+        "philippine-sea",
+        "leyte-gulf",
+        "iwo-jima",
+        "okinawa",
+        "ten-go"
+      ],
+      "desc": {
+        "en": "Designed using combat lessons from Wildcat pilots, built fast and in huge numbers. Hellcats were credited with more than 5,000 aerial victories — more than any other Allied naval aircraft — including the 'Marianas Turkey Shoot'.",
+        "zh": "吸取“野猫”飞行员的实战经验设计，研制迅速、产量巨大。“地狱猫”取得了 5000 余次空战胜利，居盟军舰载机之首，其中包括“马里亚纳猎火鸡”。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F6F_Hellcat",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F6F+Hellcat"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 20,
+        "paint": "navy3",
+        "insignia": "ww2b",
+        "profile": [
+          [
+            0,
+            0.2,
+            0.04
+          ],
+          [
+            8,
+            0.25,
+            -0.08
+          ],
+          [
+            22,
+            0.33,
+            -0.24
+          ],
+          [
+            38,
+            0.42,
+            -0.4
+          ],
+          [
+            52,
+            0.5,
+            -0.5
+          ],
+          [
+            62,
+            0.54,
+            -0.56
+          ],
+          [
+            74,
+            0.53,
+            -0.57
+          ],
+          [
+            86,
+            0.5,
+            -0.52
+          ],
+          [
+            95,
+            0.47,
+            -0.48
+          ],
+          [
+            100,
+            0.44,
+            -0.44
+          ]
+        ],
+        "canopy": {
+          "type": "framed",
+          "x": 64,
+          "len": 16
+        },
+        "wing": {
+          "pos": "low",
+          "x": 67,
+          "chord": 27,
+          "taper": 0.6,
+          "sweep": 3,
+          "dihedral": 7,
+          "round": 0.4
+        },
+        "tail": {
+          "finH": 21,
+          "finX": 18,
+          "finChord": 18,
+          "finSweep": 7,
+          "finTopChord": 10,
+          "finRound": 0.45
+        },
+        "guns": [
+          0.45,
+          0.51,
+          0.57
+        ],
+        "insigniaX": 30,
+        "code": "7",
+        "codeX": 50
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f7f",
+      "designation": "F7F-3N",
+      "name": {
+        "en": "Grumman F7F Tigercat",
+        "zh": "格鲁曼 F7F“虎猫”"
+      },
+      "nickname": {
+        "en": "Tigercat",
+        "zh": "虎猫"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USMC",
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1943-11",
+      "service": {
+        "start": "1944-04",
+        "frontlineEnd": "1954-03",
+        "end": "1954-12"
+      },
+      "production": 364,
+      "specs": {
+        "length": 13.83,
+        "span": 15.7,
+        "maxSpeed": 740,
+        "range": 1931,
+        "ceiling": 12300,
+        "crew": 2,
+        "engine": {
+          "en": "2 × P&W R-2800 Double Wasp, 2,100 hp",
+          "zh": "2 台普惠 R-2800“双黄蜂”，各 2100 马力"
+        },
+        "armament": {
+          "en": "4 × 20 mm cannon (+ 4 × .50 MG on F7F-1)",
+          "zh": "4 门 20 毫米炮（F7F-1 另有 4 挺 .50 机枪）"
+        }
+      },
+      "conflicts": [
+        "korean-war"
+      ],
+      "desc": {
+        "en": "The first twin-engine fighter to enter US Navy service and one of the fastest piston fighters ever. Too big for most carrier decks of its day, it served mainly with Marine squadrons ashore, flying night interdiction in Korea.",
+        "zh": "美国海军第一种服役的双发战斗机，也是最快的活塞战斗机之一。对当时多数航母甲板来说过于庞大，主要由陆战队在岸基使用，在朝鲜执行夜间遮断任务。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F7F_Tigercat",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F7F+Tigercat"
+      },
+      "shape": {
+        "body": "inline",
+        "engine": "none",
+        "depth": 12,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "profile": [
+          [
+            0,
+            0.22,
+            0
+          ],
+          [
+            10,
+            0.28,
+            -0.12
+          ],
+          [
+            26,
+            0.38,
+            -0.3
+          ],
+          [
+            44,
+            0.47,
+            -0.45
+          ],
+          [
+            60,
+            0.52,
+            -0.5
+          ],
+          [
+            72,
+            0.52,
+            -0.5
+          ],
+          [
+            84,
+            0.45,
+            -0.45
+          ],
+          [
+            93,
+            0.32,
+            -0.32
+          ],
+          [
+            98,
+            0.16,
+            -0.16
+          ],
+          [
+            100,
+            0.02,
+            -0.02
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 66,
+          "len": 14
+        },
+        "nacelles": [
+          {
+            "y": 0.26,
+            "x": 78,
+            "len": 26,
+            "d": 8.5
+          }
+        ],
+        "wing": {
+          "pos": "mid",
+          "x": 60,
+          "chord": 21,
+          "taper": 0.45,
+          "sweep": 4,
+          "dihedral": 5,
+          "round": 0.5
+        },
+        "tail": {
+          "finH": 20,
+          "finX": 16,
+          "finChord": 18,
+          "finSweep": 9,
+          "finTopChord": 8
+        },
+        "insigniaX": 32,
+        "wingStar": true,
+        "code": "WF",
+        "codeX": 52
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f8f",
+      "designation": "F8F-1",
+      "name": {
+        "en": "Grumman F8F Bearcat",
+        "zh": "格鲁曼 F8F“熊猫”"
+      },
+      "nickname": {
+        "en": "Bearcat",
+        "zh": "熊猫"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "fighter",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1944-08",
+      "service": {
+        "start": "1945-05",
+        "frontlineEnd": "1952-06",
+        "end": "1952-12"
+      },
+      "production": 1265,
+      "specs": {
+        "length": 8.61,
+        "span": 10.92,
+        "maxSpeed": 732,
+        "range": 1778,
+        "ceiling": 11800,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-2800 Double Wasp, 2,100 hp",
+          "zh": "普惠 R-2800“双黄蜂”，2100 马力"
+        },
+        "armament": {
+          "en": "4 × .50 MG (4 × 20 mm on F8F-1B)",
+          "zh": "4 挺 .50 机枪（F8F-1B 为 4 门 20 毫米炮）"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The smallest airframe Grumman could wrap around the R-2800, built to out-climb kamikazes from small decks. It reached the fleet weeks too late for combat, but its climb performance became legendary.",
+        "zh": "格鲁曼用能容纳 R-2800 发动机的最小机体打造，目的是从小型甲板起飞迅速爬升拦截神风机。它入列时已赶不上战斗，但其爬升性能成为传奇。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F8F_Bearcat",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F8F+Bearcat"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 22,
+        "paint": "gsb",
+        "insignia": "ww2b",
+        "blades": 4,
+        "profile": [
+          [
+            0,
+            0.2,
+            0.04
+          ],
+          [
+            10,
+            0.25,
+            -0.1
+          ],
+          [
+            26,
+            0.33,
+            -0.28
+          ],
+          [
+            42,
+            0.42,
+            -0.44
+          ],
+          [
+            56,
+            0.49,
+            -0.52
+          ],
+          [
+            68,
+            0.51,
+            -0.54
+          ],
+          [
+            80,
+            0.5,
+            -0.53
+          ],
+          [
+            91,
+            0.48,
+            -0.5
+          ],
+          [
+            100,
+            0.45,
+            -0.45
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 62,
+          "len": 17
+        },
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 28,
+          "taper": 0.5,
+          "sweep": 4,
+          "dihedral": 7,
+          "round": 0.45
+        },
+        "tail": {
+          "finH": 23,
+          "finX": 19,
+          "finChord": 19,
+          "finSweep": 8,
+          "finTopChord": 9
+        },
+        "guns": [
+          0.42,
+          0.5
+        ],
+        "insigniaX": 32,
+        "code": "201",
+        "codeX": 52
+      }
+    },
+    {
+      "country": "usa",
+      "id": "fr",
+      "designation": "FR-1",
+      "name": {
+        "en": "Ryan FR Fireball",
+        "zh": "瑞安 FR“火球”"
+      },
+      "nickname": {
+        "en": "Fireball",
+        "zh": "火球"
+      },
+      "manufacturer": {
+        "en": "Ryan",
+        "zh": "瑞安"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "mixed",
+      "firstFlight": "1944-06",
+      "service": {
+        "start": "1945-03",
+        "frontlineEnd": "1947-06",
+        "end": "1947-08"
+      },
+      "production": 66,
+      "productionNote": {
+        "en": "Plus prototypes (71 airframes in total)",
+        "zh": "另有原型机（总计 71 架）"
+      },
+      "specs": {
+        "length": 9.86,
+        "span": 12.19,
+        "maxSpeed": 650,
+        "range": 2100,
+        "ceiling": 13100,
+        "crew": 1,
+        "engine": {
+          "en": "Wright R-1820 (1,350 hp) + GE J31 turbojet (1,600 lbf)",
+          "zh": "莱特 R-1820（1350 马力）+ 通用 J31 涡喷（1600 磅推力）"
+        },
+        "armament": {
+          "en": "4 × .50 MG",
+          "zh": "4 挺 .50 机枪"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "A hedge against early jets' thirst and slow throttle response: a radial in the nose for take-off and cruise, a jet in the tail for dash. On 6 November 1945 an FR-1 whose piston engine failed made the first jet-powered carrier landing.",
+        "zh": "为应对早期喷气发动机油耗高、油门响应慢而设计的折中方案：机头活塞发动机负责起飞和巡航，机尾喷气发动机负责冲刺。1945 年 11 月 6 日，一架活塞发动机失效的 FR-1 完成了首次纯喷气动力航母着舰。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Ryan_FR_Fireball",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Ryan+FR+Fireball"
+      },
+      "shape": {
+        "body": "radial",
+        "engine": "mixed",
+        "depth": 16,
+        "paint": "gsb",
+        "insignia": "ww2b",
+        "profile": [
+          [
+            0,
+            0.22,
+            -0.12
+          ],
+          [
+            10,
+            0.28,
+            -0.22
+          ],
+          [
+            26,
+            0.37,
+            -0.35
+          ],
+          [
+            44,
+            0.45,
+            -0.46
+          ],
+          [
+            58,
+            0.5,
+            -0.5
+          ],
+          [
+            72,
+            0.5,
+            -0.5
+          ],
+          [
+            86,
+            0.48,
+            -0.48
+          ],
+          [
+            95,
+            0.46,
+            -0.46
+          ],
+          [
+            100,
+            0.43,
+            -0.43
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 68,
+          "len": 15
+        },
+        "wing": {
+          "pos": "low",
+          "x": 64,
+          "chord": 25,
+          "taper": 0.55,
+          "sweep": 2,
+          "dihedral": 6,
+          "round": 0.45
+        },
+        "tail": {
+          "finH": 19,
+          "finX": 18,
+          "finChord": 18,
+          "finSweep": 7
+        },
+        "insigniaX": 30,
+        "code": "66",
+        "codeX": 50
+      }
+    },
+    {
+      "country": "usa",
+      "id": "ad",
+      "designation": "AD-4",
+      "name": {
+        "en": "Douglas AD Skyraider",
+        "zh": "道格拉斯 AD“天袭者”"
+      },
+      "nickname": {
+        "en": "Skyraider",
+        "zh": "天袭者"
+      },
+      "manufacturer": {
+        "en": "Douglas",
+        "zh": "道格拉斯"
+      },
+      "role": "attack",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1945-03",
+      "service": {
+        "start": "1946-12",
+        "frontlineEnd": "1968-04",
+        "end": "1973-12"
+      },
+      "production": 3180,
+      "specs": {
+        "length": 11.84,
+        "span": 15.25,
+        "maxSpeed": 518,
+        "range": 2115,
+        "ceiling": 8660,
+        "crew": 1,
+        "engine": {
+          "en": "Wright R-3350 Duplex-Cyclone, 2,700 hp",
+          "zh": "莱特 R-3350“双旋风”，2700 马力"
+        },
+        "armament": {
+          "en": "4 × 20 mm, up to 8,000 lb on 15 hardpoints",
+          "zh": "4 门 20 毫米炮，15 个挂点最多 8000 磅载荷"
+        }
+      },
+      "conflicts": [
+        "korean-war",
+        "inchon",
+        "chosin"
+      ],
+      "desc": {
+        "en": "Ed Heinemann's single-seat replacement for both the dive bomber and the torpedo bomber, sketched overnight in a hotel room. It carried more than a B-17's bomb load and outlived the jet age's first generation, serving into the Vietnam War.",
+        "zh": "爱德华·海涅曼在旅馆里连夜画出的单座攻击机，一举取代俯冲轰炸机和鱼雷轰炸机。其载弹量超过 B-17，服役时间比第一代喷气机还长，一直参战到越南战争。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=A-1+Skyraider"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 18,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "blades": 4,
+        "profile": [
+          [
+            0,
+            0.22,
+            0.02
+          ],
+          [
+            10,
+            0.28,
+            -0.12
+          ],
+          [
+            26,
+            0.37,
+            -0.3
+          ],
+          [
+            42,
+            0.45,
+            -0.45
+          ],
+          [
+            56,
+            0.5,
+            -0.52
+          ],
+          [
+            68,
+            0.52,
+            -0.53
+          ],
+          [
+            80,
+            0.51,
+            -0.52
+          ],
+          [
+            91,
+            0.48,
+            -0.5
+          ],
+          [
+            100,
+            0.45,
+            -0.45
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 68,
+          "len": 16
+        },
+        "wing": {
+          "pos": "low",
+          "x": 66,
+          "chord": 28,
+          "taper": 0.55,
+          "sweep": 3,
+          "dihedral": 6,
+          "round": 0.35
+        },
+        "tail": {
+          "finH": 25,
+          "finX": 20,
+          "finChord": 20,
+          "finSweep": 6,
+          "finTopChord": 11,
+          "finRound": 0.3
+        },
+        "insigniaX": 32,
+        "code": "404",
+        "codeX": 52
+      }
+    },
+    {
+      "country": "usa",
+      "id": "fh1",
+      "designation": "FH-1",
+      "name": {
+        "en": "McDonnell FH Phantom",
+        "zh": "麦克唐纳 FH“鬼怪”"
+      },
+      "nickname": {
+        "en": "Phantom",
+        "zh": "鬼怪"
+      },
+      "manufacturer": {
+        "en": "McDonnell",
+        "zh": "麦克唐纳"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "jet",
+      "firstFlight": "1945-01",
+      "service": {
+        "start": "1947-08",
+        "frontlineEnd": "1949-07",
+        "end": "1954-07"
+      },
+      "production": 62,
+      "productionNote": {
+        "en": "Including two prototypes",
+        "zh": "含 2 架原型机"
+      },
+      "specs": {
+        "length": 11.35,
+        "span": 12.42,
+        "maxSpeed": 813,
+        "range": 1120,
+        "ceiling": 12525,
+        "crew": 1,
+        "engine": {
+          "en": "2 × Westinghouse J30 turbojets, 1,600 lbf each",
+          "zh": "2 台西屋 J30 涡喷，各 1600 磅推力"
+        },
+        "armament": {
+          "en": "4 × .50 MG",
+          "zh": "4 挺 .50 机枪"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The first pure jet to operate from a US carrier — its prototype flew off USS Franklin D. Roosevelt in July 1946. Small engines buried in the wing roots kept the airframe conventional and deck-friendly.",
+        "zh": "第一种在美国航母上起降的纯喷气式飞机——其原型机于 1946 年 7 月从“富兰克林·D·罗斯福”号起飞。小型发动机埋在翼根内，使机体保持常规布局、便于上舰。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/McDonnell_FH_Phantom",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=McDonnell+FH+Phantom"
+      },
+      "shape": {
+        "body": "jet",
+        "engine": "jet",
+        "jet": true,
+        "depth": 14,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "antenna": false,
+        "profile": [
+          [
+            0,
+            0.24,
+            -0.06
+          ],
+          [
+            10,
+            0.3,
+            -0.18
+          ],
+          [
+            26,
+            0.38,
+            -0.32
+          ],
+          [
+            44,
+            0.46,
+            -0.46
+          ],
+          [
+            58,
+            0.5,
+            -0.52
+          ],
+          [
+            70,
+            0.5,
+            -0.5
+          ],
+          [
+            82,
+            0.46,
+            -0.45
+          ],
+          [
+            92,
+            0.36,
+            -0.35
+          ],
+          [
+            98,
+            0.2,
+            -0.2
+          ],
+          [
+            100,
+            0.06,
+            -0.06
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 78,
+          "len": 14
+        },
+        "wing": {
+          "pos": "low",
+          "x": 58,
+          "chord": 28,
+          "taper": 0.62,
+          "sweep": 2,
+          "dihedral": 4,
+          "round": 0.4
+        },
+        "intake": "root",
+        "jetExhaust": {
+          "x": 30,
+          "f": 0.88
+        },
+        "tail": {
+          "finH": 19,
+          "finX": 16,
+          "finChord": 18,
+          "finSweep": 6,
+          "finTopChord": 9,
+          "finRound": 0.4
+        },
+        "insigniaX": 40,
+        "code": "F 17",
+        "codeX": 62
+      }
+    },
+    {
+      "country": "usa",
+      "id": "fj1",
+      "designation": "FJ-1",
+      "name": {
+        "en": "North American FJ-1 Fury",
+        "zh": "北美 FJ-1“狂怒”"
+      },
+      "nickname": {
+        "en": "Fury",
+        "zh": "狂怒"
+      },
+      "manufacturer": {
+        "en": "North American Aviation",
+        "zh": "北美航空"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "jet",
+      "firstFlight": "1946-11",
+      "service": {
+        "start": "1948-03",
+        "frontlineEnd": "1949-05",
+        "end": "1953-12"
+      },
+      "production": 33,
+      "productionNote": {
+        "en": "Including three prototypes",
+        "zh": "含 3 架原型机"
+      },
+      "specs": {
+        "length": 10.49,
+        "span": 11.63,
+        "maxSpeed": 880,
+        "range": 2414,
+        "ceiling": 9754,
+        "crew": 1,
+        "engine": {
+          "en": "Allison J35 turbojet, 4,000 lbf",
+          "zh": "艾利森 J35 涡喷，4000 磅推力"
+        },
+        "armament": {
+          "en": "6 × .50 MG",
+          "zh": "6 挺 .50 机枪"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "A straight-wing, nose-intake Navy jet that made the first carrier deployment at sea by an operational jet squadron (VF-5A, USS Boxer, 1948). North American's swept-wing redesign of the same airframe became the F-86 Sabre.",
+        "zh": "直翼、机头进气的海军喷气机，1948 年由 VF-5A 在“拳师”号上完成首次作战中队喷气机海上部署。北美公司以同一机体改为后掠翼，诞生了 F-86“佩刀”。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/North_American_FJ-1_Fury",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=FJ-1+Fury"
+      },
+      "shape": {
+        "body": "jetnose",
+        "engine": "jetnose",
+        "jet": true,
+        "depth": 16,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "antenna": false,
+        "canopy": {
+          "type": "bubble",
+          "x": 80,
+          "len": 15
+        },
+        "wing": {
+          "pos": "mid",
+          "x": 60,
+          "chord": 25,
+          "taper": 0.55,
+          "sweep": 3,
+          "dihedral": 3,
+          "round": 0.4
+        },
+        "tipTanks": true,
+        "tail": {
+          "finH": 19,
+          "finX": 17,
+          "finChord": 18,
+          "finSweep": 7,
+          "finTopChord": 8
+        },
+        "insigniaX": 38,
+        "code": "S-1",
+        "codeX": 60
+      }
+    },
+    {
+      "country": "usa",
+      "id": "am",
+      "designation": "AM-1",
+      "name": {
+        "en": "Martin AM Mauler",
+        "zh": "马丁 AM“殴打者”"
+      },
+      "nickname": {
+        "en": "Mauler",
+        "zh": "殴打者"
+      },
+      "manufacturer": {
+        "en": "Glenn L. Martin",
+        "zh": "格伦·L·马丁"
+      },
+      "role": "attack",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1944-08",
+      "service": {
+        "start": "1948-03",
+        "frontlineEnd": "1950-10",
+        "end": "1953-12"
+      },
+      "production": 151,
+      "specs": {
+        "length": 12.57,
+        "span": 15.24,
+        "maxSpeed": 538,
+        "range": 2890,
+        "ceiling": 9300,
+        "crew": 1,
+        "engine": {
+          "en": "P&W R-4360 Wasp Major, 3,000 hp",
+          "zh": "普惠 R-4360“大黄蜂”，3000 马力"
+        },
+        "armament": {
+          "en": "4 × 20 mm, three torpedoes or 10,000+ lb of stores",
+          "zh": "4 门 20 毫米炮，3 枚鱼雷或万磅以上载荷"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The Skyraider's heavyweight rival, built around the 28-cylinder Wasp Major. In 1949 a Mauler lifted a record 10,648 lb of ordnance, but it was hard to handle on deck and was quickly passed to Naval Reserve units.",
+        "zh": "“天袭者”的重量级对手，围绕 28 缸“大黄蜂”发动机打造。1949 年一架“殴打者”创下携带 10648 磅弹药的纪录，但甲板操作困难，很快转交海军预备役部队。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Martin_AM_Mauler",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Martin+AM+Mauler"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 18,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "blades": 4,
+        "profile": [
+          [
+            0,
+            0.22,
+            0.02
+          ],
+          [
+            10,
+            0.28,
+            -0.12
+          ],
+          [
+            26,
+            0.37,
+            -0.3
+          ],
+          [
+            42,
+            0.45,
+            -0.45
+          ],
+          [
+            56,
+            0.5,
+            -0.51
+          ],
+          [
+            68,
+            0.52,
+            -0.52
+          ],
+          [
+            82,
+            0.51,
+            -0.51
+          ],
+          [
+            92,
+            0.48,
+            -0.49
+          ],
+          [
+            100,
+            0.44,
+            -0.44
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 70,
+          "len": 15
+        },
+        "wing": {
+          "pos": "low",
+          "x": 64,
+          "chord": 27,
+          "taper": 0.55,
+          "sweep": 3,
+          "dihedral": 6,
+          "round": 0.35
+        },
+        "tail": {
+          "finH": 24,
+          "finX": 20,
+          "finChord": 21,
+          "finSweep": 5,
+          "finTopChord": 12,
+          "finRound": 0.25
+        },
+        "insigniaX": 32,
+        "code": "A 3",
+        "codeX": 54
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f2h",
+      "designation": "F2H-2",
+      "name": {
+        "en": "McDonnell F2H Banshee",
+        "zh": "麦克唐纳 F2H“女妖”"
+      },
+      "nickname": {
+        "en": "Banshee",
+        "zh": "女妖"
+      },
+      "manufacturer": {
+        "en": "McDonnell",
+        "zh": "麦克唐纳"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "jet",
+      "firstFlight": "1947-01",
+      "service": {
+        "start": "1948-08",
+        "frontlineEnd": "1959-09",
+        "end": "1961-09"
+      },
+      "production": 895,
+      "specs": {
+        "length": 12.24,
+        "span": 12.73,
+        "maxSpeed": 933,
+        "range": 1883,
+        "ceiling": 13700,
+        "crew": 1,
+        "engine": {
+          "en": "2 × Westinghouse J34 turbojets, 3,250 lbf each",
+          "zh": "2 台西屋 J34 涡喷，各 3250 磅推力"
+        },
+        "armament": {
+          "en": "4 × 20 mm cannon",
+          "zh": "4 门 20 毫米炮"
+        }
+      },
+      "conflicts": [
+        "korean-war"
+      ],
+      "desc": {
+        "en": "A scaled-up Phantom with far more power, capable of very high altitude. Banshees flew escort and photo-reconnaissance over Korea and became the Navy's first jet nuclear-strike and all-weather fighters.",
+        "zh": "放大并大幅提升动力的“鬼怪”，具有出色的高空性能。“女妖”在朝鲜执行护航和照相侦察，后来成为海军首批具备核打击和全天候作战能力的喷气战斗机。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/McDonnell_F2H_Banshee",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F2H+Banshee"
+      },
+      "shape": {
+        "body": "jet",
+        "engine": "jet",
+        "jet": true,
+        "depth": 13,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "antenna": false,
+        "profile": [
+          [
+            0,
+            0.24,
+            -0.06
+          ],
+          [
+            10,
+            0.3,
+            -0.18
+          ],
+          [
+            26,
+            0.38,
+            -0.32
+          ],
+          [
+            44,
+            0.46,
+            -0.47
+          ],
+          [
+            58,
+            0.5,
+            -0.52
+          ],
+          [
+            70,
+            0.5,
+            -0.5
+          ],
+          [
+            82,
+            0.46,
+            -0.44
+          ],
+          [
+            92,
+            0.35,
+            -0.33
+          ],
+          [
+            98,
+            0.19,
+            -0.18
+          ],
+          [
+            100,
+            0.05,
+            -0.05
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 82,
+          "len": 13
+        },
+        "wing": {
+          "pos": "mid",
+          "x": 58,
+          "chord": 30,
+          "taper": 0.55,
+          "sweep": 4,
+          "dihedral": 3,
+          "round": 0.35
+        },
+        "intake": "root",
+        "jetExhaust": {
+          "x": 28,
+          "f": 0.82
+        },
+        "tail": {
+          "finH": 20,
+          "finX": 18,
+          "finChord": 19,
+          "finSweep": 8,
+          "finTopChord": 9,
+          "stabZoff": 4,
+          "stabDihedral": 10
+        },
+        "insigniaX": 42,
+        "code": "103",
+        "codeX": 64
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f9f",
+      "designation": "F9F-2",
+      "name": {
+        "en": "Grumman F9F Panther",
+        "zh": "格鲁曼 F9F“黑豹”"
+      },
+      "nickname": {
+        "en": "Panther",
+        "zh": "黑豹"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN",
+        "USMC"
+      ],
+      "propulsion": "jet",
+      "firstFlight": "1947-11",
+      "service": {
+        "start": "1949-05",
+        "frontlineEnd": "1956-10",
+        "end": "1958-12"
+      },
+      "production": 1382,
+      "specs": {
+        "length": 11.35,
+        "span": 11.58,
+        "maxSpeed": 925,
+        "range": 2100,
+        "ceiling": 13600,
+        "crew": 1,
+        "engine": {
+          "en": "P&W J42 (licensed Rolls-Royce Nene), 5,000 lbf",
+          "zh": "普惠 J42（罗罗“尼恩”授权版），5000 磅推力"
+        },
+        "armament": {
+          "en": "4 × 20 mm, 2,000 lb of bombs or rockets",
+          "zh": "4 门 20 毫米炮，2000 磅炸弹或火箭弹"
+        }
+      },
+      "conflicts": [
+        "korean-war",
+        "inchon",
+        "chosin"
+      ],
+      "desc": {
+        "en": "Grumman's first jet and the Navy's most widely used jet of the Korean War. On 3 July 1950 a VF-51 Panther from USS Valley Forge scored the US Navy's first jet air-to-air kill. John Glenn and Ted Williams both flew it with the Marines.",
+        "zh": "格鲁曼的第一种喷气机，也是朝鲜战争中海军使用最广的喷气机。1950 年 7 月 3 日，“福吉谷”号上 VF-51 中队的“黑豹”取得美国海军首个喷气机空战战果。约翰·格伦与棒球明星泰德·威廉斯都曾在陆战队驾驶它作战。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_F9F_Panther",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=F9F+Panther"
+      },
+      "shape": {
+        "body": "jet",
+        "engine": "jet",
+        "jet": true,
+        "depth": 14,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "antenna": false,
+        "profile": [
+          [
+            0,
+            0.22,
+            -0.12
+          ],
+          [
+            10,
+            0.28,
+            -0.22
+          ],
+          [
+            26,
+            0.37,
+            -0.36
+          ],
+          [
+            44,
+            0.46,
+            -0.47
+          ],
+          [
+            58,
+            0.5,
+            -0.52
+          ],
+          [
+            70,
+            0.5,
+            -0.5
+          ],
+          [
+            82,
+            0.45,
+            -0.44
+          ],
+          [
+            92,
+            0.34,
+            -0.32
+          ],
+          [
+            98,
+            0.18,
+            -0.16
+          ],
+          [
+            100,
+            0.04,
+            -0.04
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 82,
+          "len": 14
+        },
+        "wing": {
+          "pos": "low",
+          "x": 60,
+          "chord": 29,
+          "taper": 0.62,
+          "sweep": 2,
+          "dihedral": 3,
+          "round": 0.3
+        },
+        "intake": "root",
+        "tipTanks": true,
+        "tail": {
+          "finH": 20,
+          "finX": 18,
+          "finChord": 19,
+          "finSweep": 6,
+          "finTopChord": 9,
+          "finRound": 0.35
+        },
+        "insigniaX": 40,
+        "code": "104",
+        "codeX": 62
+      }
+    },
+    {
+      "country": "usa",
+      "id": "f6u",
+      "designation": "F6U-1",
+      "name": {
+        "en": "Vought F6U Pirate",
+        "zh": "沃特 F6U“海盗旗”"
+      },
+      "nickname": {
+        "en": "Pirate",
+        "zh": "海盗旗"
+      },
+      "manufacturer": {
+        "en": "Vought",
+        "zh": "沃特"
+      },
+      "role": "jetFighter",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "jet",
+      "firstFlight": "1946-10",
+      "service": {
+        "start": "1949-08",
+        "frontlineEnd": "1949-08",
+        "end": "1950-06"
+      },
+      "production": 33,
+      "productionNote": {
+        "en": "30 production + 3 prototypes; evaluation unit VX-5 only",
+        "zh": "30 架生产型 + 3 架原型；仅装备试验中队 VX-5"
+      },
+      "specs": {
+        "length": 11.46,
+        "span": 10,
+        "maxSpeed": 959,
+        "range": null,
+        "ceiling": null,
+        "crew": 1,
+        "engine": {
+          "en": "Westinghouse J34 with afterburner, 4,224 lbf",
+          "zh": "西屋 J34（带加力），4224 磅推力"
+        },
+        "armament": {
+          "en": "4 × 20 mm cannon",
+          "zh": "4 门 20 毫米炮"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "Vought's first jet: the first Navy aircraft with an afterburner and one of the first with composite 'Metalite' skin. Underpowered and outclassed by the Panther, it never served with a fleet squadron.",
+        "zh": "沃特的第一种喷气机：海军第一种装加力燃烧室的飞机，也是最早使用“Metalite”复合蒙皮的飞机之一。动力不足、性能不及“黑豹”，从未进入作战中队。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Vought_F6U_Pirate",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Vought+F6U"
+      },
+      "shape": {
+        "body": "jet",
+        "engine": "jet",
+        "jet": true,
+        "depth": 14,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "antenna": false,
+        "profile": [
+          [
+            0,
+            0.24,
+            -0.14
+          ],
+          [
+            10,
+            0.3,
+            -0.24
+          ],
+          [
+            26,
+            0.38,
+            -0.36
+          ],
+          [
+            44,
+            0.46,
+            -0.47
+          ],
+          [
+            58,
+            0.5,
+            -0.5
+          ],
+          [
+            70,
+            0.5,
+            -0.49
+          ],
+          [
+            82,
+            0.45,
+            -0.43
+          ],
+          [
+            92,
+            0.33,
+            -0.31
+          ],
+          [
+            98,
+            0.17,
+            -0.15
+          ],
+          [
+            100,
+            0.04,
+            -0.04
+          ]
+        ],
+        "canopy": {
+          "type": "bubble",
+          "x": 80,
+          "len": 13
+        },
+        "intake": "side",
+        "intakeX": 64,
+        "intakeR": 0.18,
+        "wing": {
+          "pos": "mid",
+          "x": 58,
+          "chord": 26,
+          "taper": 0.6,
+          "sweep": 2,
+          "dihedral": 3,
+          "round": 0.3
+        },
+        "tipTanks": true,
+        "tail": {
+          "finH": 21,
+          "finX": 18,
+          "finChord": 19,
+          "finSweep": 9,
+          "finTopChord": 8,
+          "stabZoff": 3
+        },
+        "insigniaX": 40,
+        "code": "X 5",
+        "codeX": 54
+      }
+    },
+    {
+      "country": "usa",
+      "id": "af",
+      "designation": "AF-2S",
+      "name": {
+        "en": "Grumman AF Guardian",
+        "zh": "格鲁曼 AF“守护者”"
+      },
+      "nickname": {
+        "en": "Guardian",
+        "zh": "守护者"
+      },
+      "manufacturer": {
+        "en": "Grumman",
+        "zh": "格鲁曼"
+      },
+      "role": "attack",
+      "basing": "carrier",
+      "branches": [
+        "USN"
+      ],
+      "propulsion": "piston",
+      "firstFlight": "1945-12",
+      "service": {
+        "start": "1950-10",
+        "frontlineEnd": "1955-08",
+        "end": "1955-08"
+      },
+      "production": 389,
+      "specs": {
+        "length": 13.21,
+        "span": 18.49,
+        "maxSpeed": 510,
+        "range": 2410,
+        "ceiling": null,
+        "crew": 3,
+        "engine": {
+          "en": "P&W R-2800 Double Wasp, 2,400 hp",
+          "zh": "普惠 R-2800“双黄蜂”，2400 马力"
+        },
+        "armament": {
+          "en": "Torpedo, depth charges or 4,000 lb of bombs",
+          "zh": "鱼雷、深水炸弹或 4000 磅炸弹"
+        }
+      },
+      "conflicts": [],
+      "desc": {
+        "en": "The Navy's first purpose-built carrier anti-submarine system, flown as hunter-killer pairs: the radar-equipped AF-2W found the submarine, the AF-2S attacked it. One of the largest single-piston-engine aircraft ever operated from a carrier.",
+        "zh": "海军第一种专门设计的舰载反潜系统，以“猎-杀”双机组队：装雷达的 AF-2W 负责搜索，AF-2S 负责攻击。是航母上使用过的最大的单活塞发动机飞机之一。"
+      },
+      "wiki": {
+        "en": "https://en.wikipedia.org/wiki/Grumman_AF_Guardian",
+        "zh": "https://zh.wikipedia.org/w/index.php?search=Grumman+AF+Guardian"
+      },
+      "shape": {
+        "body": "radial",
+        "depth": 19,
+        "paint": "gsb",
+        "insignia": "usaf47",
+        "blades": 4,
+        "profile": [
+          [
+            0,
+            0.22,
+            0.02
+          ],
+          [
+            10,
+            0.28,
+            -0.14
+          ],
+          [
+            26,
+            0.37,
+            -0.33
+          ],
+          [
+            42,
+            0.45,
+            -0.47
+          ],
+          [
+            56,
+            0.5,
+            -0.53
+          ],
+          [
+            68,
+            0.52,
+            -0.54
+          ],
+          [
+            82,
+            0.51,
+            -0.52
+          ],
+          [
+            92,
+            0.48,
+            -0.49
+          ],
+          [
+            100,
+            0.44,
+            -0.44
+          ]
+        ],
+        "canopy": {
+          "type": "framed",
+          "x": 74,
+          "len": 22
+        },
+        "radome": {
+          "x": 52,
+          "r": 5
+        },
+        "wing": {
+          "pos": "mid",
+          "x": 62,
+          "chord": 25,
+          "taper": 0.5,
+          "sweep": 3,
+          "dihedral": 5,
+          "round": 0.4
+        },
+        "tail": {
+          "finH": 24,
+          "finX": 20,
+          "finChord": 21,
+          "finSweep": 6,
+          "finTopChord": 11
+        },
+        "insigniaX": 30,
+        "code": "SA",
+        "codeX": 54
+      }
+    }
+  ],
+  "lineage": [
+    {
+      "country": "usa",
+      "from": "f4b",
+      "to": "f2f",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "f2f",
+      "to": "f3f",
+      "type": "derived"
+    },
+    {
+      "country": "usa",
+      "from": "f3f",
+      "to": "f4f",
+      "type": "derived",
+      "note": {
+        "en": "XF4F-1 began as a biplane development of the F3F",
+        "zh": "XF4F-1 最初是 F3F 的双翼发展型"
+      }
+    },
+    {
+      "country": "usa",
+      "from": "f2a",
+      "to": "f4f",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "f4f",
+      "to": "f6f",
+      "type": "derived"
+    },
+    {
+      "country": "usa",
+      "from": "f6f",
+      "to": "f8f",
+      "type": "derived"
+    },
+    {
+      "country": "usa",
+      "from": "sbu",
+      "to": "sbc",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "sbc",
+      "to": "sb2c",
+      "type": "replaced",
+      "note": {
+        "en": "Curtiss passed the 'Helldiver' name to its monoplane successor",
+        "zh": "寇蒂斯把“地狱俯冲者”之名传给了单翼继任者"
+      }
+    },
+    {
+      "country": "usa",
+      "from": "bt1",
+      "to": "sbd",
+      "type": "derived",
+      "note": {
+        "en": "XBT-2 redesigned by Douglas into the SBD",
+        "zh": "XBT-2 经道格拉斯改进为 SBD"
+      }
+    },
+    {
+      "country": "usa",
+      "from": "sb2u",
+      "to": "sbd",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "tbd",
+      "to": "tbf",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "sbd",
+      "to": "sb2c",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "sbd",
+      "to": "ad",
+      "type": "derived",
+      "note": {
+        "en": "Same Douglas El Segundo team under Ed Heinemann",
+        "zh": "同一支由海涅曼领导的道格拉斯埃尔塞贡多团队"
+      }
+    },
+    {
+      "country": "usa",
+      "from": "sb2c",
+      "to": "ad",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "tbf",
+      "to": "ad",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "tbf",
+      "to": "af",
+      "type": "replaced"
+    },
+    {
+      "country": "usa",
+      "from": "fh1",
+      "to": "f2h",
+      "type": "derived"
+    },
+    {
+      "country": "usa",
+      "from": "f6f",
+      "to": "f9f",
+      "type": "replaced"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "neutrality-patrol",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1939-09",
+      "end": "1941-12",
+      "magnitude": 1,
+      "name": {
+        "en": "Neutrality Patrol",
+        "zh": "中立巡逻"
+      },
+      "desc": {
+        "en": "US Navy patrols of the western Atlantic before Pearl Harbor; carrier air groups flew long-range patrols as the war in Europe spread.",
+        "zh": "珍珠港事件前美国海军在西大西洋的巡逻行动，航母航空队承担远程巡逻任务。"
+      }
+    },
+    {
+      "id": "pacific-war",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1941-12",
+      "end": "1945-09",
+      "magnitude": 4,
+      "name": {
+        "en": "Pacific War",
+        "zh": "太平洋战争"
+      },
+      "desc": {
+        "en": "The carrier war against Japan. Aircraft carriers replaced battleships as the decisive capital ship, and carrier aircraft decided most major naval battles.",
+        "zh": "对日航母战争。航空母舰取代战列舰成为决定性主力舰，舰载机决定了大多数重大海战的胜负。"
+      }
+    },
+    {
+      "id": "atlantic-cve",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1943-03",
+      "end": "1945-05",
+      "magnitude": 2,
+      "name": {
+        "en": "Atlantic Hunter-Killer Groups",
+        "zh": "大西洋猎杀群"
+      },
+      "desc": {
+        "en": "Escort carriers with Wildcats and Avengers hunted U-boats in the Atlantic, closing the mid-ocean air gap.",
+        "zh": "搭载“野猫”和“复仇者”的护航航母在大西洋猎杀德国潜艇，填补了大洋中部的空中掩护空白。"
+      }
+    },
+    {
+      "id": "korean-war",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1950-06",
+      "end": "1953-07",
+      "magnitude": 3,
+      "name": {
+        "en": "Korean War",
+        "zh": "朝鲜战争"
+      },
+      "desc": {
+        "en": "First conflict in which US Navy jets flew combat from carriers, alongside piston Corsairs and Skyraiders.",
+        "zh": "美国海军喷气式飞机首次从航母上出击作战的冲突，与活塞式“海盗”“天袭者”并肩作战。"
+      }
+    },
+    {
+      "id": "pearl-harbor",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1941-12-07",
+      "magnitude": 3,
+      "name": {
+        "en": "Pearl Harbor",
+        "zh": "珍珠港"
+      },
+      "desc": {
+        "en": "Japanese carrier strike on the Pacific Fleet. The US carriers were at sea and survived — the core of the coming carrier war.",
+        "zh": "日本航母舰队突袭太平洋舰队。美军航母当时在海上而幸免，成为此后航母战争的核心。"
+      }
+    },
+    {
+      "id": "wake-island",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1941-12-08",
+      "magnitude": 1,
+      "name": {
+        "en": "Wake Island",
+        "zh": "威克岛"
+      },
+      "desc": {
+        "en": "Marine Wildcats of VMF-211 defended Wake for two weeks and sank the destroyer Kisaragi.",
+        "zh": "陆战队 VMF-211 的“野猫”坚守威克岛两周，击沉驱逐舰“如月”号。"
+      }
+    },
+    {
+      "id": "coral-sea",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-05-07",
+      "magnitude": 3,
+      "name": {
+        "en": "Coral Sea",
+        "zh": "珊瑚海"
+      },
+      "desc": {
+        "en": "First battle fought entirely by carrier aircraft; the fleets never sighted each other.",
+        "zh": "历史上第一场完全由舰载机进行的海战，双方舰队从未彼此目视接触。"
+      }
+    },
+    {
+      "id": "midway",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-06-04",
+      "magnitude": 5,
+      "name": {
+        "en": "Midway",
+        "zh": "中途岛"
+      },
+      "desc": {
+        "en": "SBD Dauntless dive bombers sank four Japanese fleet carriers in a single day, turning the Pacific War.",
+        "zh": "SBD“无畏”俯冲轰炸机一日之内击沉四艘日本舰队航母，扭转了太平洋战局。"
+      }
+    },
+    {
+      "id": "guadalcanal",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1942-08",
+      "end": "1943-02",
+      "magnitude": 3,
+      "name": {
+        "en": "Guadalcanal Campaign",
+        "zh": "瓜达尔卡纳尔战役"
+      },
+      "desc": {
+        "en": "Six-month struggle for Henderson Field; Navy and Marine aircraft of the 'Cactus Air Force' fought from the island.",
+        "zh": "围绕亨德森机场长达六个月的争夺，海军与陆战队飞机组成“仙人掌航空队”从岛上作战。"
+      }
+    },
+    {
+      "id": "eastern-solomons",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-08-24",
+      "magnitude": 2,
+      "name": {
+        "en": "Eastern Solomons",
+        "zh": "东所罗门"
+      },
+      "desc": {
+        "en": "Carrier battle near Guadalcanal; the light carrier Ryūjō was sunk and Enterprise damaged.",
+        "zh": "瓜岛附近的航母战，日本轻型航母“龙骧”号被击沉，“企业”号受损。"
+      }
+    },
+    {
+      "id": "santa-cruz",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-10-26",
+      "magnitude": 2,
+      "name": {
+        "en": "Santa Cruz Islands",
+        "zh": "圣克鲁斯群岛"
+      },
+      "desc": {
+        "en": "Costly carrier duel: USS Hornet was lost, but Japan lost many veteran aircrews it could not replace.",
+        "zh": "代价高昂的航母对决：“大黄蜂”号沉没，但日本损失了大量无法补充的老练机组。"
+      }
+    },
+    {
+      "id": "torch",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-11-08",
+      "magnitude": 2,
+      "name": {
+        "en": "Operation Torch",
+        "zh": "火炬行动"
+      },
+      "desc": {
+        "en": "Allied landings in North Africa supported by USS Ranger and escort carriers.",
+        "zh": "盟军北非登陆，“突击者”号与护航航母提供空中支援。"
+      }
+    },
+    {
+      "id": "philippine-sea",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1944-06-19",
+      "magnitude": 4,
+      "name": {
+        "en": "Philippine Sea",
+        "zh": "菲律宾海"
+      },
+      "desc": {
+        "en": "The 'Great Marianas Turkey Shoot': Hellcats destroyed most of Japan's carrier air power in two days.",
+        "zh": "“马里亚纳猎火鸡”：“地狱猫”在两天内摧毁了日本绝大部分舰载航空兵力。"
+      }
+    },
+    {
+      "id": "leyte-gulf",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1944-10-24",
+      "magnitude": 5,
+      "name": {
+        "en": "Leyte Gulf",
+        "zh": "莱特湾"
+      },
+      "desc": {
+        "en": "Largest naval battle in history. Carrier aircraft sank the super-battleship Musashi; escort-carrier Wildcats and Avengers fought off the Center Force off Samar.",
+        "zh": "史上规模最大的海战。舰载机击沉超级战列舰“武藏”号；萨马岛外，护航航母的“野猫”和“复仇者”击退了中央舰队。"
+      }
+    },
+    {
+      "id": "iwo-jima",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1945-02-19",
+      "magnitude": 2,
+      "name": {
+        "en": "Iwo Jima",
+        "zh": "硫磺岛"
+      },
+      "desc": {
+        "en": "Carrier aircraft provided close air support for the Marine landings.",
+        "zh": "舰载机为陆战队登陆提供近距空中支援。"
+      }
+    },
+    {
+      "id": "okinawa",
+      "type": "war",
+      "countries": [
+        "usa"
+      ],
+      "start": "1945-04",
+      "end": "1945-06",
+      "magnitude": 3,
+      "name": {
+        "en": "Okinawa",
+        "zh": "冲绳战役"
+      },
+      "desc": {
+        "en": "Three months of kamikaze attacks; carrier fighters flew constant combat air patrols over the fleet.",
+        "zh": "长达三个月的神风攻击，舰载战斗机持续在舰队上空执行战斗空中巡逻。"
+      }
+    },
+    {
+      "id": "ten-go",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1945-04-07",
+      "magnitude": 3,
+      "name": {
+        "en": "Operation Ten-Go",
+        "zh": "天号作战"
+      },
+      "desc": {
+        "en": "Some 380 carrier aircraft sank the battleship Yamato before she could reach Okinawa.",
+        "zh": "约 380 架舰载机在“大和”号抵达冲绳之前将其击沉。"
+      }
+    },
+    {
+      "id": "inchon",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1950-09-15",
+      "magnitude": 3,
+      "name": {
+        "en": "Inchon Landing",
+        "zh": "仁川登陆"
+      },
+      "desc": {
+        "en": "Amphibious landing behind North Korean lines, covered by Corsairs, Skyraiders and Panthers.",
+        "zh": "在朝鲜军后方实施的两栖登陆，“海盗”“天袭者”与“黑豹”提供掩护。"
+      }
+    },
+    {
+      "id": "chosin",
+      "type": "battle",
+      "countries": [
+        "usa"
+      ],
+      "date": "1950-11-27",
+      "magnitude": 2,
+      "name": {
+        "en": "Chosin Reservoir",
+        "zh": "长津湖"
+      },
+      "desc": {
+        "en": "Carrier-based Corsairs flew close support for the 1st Marine Division in sub-zero conditions.",
+        "zh": "舰载“海盗”在严寒中为陆战一师提供近距空中支援。"
+      }
+    },
+    {
+      "id": "first-essex",
+      "type": "milestone",
+      "countries": [
+        "usa"
+      ],
+      "date": "1942-12-31",
+      "magnitude": 2,
+      "name": {
+        "en": "USS Essex commissioned",
+        "zh": "“埃塞克斯”号服役"
+      },
+      "desc": {
+        "en": "Lead ship of the 24-strong Essex class, the backbone of the fast carrier task forces.",
+        "zh": "共 24 艘的埃塞克斯级首舰，快速航母特混舰队的中坚。"
+      }
+    },
+    {
+      "id": "first-jet-landing",
+      "type": "milestone",
+      "countries": [
+        "usa"
+      ],
+      "date": "1946-07-21",
+      "magnitude": 2,
+      "name": {
+        "en": "First US jet carrier landing",
+        "zh": "美国首次喷气机航母着舰"
+      },
+      "desc": {
+        "en": "The McDonnell XFD-1 Phantom landed and took off from USS Franklin D. Roosevelt.",
+        "zh": "麦克唐纳 XFD-1“鬼怪”在“富兰克林·D·罗斯福”号上完成起降。"
+      }
+    },
+    {
+      "id": "midway-class",
+      "type": "milestone",
+      "countries": [
+        "usa"
+      ],
+      "date": "1945-09-10",
+      "magnitude": 1,
+      "name": {
+        "en": "USS Midway commissioned",
+        "zh": "“中途岛”号服役"
+      },
+      "desc": {
+        "en": "First US carrier with an armoured flight deck, built to operate the heavier post-war aircraft.",
+        "zh": "美国首艘装甲飞行甲板航母，为更重的战后舰载机而设计。"
+      }
+    }
+  ]
+}

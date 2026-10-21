@@ -1,0 +1,11 @@
+[
+  {
+    "id": "usa",
+    "flag": "🇺🇸",
+    "name": { "en": "United States", "zh": "美国" },
+    "accent": "#38bdf8",
+    "enabled": true,
+    "datasets": ["aircraft"],
+    "range": { "from": 1935, "to": 1950 }
+  }
+]

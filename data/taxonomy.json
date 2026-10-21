@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "roles": [
+    { "id": "fighter",       "color": "#38bdf8", "icon": "fighter", "label": { "en": "Carrier Fighter",       "zh": "舰载战斗机" },        "short": { "en": "FTR", "zh": "战斗" } },
+    { "id": "jetFighter",    "color": "#a78bfa", "icon": "jet",     "label": { "en": "Carrier Jet Fighter",   "zh": "舰载喷气战斗机" },    "short": { "en": "JET", "zh": "喷气" } },
+    { "id": "diveBomber",    "color": "#fbbf24", "icon": "dive",    "label": { "en": "Dive / Scout Bomber",   "zh": "俯冲 / 侦察轰炸机" },  "short": { "en": "DIVE", "zh": "俯冲" } },
+    { "id": "torpedoBomber", "color": "#2dd4bf", "icon": "torpedo", "label": { "en": "Torpedo Bomber",        "zh": "鱼雷轰炸机" },        "short": { "en": "TORP", "zh": "鱼雷" } },
+    { "id": "attack",        "color": "#fb7185", "icon": "attack",  "label": { "en": "Attack / ASW",          "zh": "舰载攻击 / 反潜机" },  "short": { "en": "ATK", "zh": "攻击" } }
+  ],
+  "basing": [
+    { "id": "carrier", "label": { "en": "Carrier-based", "zh": "舰载" }, "glyph": "⚓" },
+    { "id": "land",    "label": { "en": "Land-based",    "zh": "陆基" }, "glyph": "▲" },
+    { "id": "seaplane","label": { "en": "Seaplane",      "zh": "水上" }, "glyph": "≈" }
+  ],
+  "branches": [
+    { "id": "USN",  "label": { "en": "US Navy",         "zh": "美国海军" } },
+    { "id": "USMC", "label": { "en": "US Marine Corps", "zh": "美国海军陆战队" } }
+  ],
+  "propulsion": [
+    { "id": "piston", "label": { "en": "Piston",            "zh": "活塞" } },
+    { "id": "jet",    "label": { "en": "Jet",               "zh": "喷气" } },
+    { "id": "mixed",  "label": { "en": "Mixed piston + jet", "zh": "活塞 + 喷气混合" } }
+  ],
+  "linkTypes": [
+    { "id": "derived",  "label": { "en": "Derived / developed into", "zh": "衍生 / 发展为" } },
+    { "id": "replaced", "label": { "en": "Replaced by",              "zh": "被替换为" } }
+  ],
+  "conflictTypes": [
+    { "id": "war",       "label": { "en": "War / campaign", "zh": "战争 / 战役" } },
+    { "id": "battle",    "label": { "en": "Battle",         "zh": "会战" } },
+    { "id": "milestone", "label": { "en": "Milestone",      "zh": "里程碑" } }
+  ]
+}
