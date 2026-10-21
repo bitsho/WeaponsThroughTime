@@ -1,5 +1,5 @@
 {
-  "version": "mvi1dejj",
+  "version": "mvi7ppud",
   "window": {
     "from": 1935,
     "to": 1950
@@ -297,13 +297,12 @@
         "antenna": false
       },
       "media": {
-        "photo": "img/aircraft/f4b.jpg",
-        "photoSmall": "img/aircraft/f4b-900.jpg",
-        "photoW": 960,
-        "photoH": 552,
-        "cutout": "img/aircraft/f4b-cut.webp",
-        "cutoutW": 348,
-        "cutoutH": 207,
+        "photo": "img/aircraft/f4b-900.jpg",
+        "photoW": 900,
+        "photoH": 518,
+        "cutout": "img/aircraft/f4b-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 292,
         "credit": {
           "title": "Formazione di Boeing F4B-4.png",
           "author": "U.S. Navy",
@@ -311,6 +310,15 @@
           "year": "1931",
           "source": "https://commons.wikimedia.org/wiki/File:Formazione_di_Boeing_F4B-4.png",
           "caption": "Boeing F4B-4 of US Navy in flight"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -404,13 +412,12 @@
         "insigniaX": 30
       },
       "media": {
-        "photo": "img/aircraft/f2f.jpg",
-        "photoSmall": "img/aircraft/f2f-900.jpg",
-        "photoW": 960,
-        "photoH": 755,
-        "cutout": "img/aircraft/f2f-cut.webp",
-        "cutoutW": 685,
-        "cutoutH": 340,
+        "photo": "img/aircraft/f2f-900.jpg",
+        "photoW": 900,
+        "photoH": 708,
+        "cutout": "img/aircraft/f2f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 296,
         "credit": {
           "title": "Grumman F2F-1 (BuNo. 9624) of VF-2.jpg",
           "author": "U.S. Navy",
@@ -418,6 +425,15 @@
           "year": "1935",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_F2F-1_(BuNo._9624)_of_VF-2.jpg",
           "caption": "Undated photograph of an F2F-1 from VF-2."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -512,13 +528,12 @@
         "insigniaX": 30
       },
       "media": {
-        "photo": "img/aircraft/f3f.jpg",
-        "photoSmall": "img/aircraft/f3f-900.jpg",
-        "photoW": 960,
-        "photoH": 606,
-        "cutout": "img/aircraft/f3f-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 351,
+        "photo": "img/aircraft/f3f-900.jpg",
+        "photoW": 900,
+        "photoH": 568,
+        "cutout": "img/aircraft/f3f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 300,
         "credit": {
           "title": "F3F-1 4-F-7 Jax.jpg",
           "author": "U.S. Navy",
@@ -526,6 +541,15 @@
           "year": "1939",
           "source": "https://commons.wikimedia.org/wiki/File:F3F-1_4-F-7_Jax.jpg",
           "caption": "A Grumman F3F-1 0232 fighter of U.S. Navy fighter squadron VF-4 in the 1939-01-13 - VF-4 was assigned to the aircraft carrier USS Ranger (CV-4)."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -622,13 +646,12 @@
         "insigniaX": 28
       },
       "media": {
-        "photo": "img/aircraft/sbu.jpg",
-        "photoSmall": "img/aircraft/sbu-900.jpg",
-        "photoW": 1280,
-        "photoH": 972,
-        "cutout": "img/aircraft/sbu-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 353,
+        "photo": "img/aircraft/sbu-900.jpg",
+        "photoW": 900,
+        "photoH": 683,
+        "cutout": "img/aircraft/sbu-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 287,
         "credit": {
           "title": "Vought SBU-1 of VS-41 in flight over the Atlantic Ocean on 8 February 1940 (NNAM.1996.253.2050).jpg",
           "author": "U.S. Navy",
@@ -636,6 +659,15 @@
           "year": "1940",
           "source": "https://commons.wikimedia.org/wiki/File:Vought_SBU-1_of_VS-41_in_flight_over_the_Atlantic_Ocean_on_8_February_1940_(NNAM.1996.253.2050).jpg",
           "caption": "A U.S. Navy Vought SBU-1 (BuNo 9820) of Scouting Squadron 41 (VS-41) in flight over the Atlantic Ocean on 8 February 1940. VS-41 was assigned to the aircraft carrier USS Ranger (CV-4). Note the Neutrality Patrol markings on the engine cowling."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -733,13 +765,12 @@
         "insigniaX": 28
       },
       "media": {
-        "photo": "img/aircraft/sbc.jpg",
-        "photoSmall": "img/aircraft/sbc-900.jpg",
-        "photoW": 960,
-        "photoH": 417,
-        "cutout": "img/aircraft/sbc-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 273,
+        "photo": "img/aircraft/sbc-900.jpg",
+        "photoW": 900,
+        "photoH": 391,
+        "cutout": "img/aircraft/sbc-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 297,
         "credit": {
           "title": "SBC-4 New York Naval Air Reserve 1940.jpg",
           "author": "U.S. Navy",
@@ -747,6 +778,15 @@
           "year": "1940",
           "source": "https://commons.wikimedia.org/wiki/File:SBC-4_New_York_Naval_Air_Reserve_1940.jpg",
           "caption": "A U.S. Navy Curtiss SBC-4 Helldiver (BuNo 1813) assigned to Naval Air Reserve Air Base New York, Floyd Bennett Field, in flight. Note the NRAB New York insignia on the fuselage of the aircraft. The SBC-4 BuNo 1813 was one of the aircraft transferred to USAAC on 8 June 1940 and then to the French Nav"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -840,13 +880,12 @@
         "codeX": 44
       },
       "media": {
-        "photo": "img/aircraft/tbd.jpg",
-        "photoSmall": "img/aircraft/tbd-900.jpg",
-        "photoW": 1280,
-        "photoH": 914,
-        "cutout": "img/aircraft/tbd-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 339,
+        "photo": "img/aircraft/tbd-900.jpg",
+        "photoW": 900,
+        "photoH": 643,
+        "cutout": "img/aircraft/tbd-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 267,
         "credit": {
           "title": "TBD-1 in flight Anacostia left side 1937.jpg",
           "author": "U.S. Navy",
@@ -854,6 +893,15 @@
           "year": "1937",
           "source": "https://commons.wikimedia.org/wiki/File:TBD-1_in_flight_Anacostia_left_side_1937.jpg",
           "caption": "The first production U.S. Navy Douglas TBD-1 Devastator (BuNo 0268) pictured during flight testing at Nval Air Station Anacostia, Washington D.C. (USA), in 1937. Anacostia was the location of the Navy's flight testing during the period in which this photograph was taken."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -946,13 +994,12 @@
         "insigniaX": 24
       },
       "media": {
-        "photo": "img/aircraft/sb2u.jpg",
-        "photoSmall": "img/aircraft/sb2u-900.jpg",
-        "photoW": 1280,
-        "photoH": 1021,
-        "cutout": "img/aircraft/sb2u-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 470,
+        "photo": "img/aircraft/sb2u-900.jpg",
+        "photoW": 900,
+        "photoH": 718,
+        "cutout": "img/aircraft/sb2u-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 267,
         "credit": {
           "title": "Restored Vought SB2U-2 Vindicator at the U.S. National Naval Aviation Museum, Pensacola, Florida (USA), in 1999.jpg",
           "author": "U.S. National Museum of Naval Aviation",
@@ -960,6 +1007,15 @@
           "year": "1999",
           "source": "https://commons.wikimedia.org/wiki/File:Restored_Vought_SB2U-2_Vindicator_at_the_U.S._National_Naval_Aviation_Museum,_Pensacola,_Florida_(USA),_in_1999.jpg",
           "caption": "The Vought SB2U-2 Vindicator of the U.S. National Museum of Naval Aviation at Pensacola, Florida (USA), photographed in 1999. Official caption: \"The last SB2U-2 delivered to the Navy, the museum's Vindicator joined the fleet in 1939, and logged flights with four squadrons. These included Bombing Squ"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -1048,13 +1104,12 @@
         "insigniaX": 24
       },
       "media": {
-        "photo": "img/aircraft/bt1.jpg",
-        "photoSmall": "img/aircraft/bt1-900.jpg",
-        "photoW": 1280,
-        "photoH": 707,
-        "cutout": "img/aircraft/bt1-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 215,
+        "photo": "img/aircraft/bt1-900.jpg",
+        "photoW": 900,
+        "photoH": 497,
+        "cutout": "img/aircraft/bt1-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 268,
         "credit": {
           "title": "Northrop BT-1 (Oakland March1940) (8557524983).jpg",
           "author": "Bill Larkins",
@@ -1062,6 +1117,15 @@
           "year": "2013",
           "source": "https://commons.wikimedia.org/wiki/File:Northrop_BT-1_(Oakland_March1940)_(8557524983).jpg",
           "caption": "Northrop BT-1 (Oakland March1940)"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -1212,13 +1276,12 @@
         "insigniaX": 30
       },
       "media": {
-        "photo": "img/aircraft/f2a.jpg",
-        "photoSmall": "img/aircraft/f2a-900.jpg",
-        "photoW": 1280,
-        "photoH": 642,
-        "cutout": "img/aircraft/f2a-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 340,
+        "photo": "img/aircraft/f2a-900.jpg",
+        "photoW": 900,
+        "photoH": 451,
+        "cutout": "img/aircraft/f2a-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 264,
         "credit": {
           "title": "Brewster Buffalo F2A-2.jpg",
           "author": "NACA",
@@ -1226,6 +1289,15 @@
           "year": "1943",
           "source": "https://commons.wikimedia.org/wiki/File:Brewster_Buffalo_F2A-2.jpg",
           "caption": "A U.S. Navy Brewster F2A-2 Buffalo at the NACA Langley Research Center, Hampton, Virginia (USA), on 9 February 1943.Original description (NASA): \"Brewster F2A-2 Buffalo: The Navy's Brewster F2A-2 Buffalo did not prove to be a particularly effective fighter aircraft, but that did not prevent countrie"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -1389,13 +1461,12 @@
         "codeX": 48
       },
       "media": {
-        "photo": "img/aircraft/f4f.jpg",
-        "photoSmall": "img/aircraft/f4f-900.jpg",
-        "photoW": 1280,
-        "photoH": 845,
-        "cutout": "img/aircraft/f4f-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 246,
+        "photo": "img/aircraft/f4f-900.jpg",
+        "photoW": 900,
+        "photoH": 594,
+        "cutout": "img/aircraft/f4f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 199,
         "credit": {
           "title": "F4F-3 Wildcats of VF-5 in flight c1941.jpg",
           "author": "U.S. Navy",
@@ -1403,6 +1474,15 @@
           "year": "1941",
           "source": "https://commons.wikimedia.org/wiki/File:F4F-3_Wildcats_of_VF-5_in_flight_c1941.jpg",
           "caption": "Three U.S. Navy Grumman F4F-3/3A Wildcats of Fighting Squadron VF-5 from the aircraft carrier USS Yorktown (CV-5) flying in formation, circa 1941."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VF-3 No. 13 · 1942",
+          "reference": "https://www.history.navy.mil/content/history/nhhc/our-collections/photography/wars-and-events/world-war-ii/midway/80-G-312016.html"
         }
       }
     },
@@ -1503,13 +1583,12 @@
         "codeX": 44
       },
       "media": {
-        "photo": "img/aircraft/sbd.jpg",
-        "photoSmall": "img/aircraft/sbd-900.jpg",
-        "photoW": 1280,
-        "photoH": 673,
-        "cutout": "img/aircraft/sbd-cut.webp",
-        "cutoutW": 535,
-        "cutoutH": 255,
+        "photo": "img/aircraft/sbd-900.jpg",
+        "photoW": 900,
+        "photoH": 473,
+        "cutout": "img/aircraft/sbd-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 205,
         "credit": {
           "title": "Douglas SBDs of VS-51 in flight in October 1943.jpg",
           "author": "U.S. Navy photo 80-G-K-1611",
@@ -1517,6 +1596,15 @@
           "year": "1943",
           "source": "https://commons.wikimedia.org/wiki/File:Douglas_SBDs_of_VS-51_in_flight_in_October_1943.jpg",
           "caption": "Three U.S. Navy Douglas SBD-5 Dauntless scout bombers of Scouting Squadron 51 (VS-51) fly in formation over the Pacific Ocean in October 1943."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VB-6 B-1 / Midway · 1942",
+          "reference": "https://www.tullisaviationart.com/2022/03/11/954/"
         }
       }
     },
@@ -1632,13 +1720,12 @@
         "codeX": 54
       },
       "media": {
-        "photo": "img/aircraft/tbf.jpg",
-        "photoSmall": "img/aircraft/tbf-900.jpg",
-        "photoW": 1280,
-        "photoH": 836,
-        "cutout": "img/aircraft/tbf-cut.webp",
-        "cutoutW": 561,
-        "cutoutH": 184,
+        "photo": "img/aircraft/tbf-900.jpg",
+        "photoW": 900,
+        "photoH": 588,
+        "cutout": "img/aircraft/tbf-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 175,
         "credit": {
           "title": "Grumman TBM-3R VR-23 over Korea 1953.jpg",
           "author": "U.S. Navy",
@@ -1646,6 +1733,15 @@
           "year": "1953",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_TBM-3R_VR-23_over_Korea_1953.jpg",
           "caption": "A U.S. Navy Grumman TBM-3R Avenger (BuNo 85905) of transport squadron VR-23 in flight over Korea, 25 June 1953."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VT-84 White 305 · 1945",
+          "reference": "https://putteringinthestudy.com/2025/01/13/1-72-tbm-3-avenger-white-305-vt-84-u-s-s-bunker-hill-cv-17-february-1945/"
         }
       }
     },
@@ -1806,13 +1902,12 @@
         "codeX": 64
       },
       "media": {
-        "photo": "img/aircraft/f4u.jpg",
-        "photoSmall": "img/aircraft/f4u-900.jpg",
-        "photoW": 960,
-        "photoH": 635,
-        "cutout": "img/aircraft/f4u-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 293,
+        "photo": "img/aircraft/f4u-900.jpg",
+        "photoW": 900,
+        "photoH": 595,
+        "cutout": "img/aircraft/f4u-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 272,
         "credit": {
           "title": "F4U-1 Corsair in flight c1942.jpg",
           "author": "U.S. Navy",
@@ -1820,6 +1915,15 @@
           "year": "1942",
           "source": "https://commons.wikimedia.org/wiki/File:F4U-1_Corsair_in_flight_c1942.jpg",
           "caption": "A U.S. Navy Vought F4U-1 Corsair fighter in flight, circa 1942."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VMF-312 Checkerboards · 1951",
+          "reference": "https://www.history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/f/f4u-4-corsair.html"
         }
       }
     },
@@ -1919,13 +2023,12 @@
         "codeX": 48
       },
       "media": {
-        "photo": "img/aircraft/sb2c.jpg",
-        "photoSmall": "img/aircraft/sb2c-900.jpg",
-        "photoW": 1280,
-        "photoH": 991,
-        "cutout": "img/aircraft/sb2c-cut.webp",
-        "cutoutW": 652,
-        "cutoutH": 357,
+        "photo": "img/aircraft/sb2c-900.jpg",
+        "photoW": 900,
+        "photoH": 697,
+        "cutout": "img/aircraft/sb2c-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 196,
         "credit": {
           "title": "XSB2C-1 18Dec1940.jpg",
           "author": "U.S. Navy (via Felix c, en.wikipedia)",
@@ -1933,6 +2036,15 @@
           "year": "2006",
           "source": "https://commons.wikimedia.org/wiki/File:XSB2C-1_18Dec1940.jpg",
           "caption": "This photo shows the prototype Curtiss XSB2C-1 Helldiver on its maiden flight on 18 December 1940."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VB-83 White 207 · 1945",
+          "reference": "https://hobbymasterarchive.org/HA2207/"
         }
       }
     },
@@ -2087,13 +2199,12 @@
         "codeX": 50
       },
       "media": {
-        "photo": "img/aircraft/f6f.jpg",
-        "photoSmall": "img/aircraft/f6f-900.jpg",
-        "photoW": 1600,
-        "photoH": 1130,
-        "cutout": "img/aircraft/f6f-cut.webp",
-        "cutoutW": 667,
-        "cutoutH": 425,
+        "photo": "img/aircraft/f6f-900.jpg",
+        "photoW": 900,
+        "photoH": 636,
+        "cutout": "img/aircraft/f6f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 199,
         "credit": {
           "title": "Grumman F6F-3 Hellcat of VF-1 in flight over California (USA), in 1943 (80-G-K-605).jpg",
           "author": "U.S. Navy",
@@ -2101,6 +2212,15 @@
           "year": "1943",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_F6F-3_Hellcat_of_VF-1_in_flight_over_California_(USA),_in_1943_(80-G-K-605).jpg",
           "caption": "A U.S. Navy Grumman F6F-3 Hellcat of Fighter Squadron 1 (VF-1) in flight over California (USA), in early 1943. VF-1 was redesignated VF-5 in July 1943."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VF-27 Catmouth · 1944",
+          "reference": "https://modelingmadness.com/scott/decals/super/ss48827.htm"
         }
       }
     },
@@ -2254,13 +2374,12 @@
         "codeX": 52
       },
       "media": {
-        "photo": "img/aircraft/f7f.jpg",
-        "photoSmall": "img/aircraft/f7f-900.jpg",
-        "photoW": 1280,
-        "photoH": 956,
-        "cutout": "img/aircraft/f7f-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 232,
+        "photo": "img/aircraft/f7f-900.jpg",
+        "photoW": 900,
+        "photoH": 672,
+        "cutout": "img/aircraft/f7f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 260,
         "credit": {
           "title": "Grumman F7F Tigercat.jpg",
           "author": "U.S. Navy",
@@ -2268,6 +2387,15 @@
           "year": "1944",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_F7F_Tigercat.jpg",
           "caption": "A Grumman F7F-2N Tigercat, circa 1944-45."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -2408,13 +2536,12 @@
         "codeX": 52
       },
       "media": {
-        "photo": "img/aircraft/f8f.jpg",
-        "photoSmall": "img/aircraft/f8f-900.jpg",
-        "photoW": 1280,
-        "photoH": 853,
-        "cutout": "img/aircraft/f8f-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 563,
+        "photo": "img/aircraft/f8f-900.jpg",
+        "photoW": 900,
+        "photoH": 600,
+        "cutout": "img/aircraft/f8f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 227,
         "credit": {
           "title": "Bearcat - Fly Navy Day 2016 (27564576372).jpg",
           "author": "Airwolfhound from Hertfordshire, UK",
@@ -2422,6 +2549,15 @@
           "year": "2016",
           "source": "https://commons.wikimedia.org/wiki/File:Bearcat_-_Fly_Navy_Day_2016_(27564576372).jpg",
           "caption": "Bearcat - Fly Navy Day 2016"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "Blue Angels · 1948-1949",
+          "reference": "https://www.blueangels.navy.mil/history/events.htm"
         }
       }
     },
@@ -2561,13 +2697,12 @@
         "codeX": 50
       },
       "media": {
-        "photo": "img/aircraft/fr.jpg",
-        "photoSmall": "img/aircraft/fr-900.jpg",
-        "photoW": 1280,
-        "photoH": 958,
-        "cutout": "img/aircraft/fr-cut.webp",
-        "cutoutW": 719,
-        "cutoutH": 339,
+        "photo": "img/aircraft/fr-900.jpg",
+        "photoW": 900,
+        "photoH": 674,
+        "cutout": "img/aircraft/fr-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 265,
         "credit": {
           "title": "FR-1 Fireball of VF-41 in flight c1945.jpg",
           "author": "U.S. Navy",
@@ -2575,6 +2710,15 @@
           "year": "1945",
           "source": "https://commons.wikimedia.org/wiki/File:FR-1_Fireball_of_VF-41_in_flight_c1945.jpg",
           "caption": "A U.S. Navy Ryan FR-1 Fireball of Fighter Squadron 41 (VF-41) \"Fire Birds\" in flight."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -2717,13 +2861,12 @@
         "codeX": 52
       },
       "media": {
-        "photo": "img/aircraft/ad.jpg",
-        "photoSmall": "img/aircraft/ad-900.jpg",
-        "photoW": 1280,
-        "photoH": 938,
-        "cutout": "img/aircraft/ad-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 256,
+        "photo": "img/aircraft/ad-900.jpg",
+        "photoW": 900,
+        "photoH": 660,
+        "cutout": "img/aircraft/ad-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 217,
         "credit": {
           "title": "Douglas AD-1Q Skyraider VC-35.jpg",
           "author": "U.S. Navy",
@@ -2731,6 +2874,15 @@
           "year": "1950",
           "source": "https://commons.wikimedia.org/wiki/File:Douglas_AD-1Q_Skyraider_VC-35.jpg",
           "caption": "A U.S. Navy Douglas AD-1Q Skyraider electronic countermeasures aircraft (BuNo 09386) of composite squadron VC-35 Night Hecklers, circa 1950."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VA-195 Dambusters · 1951",
+          "reference": "https://www.history.navy.mil/content/history/museums/nnam/education/articles/history-up-close/the-u-s--navy_s-dambusters-at-hwachon-dam.html"
         }
       }
     },
@@ -2885,13 +3037,12 @@
         "codeX": 62
       },
       "media": {
-        "photo": "img/aircraft/fh1.jpg",
-        "photoSmall": "img/aircraft/fh1-900.jpg",
-        "photoW": 960,
-        "photoH": 386,
-        "cutout": "img/aircraft/fh1-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 227,
+        "photo": "img/aircraft/fh1-900.jpg",
+        "photoW": 900,
+        "photoH": 362,
+        "cutout": "img/aircraft/fh1-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 251,
         "credit": {
           "title": "McDonnell FH-1 Phantom VMF-122 in flight.jpg",
           "author": "USN/USMC",
@@ -2899,6 +3050,15 @@
           "year": "1940",
           "source": "https://commons.wikimedia.org/wiki/File:McDonnell_FH-1_Phantom_VMF-122_in_flight.jpg",
           "caption": "A U.S. Marine Corps McDonnell FH-1 Phantom of Marine fighter squadron VMF-122."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -2995,13 +3155,12 @@
         "codeX": 60
       },
       "media": {
-        "photo": "img/aircraft/fj1.jpg",
-        "photoSmall": "img/aircraft/fj1-900.jpg",
-        "photoW": 1280,
-        "photoH": 959,
-        "cutout": "img/aircraft/fj1-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 351,
+        "photo": "img/aircraft/fj1-900.jpg",
+        "photoW": 900,
+        "photoH": 674,
+        "cutout": "img/aircraft/fj1-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 268,
         "credit": {
           "title": "Yanks Fury.JPG",
           "author": "NJW87",
@@ -3009,6 +3168,15 @@
           "year": "2010",
           "source": "https://commons.wikimedia.org/wiki/File:Yanks_Fury.JPG",
           "caption": "Photograph of the FJ-1 Fury at Yanks Air Museum. Aircraft is nearly complete: Still needs canopy to be finished and paint touch up."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -3146,13 +3314,12 @@
         "codeX": 54
       },
       "media": {
-        "photo": "img/aircraft/am.jpg",
-        "photoSmall": "img/aircraft/am-900.jpg",
-        "photoW": 1280,
-        "photoH": 1006,
-        "cutout": "img/aircraft/am-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 358,
+        "photo": "img/aircraft/am-900.jpg",
+        "photoW": 900,
+        "photoH": 707,
+        "cutout": "img/aircraft/am-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 273,
         "credit": {
           "title": "Martin AM-1 NATC in flight.jpg",
           "author": "U.S. Navy",
@@ -3160,6 +3327,15 @@
           "year": "1940",
           "source": "https://commons.wikimedia.org/wiki/File:Martin_AM-1_NATC_in_flight.jpg",
           "caption": "A U.S. Navy Martin Mauler AM-1 Mauler (BuNo 22308) of Naval Air Test Center (NATC) at Naval Air Station Patuxent River, Maryland (USA), in flight, circa late 1940s."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -3313,13 +3489,12 @@
         "codeX": 64
       },
       "media": {
-        "photo": "img/aircraft/f2h.jpg",
-        "photoSmall": "img/aircraft/f2h-900.jpg",
-        "photoW": 1280,
-        "photoH": 474,
-        "cutout": "img/aircraft/f2h-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 239,
+        "photo": "img/aircraft/f2h-900.jpg",
+        "photoW": 900,
+        "photoH": 333,
+        "cutout": "img/aircraft/f2h-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 189,
         "credit": {
           "title": "McDonnell F2H-1 Banshee NACA 1951 (cropped).jpg",
           "author": "NACA",
@@ -3327,6 +3502,15 @@
           "year": "1951",
           "source": "https://commons.wikimedia.org/wiki/File:McDonnell_F2H-1_Banshee_NACA_1951_(cropped).jpg",
           "caption": "A U.S. Navy McDonnell F2H-1 Banshee (BuNo 122450) at the National Advisory Committee for Aeronautics, Langley, Virginia (USA), 9 March 1951: The McDonnell F2H-1 Banshee probably would have had a longer NACA Langley career. However, it was written off in a landing accident on 12 July 1951. (Text: NAS"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VF-11 Red Rippers · 1952",
+          "reference": "https://commons.wikimedia.org/wiki/File:F2H_Banshee_VF-11_over_Wonsan_colour_1952.jpg"
         }
       }
     },
@@ -3478,13 +3662,12 @@
         "codeX": 62
       },
       "media": {
-        "photo": "img/aircraft/f9f.jpg",
-        "photoSmall": "img/aircraft/f9f-900.jpg",
-        "photoW": 1280,
-        "photoH": 959,
-        "cutout": "img/aircraft/f9f-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 374,
+        "photo": "img/aircraft/f9f-900.jpg",
+        "photoW": 900,
+        "photoH": 674,
+        "cutout": "img/aircraft/f9f-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 200,
         "credit": {
           "title": "Grumman F9F-2 Panther in flight c1949.jpg",
           "author": "U.S. Navy",
@@ -3492,6 +3675,15 @@
           "year": "1949",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_F9F-2_Panther_in_flight_c1949.jpg",
           "caption": "A U.S. Navy Grumman F9F-2 Panther (BuNo 122567) in flight. 122567 was the eighth production aircraft."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": "VF-71 Sweet Violette · 1952",
+          "reference": "https://www.aircraftresourcecenter.com/Rev2/1501-1600/Rev1501-YHD48038/00.shtm"
         }
       }
     },
@@ -3644,13 +3836,12 @@
         "codeX": 54
       },
       "media": {
-        "photo": "img/aircraft/f6u.jpg",
-        "photoSmall": "img/aircraft/f6u-900.jpg",
+        "photo": "img/aircraft/f6u-900.jpg",
         "photoW": 500,
         "photoH": 214,
-        "cutout": "img/aircraft/f6u-cut.webp",
-        "cutoutW": 476,
-        "cutoutH": 179,
+        "cutout": "img/aircraft/f6u-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 257,
         "credit": {
           "title": "Vought F6U-1 at the National Museum of Naval Aviation.jpg",
           "author": "U.S. Navy",
@@ -3658,6 +3849,15 @@
           "year": "2012",
           "source": "https://commons.wikimedia.org/wiki/File:Vought_F6U-1_at_the_National_Museum_of_Naval_Aviation.jpg",
           "caption": "The last surviving Vought F6U-1 Pirate (BuNo 122479) at the U.S. Navy National Museum of Naval Aviation in Pensacola, Florida (USA). Note: the canopy has not original shape. Original desciption: \"Like its counterparts with bustling assembly lines pushing out hundreds of aircraft to meet the demands"
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     },
@@ -3798,13 +3998,12 @@
         "codeX": 54
       },
       "media": {
-        "photo": "img/aircraft/af.jpg",
-        "photoSmall": "img/aircraft/af-900.jpg",
-        "photoW": 1280,
-        "photoH": 916,
-        "cutout": "img/aircraft/af-cut.webp",
-        "cutoutW": 760,
-        "cutoutH": 307,
+        "photo": "img/aircraft/af-900.jpg",
+        "photoW": 900,
+        "photoH": 644,
+        "cutout": "img/aircraft/af-art.webp",
+        "cutoutW": 480,
+        "cutoutH": 270,
         "credit": {
           "title": "Grumman AF-2W in flight 1950.jpg",
           "author": "U.S. Navy",
@@ -3812,6 +4011,15 @@
           "year": "1950",
           "source": "https://commons.wikimedia.org/wiki/File:Grumman_AF-2W_in_flight_1950.jpg",
           "caption": "The second U.S. Navy Grumman AF-2W Guardian (BuNo 123091), in flight probably near Bethpage, New York (USA), circa 1950."
+        },
+        "art": {
+          "kind": "illustration",
+          "note": {
+            "en": "Illustration (AI-generated reference render, supplied by the project owner) — not an exact record of the airframe.",
+            "zh": "插画（项目方提供的 AI 生成参考效果图），外形与涂装并非严格史料。"
+          },
+          "livery": null,
+          "reference": null
         }
       }
     }

@@ -22,7 +22,7 @@ const dataURI = (rel) => {
 const ac = aircraft.filter((a) => a.country === 'usa' && a.basing === 'carrier' && inWindow(a, from, to)).map((a) => {
   if (!a.media) return a;
   const m = Object.assign({}, a.media);
-  m.cutout = dataURI(m.cutout); m.photo = dataURI(m.photoSmall || m.photo); delete m.thumb;
+  m.cutout = dataURI(m.cutout); m.photo = dataURI(m.photo); delete m.thumb;
   return Object.assign({}, a, { media: m });
 });
 const ids = new Set(ac.map((a) => a.id));

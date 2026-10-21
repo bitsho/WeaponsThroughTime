@@ -23,13 +23,13 @@
   const gutter = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gutter')) || 176;
   const PADL = 26;
   const X = (y) => gutter() + PADL + (y - VIEW.from) * st.ppy;
-  const worldW = () => X(VIEW.to) + 80;
+  const worldW = () => X(VIEW.to) + 260;
 
   /* ---------------- image helpers ---------------- */
   const media = (a) => a.media || {};
   const icon = (a) => { const m = media(a); return m.cutout ? { src: m.cutout, w: m.cutoutW, h: m.cutoutH, cut: true } : m.photo ? { src: m.thumb || m.photo, w: m.photoW || 16, h: m.photoH || 10, cut: false } : null; };
-  const imgW = (a) => Math.round(58 + 168 * Math.sqrt(a.production / PMAX));
-  const imgH = (a) => { const ic = icon(a); const w = imgW(a); return ic ? Math.min(Math.round(w * (ic.h / ic.w)), Math.round(w * 0.55)) : Math.round(w * 0.32); };
+  const imgW = (a) => Math.round(44 + 120 * Math.sqrt(a.production / PMAX));
+  const imgH = (a) => { const ic = icon(a); const w = imgW(a); return ic ? Math.min(Math.round(w * (ic.h / ic.w)), Math.round(w * 0.5)) : Math.round(w * 0.32); };
 
   /* ---------------- boot ---------------- */
   async function boot() {
@@ -150,16 +150,16 @@
     const items = CF.map((c) => {
       const sp = c._span, x0 = X(Math.max(sp.start, VIEW.from)), x1 = sp.point ? x0 : X(Math.min(sp.end, VIEW.to));
       const label = L(c.name);
-      const lw = textW(label, 6.2) + (sp.point ? 22 : 18);
+      const lw = textW(label, 5.9) + (sp.point ? 20 : 16);
       return { c, x0, x1, w: sp.point ? lw : Math.max(x1 - x0, lw), end: sp.point ? x0 + lw + 10 : Math.max(x1, x0 + lw) + 8 };
     }).sort((a, b) => a.x0 - b.x0);
     const rows = packRows(items, (i) => i.x0 - 4, (i) => i.end);
-    const RH = 22, H = rows.length * RH + 20;
+    const RH = 18, H = rows.length * RH + 12;
     const { b, tr } = bandShell('conflicts', t('band_conflicts'), t('band_conflicts_sub'), '#ff6b4a', H);
     items.forEach((it, i) => {
       const c = it.c, sp = c._span;
       const e = el('div', `cf ${c.type}${c.type === 'war' && (c.magnitude || 1) < 2 ? ' minor' : ''}`);
-      e.style.left = it.x0 + 'px'; e.style.top = (12 + it._row * RH + (c.type === 'war' ? 3 : 0)) + 'px';
+      e.style.left = it.x0 + 'px'; e.style.top = (6 + it._row * RH + (c.type === 'war' ? 2 : 0)) + 'px';
       if (sp.point) {
         const s = 8 + (c.magnitude || 1) * 3;
         e.innerHTML = c.type === 'milestone' ? `<i class="dia"></i><span>${esc(L(c.name))}</span>` : `<i class="star" style="--s:${s}px;--d:${(i * 0.37) % 3}s"></i><span>${esc(L(c.name))}</span>`;
@@ -178,16 +178,18 @@
       const sp = a._span;
       const x0 = X(Math.max(sp.start, VIEW.from)), x1 = X(Math.min(sp.end, VIEW.to)), xf = X(Math.min(sp.frontlineEnd, VIEW.to));
       const w = imgW(a), h = imgH(a);
-      const label = `${a.designation}  ${L(a.nickname)}  ${num(a.production)}`;
-      return { a, x0, x1, xf, w, h, end: Math.max(x1 + (sp.end > VIEW.to ? 14 : 0), x0 + w + 6, x0 + textW(label)) + 16 };
+      const pre = sp.start < VIEW.from, cont = sp.end > VIEW.to;
+      const label = `${a.designation} ${L(a.nickname)} ${num(a.production)}${pre ? ' · ' + t('since') + ' ' + yearOf(a.service.start) : ''}${cont ? ' → ' + yearOf(a.service.end) : ''}`;
+      const lw = textW(label, 6.3) + 14;
+      return { a, x0, x1, xf, w, h, lw, end: Math.max(x1 + (cont ? 14 : 0), x0 + w + 8 + lw) + 10 };
     }).sort((p, q) => p.x0 - q.x0 || q.a.production - p.a.production);
     const rows = packRows(items, (i) => i.x0 - 6, (i) => i.end);
-    const rowH = rows.map((row) => Math.max(...row.items.map((i) => i.h)) + 44);
-    const H = rowH.reduce((s, h) => s + h, 0) + 16;
+    const rowH = rows.map((row) => Math.max(22, ...row.items.map((i) => i.h)) + 11);
+    const H = rowH.reduce((s, h) => s + h, 0) + 12;
     const { b, tr } = bandShell('lane', L(r.label), `${list.length} ${t('types')}`, r.color, H);
     if (!visible) b.classList.add('hidden-lane');
     b.dataset.role = r.id;
-    const tops = []; rowH.reduce((acc, h, i) => { tops[i] = acc; return acc + h; }, 10);
+    const tops = []; rowH.reduce((acc, h, i) => { tops[i] = acc; return acc + h; }, 6);
     items.forEach((it, k) => {
       const a = it.a, sp = a._span, ic = icon(a);
       const node = el('div', 'ac'); node.dataset.id = a.id;
@@ -195,12 +197,12 @@
       node.style.setProperty('--delay', (0.15 + (sp.start - VIEW.from) * 0.05 + k * 0.03).toFixed(2) + 's');
       node.style.setProperty('--bob', (-(k * 1.37) % 6).toFixed(2) + 's');
       node.style.left = it.x0 + 'px'; node.style.top = tops[it._row] + 'px';
-      node.style.width = Math.max(it.w, it.x1 - it.x0) + 'px'; node.style.height = rowH[it._row] - 8 + 'px';
+      node.style.width = Math.max(it.w + 8 + it.lw, it.x1 - it.x0) + 'px'; node.style.height = rowH[it._row] - 2 + 'px'; node.style.setProperty('--iw', it.w + 'px');
       const pre = sp.start < VIEW.from, cont = sp.end > VIEW.to;
-      const imgHtml = ic ? `<img src="${esc(ic.src)}" alt="${esc(L(a.name))}" loading="lazy" decoding="async">` : `<span class="lg-ac l" style="display:block;width:100%;height:${it.h}px;background:var(--c);opacity:.5"></span>`;
+      const imgHtml = ic ? `<img src="${esc(ic.src)}" alt="${esc(L(a.name))}" decoding="async">` : `<span class="lg-ac l" style="display:block;width:100%;height:${it.h}px;background:var(--c);opacity:.5"></span>`;
       node.innerHTML = `
         <div class="img${ic && !ic.cut ? ' photo' : ''}" style="width:${it.w}px">${imgHtml}</div>
-        <i class="ring" style="width:${it.w + 16}px;height:${it.h + 12}px"></i>
+        <i class="ring" style="width:${it.w + 12}px;height:${it.h + 8}px"></i>
         <div class="bar${pre ? ' pre' : ''}" style="width:${Math.max(4, it.x1 - it.x0)}px"><i class="fr" style="width:${Math.max(0, it.xf - it.x0)}px"></i>${cont ? '<i class="cont"></i>' : ''}</div>
         <div class="lbl"><b>${esc(a.designation)}</b><em>${esc(L(a.nickname))}</em><span class="n">${num(a.production)}</span>${pre ? `<span class="n">· ${t('since')} ${yearOf(a.service.start)}</span>` : ''}${cont ? `<span class="n">→ ${yearOf(a.service.end)}</span>` : ''}</div>`;
       node.addEventListener('mouseenter', (ev) => tipAircraft(a, ev));
@@ -214,7 +216,7 @@
   function statsBand() {
     const rows = S.inServiceByYear(AC.filter((a) => st.roles.has(a.role)), VIEW.from, VIEW.to - 1, (a) => a.role);
     const max = Math.max(...rows.map((r) => r.total), 1);
-    const H = 150, unit = (H - 64) / max;
+    const H = 92, unit = (H - 40) / max;
     const { b, tr } = bandShell('stats', t('band_stats'), t('band_stats_sub'), '#3dff9e', H);
     rows.forEach((row, i) => {
       const c = el('div', 'col');
@@ -235,7 +237,7 @@
       const lane = g.node.closest('.band');
       g.visible = !lane.classList.contains('hidden-lane');
       g.top = r.top - wr.top; g.bottom = r.bottom - wr.top;
-      g.barY = g.bottom - 19;   // centre of the 6px bar (bar sits 16px above the node bottom)
+      g.barY = g.bottom - 4.5;   // centre of the 5px bar (2px above the node bottom)
     });
   }
 
@@ -353,6 +355,7 @@
     const cfs = CF.filter((c) => (a.conflicts || []).includes(c.id)).sort((p, q) => p._span.start - q._span.start);
     box.innerHTML = `
       ${m.photo ? `<div class="p-photo"><img src="${esc(m.photo)}" alt="${esc(L(a.name))}"><i class="scan"></i></div>${credit(m)}` : ''}
+      ${m.art ? `<p class="p-credit">${t('art_note')}${m.art.livery ? ' · ' + esc(m.art.livery) : ''}</p>` : ''}
       <div class="p-role">${esc(L(r.label))}<span class="tag">⚓ ${t('basing_carrier')}</span><span class="tag">${(a.branches || []).join(' / ')}</span><span class="tag">${esc(L((D.taxonomy.propulsion.find((x) => x.id === a.propulsion) || {}).label))}</span></div>
       <div class="p-name">${esc(L(a.name))}</div>
       <div class="p-sub">${esc(a.designation)}${L(a.nickname) ? ' · “' + esc(L(a.nickname)) + '”' : ''} · ${esc(L(a.manufacturer))}</div>

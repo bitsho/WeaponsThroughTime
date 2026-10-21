@@ -2,10 +2,10 @@
 
 Interactive evolution timeline of military aircraft, inspired by [war-evo.com](https://war-evo.com/).
 Current scope: **US Navy carrier aircraft, 1935–1950** — 26 types on one timeline with battles,
-production-scaled aircraft cut-outs (public-domain / CC photos), service bars, lineage links and dossiers.
+production-scaled aircraft illustrations, service bars, lineage links and dossiers with public-domain / CC photos.
 
 交互式军用飞机演进时间轴（参考 war-evo.com）。当前范围：**美国海军舰载机 1935–1950**，共 26 型：
-战役事件带、按产量缩放的去背景机体照片（公有领域/CC 授权）、服役条、谱系连线、详情档案、中英双语。
+战役事件带、按产量缩放的透明背景机体插画、服役条、谱系连线、详情档案（附公有领域/CC 历史照片）、中英双语。
 
 > `APWH_Histography_V3_BILINGUAL_FINAL.html` and `Histography_Timeline_Skill_v1.0.zip` are earlier, unrelated files and are left untouched.
 
@@ -31,7 +31,7 @@ data/
   models/          3D model specs (legacy hangar)
 public/
   index.html       carrier-aircraft timeline   ·  js/timeline.js · css/timeline.css
-  img/aircraft/    <id>.jpg photo · <id>-900.jpg panel size · <id>-cut.webp background-removed cut-out
+  img/aircraft/    <id>-art.webp timeline illustration (transparent) · <id>-900.jpg historical photo for the dossier
   legacy/          3D hangar experiment (three.js procedural models), kept for later work
   js/shared.js     date helpers shared with the server
   vendor/three/    three.js r170 (MIT)
@@ -52,12 +52,13 @@ scripts/           validate.js · build-static.js
 | GET | `/models` · `/models/:id` · `/hangar` | 3D model specs |
 | POST/PATCH/DELETE | `/aircraft`, `/conflicts` | admin — `Authorization: Bearer $WTT_ADMIN_TOKEN` |
 
-## Photos · 图片
+## Images · 图片
 
-Every aircraft record carries a `media` block (`photo`, `cutout`, sizes and `credit` with author, licence and
-Commons source page). Photos come from Wikimedia Commons, public domain first (US Navy / NARA, e.g. the 80-G-K
-Kodachrome series), CC BY / BY-SA otherwise. Cut-outs are generated with rembg (BiRefNet); the dossier always
-shows the original photo with its credit line.
+- **Timeline icons** — `media.cutout` → `img/aircraft/<id>-art.webp`: transparent illustrations supplied by the project
+  owner (AI-generated reference renders, trimmed and compressed to 480 px WebP, ~35 KB each). They are visual
+  references, not exact records of airframe geometry or markings; `media.art` carries that note and the livery reference.
+- **Dossier photo** — `media.photo` → `img/aircraft/<id>-900.jpg`: historical photo from Wikimedia Commons, public
+  domain first (US Navy / NARA), CC BY-SA otherwise, with author / licence / source in `media.credit`.
 
 ## Adding a 3D aircraft (legacy hangar) · 新增 3D 机型
 

@@ -134,8 +134,8 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 /* conflicts band */
 .band.conflicts { background: linear-gradient(to bottom, rgba(255,107,74,.045), transparent); }
 .band.conflicts .ln { --c: var(--war); }
-.cf { position: absolute; z-index: 1; display: flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; font-size: 11px; color: #f2c6b8; transition: opacity .3s, filter .3s; }
-.cf.war { height: 18px; padding: 0 8px; color: #ffe2d8; letter-spacing: .04em; }
+.cf { position: absolute; z-index: 1; display: flex; align-items: center; gap: 5px; cursor: pointer; white-space: nowrap; font-size: 10.5px; line-height: 14px; color: #f2c6b8; transition: opacity .3s, filter .3s; }
+.cf.war { height: 14px; font-size: 10.5px; padding: 0 8px; color: #ffe2d8; letter-spacing: .04em; }
 .cf.war .span { position: absolute; left: 0; top: 0; bottom: 0; border-left: 2px solid var(--war); background: linear-gradient(90deg, rgba(255,107,74,.34), rgba(255,107,74,.10)); z-index: -1; transform-origin: left; animation: grow 1s var(--ease) both; }
 .cf.war.minor .span { background: linear-gradient(90deg, rgba(255,107,74,.18), rgba(255,107,74,.05)); }
 .cf.war span { position: relative; text-shadow: 0 0 6px #000, 0 0 2px #000; }
@@ -149,19 +149,19 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 
 /* aircraft */
 .ac { --c: var(--cyan); position: absolute; display: block; cursor: pointer; transition: opacity .35s, filter .35s; }
-.ac .img { position: absolute; left: 0; bottom: 26px; display: block; transform-origin: 30% 100%;
+.ac .img { position: absolute; left: 0; bottom: 8px; display: block; transform-origin: 30% 100%;
   filter: drop-shadow(0 10px 10px rgba(0,0,0,.55)); transition: transform .45s var(--ease), filter .35s; animation: flyin 1s var(--ease) both; animation-delay: var(--delay); }
 .ac .img img { display: block; width: 100%; height: auto; pointer-events: none; animation: bob 6s ease-in-out infinite; animation-delay: var(--bob); }
 .ac .img.photo img { border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
 @keyframes flyin { from { opacity: 0; transform: translate(-60px, 8px) scale(.92); filter: blur(4px) drop-shadow(0 0 0 transparent); } }
 @keyframes bob { 50% { transform: translateY(-3px); } }
-.ac .bar { position: absolute; left: 0; bottom: 16px; height: 6px; background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--c) 55%, transparent) 0 3px, transparent 3px 6px);
+.ac .bar { position: absolute; left: 0; bottom: 2px; height: 5px; background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--c) 55%, transparent) 0 3px, transparent 3px 6px);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--c) 45%, transparent); transform-origin: left; animation: grow 1.1s var(--ease) both; animation-delay: var(--delay); }
 .ac .bar .fr { position: absolute; inset: 0 auto 0 0; background: linear-gradient(90deg, var(--c), color-mix(in srgb, var(--c) 70%, #fff)); box-shadow: 0 0 10px color-mix(in srgb, var(--c) 60%, transparent); }
 .ac .bar.pre { -webkit-mask-image: linear-gradient(to right, transparent, #000 34px); mask-image: linear-gradient(to right, transparent, #000 34px); }
 .ac .bar .cont { position: absolute; right: -9px; top: -4px; width: 0; height: 0; border-left: 9px solid var(--c); border-top: 7px solid transparent; border-bottom: 7px solid transparent; filter: drop-shadow(0 0 4px var(--c)); }
 @keyframes grow { from { transform: scaleX(0); } }
-.ac .lbl { position: absolute; left: 0; bottom: 0; height: 14px; display: flex; gap: 7px; align-items: baseline; white-space: nowrap; font-size: 11px; color: var(--dim); }
+.ac .lbl { position: absolute; left: calc(var(--iw) + 8px); bottom: 10px; height: 14px; display: flex; gap: 7px; align-items: baseline; white-space: nowrap; font-size: 11px; color: var(--dim); }
 .ac .lbl b { font: 600 12px var(--f-ui); color: #fff; letter-spacing: .03em; }
 .ac .lbl em { font-style: normal; color: color-mix(in srgb, var(--c) 80%, #fff); }
 .ac .lbl .n { font: 11px var(--f-mono); color: var(--dimmer); }
@@ -169,7 +169,7 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 .ac:hover .img, .ac.sel .img { transform: translateY(-6px) scale(1.06); filter: drop-shadow(0 16px 14px rgba(0,0,0,.6)) drop-shadow(0 0 14px color-mix(in srgb, var(--c) 55%, transparent)); }
 .ac:hover .lbl b, .ac.sel .lbl b { color: var(--c); }
 .ac.sel .bar { box-shadow: inset 0 0 0 1px var(--c), 0 0 14px var(--c); }
-.ac .ring { position: absolute; left: -8px; bottom: 30px; border: 1px solid var(--c); opacity: 0; pointer-events: none; transition: opacity .3s; }
+.ac .ring { position: absolute; left: -6px; bottom: 5px; border: 1px solid var(--c); opacity: 0; pointer-events: none; transition: opacity .3s; }
 .ac.sel .ring { opacity: .9; animation: ringpulse 1.6s ease-out infinite; }
 @keyframes ringpulse { from { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c) 50%, transparent); } to { box-shadow: 0 0 0 10px transparent; } }
 .ac.dim { opacity: .16; filter: grayscale(.9); }
@@ -187,7 +187,7 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
 
 /* stats band */
 .band.stats .ln { --c: #3dff9e; }
-.col { position: absolute; bottom: 22px; display: flex; flex-direction: column-reverse; gap: 1px; transform-origin: bottom; animation: rise 1s var(--ease) both; animation-delay: var(--delay); cursor: default; }
+.col { position: absolute; bottom: 16px; display: flex; flex-direction: column-reverse; gap: 1px; transform-origin: bottom; animation: rise 1s var(--ease) both; animation-delay: var(--delay); cursor: default; }
 .col i { display: block; width: 100%; background: var(--c); opacity: .78; }
 .col:hover i { opacity: 1; }
 .col .cnt { position: absolute; left: 50%; bottom: calc(100% + 4px); transform: translateX(-50%); font: 12px var(--f-mono); color: var(--text); }
@@ -277,3 +277,4 @@ html[data-lang="zh"] .lane-label .ln { font-family: var(--f-title); font-size: 1
   html[data-lang="zh"] .lane-label .ln { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+.p-grid .p-note { display: block; text-align: left; margin-top: 4px; }
