@@ -1,5 +1,7 @@
 /* ============ Weapons Through Time — Hangar ============ */
+/* Layout: sticky HUD header · intro · auto-fit card grid · full-screen inspection bay. Single dark look by design. */
 :root {
+  color-scheme: dark;
   --bg: #03060b; --bg2: #07101c; --panel: rgba(8, 17, 30, 0.74); --panel2: rgba(12, 24, 40, 0.86);
   --line: rgba(56, 225, 255, 0.14); --line2: rgba(56, 225, 255, 0.32);
   --cyan: #38e1ff; --cyan2: #7cf0ff; --amber: #ffb547; --red: #ff5a3c;
@@ -13,6 +15,7 @@ html[data-lang="zh"] { --f-title: 'ZCOOL QingKe HuangYou', 'Saira Stencil One', 
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--f-ui); -webkit-font-smoothing: antialiased; }
 body { min-height: 100vh; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
 button { font-family: inherit; color: inherit; }
 
 /* ---------- background ---------- */
@@ -29,8 +32,8 @@ button { font-family: inherit; color: inherit; }
 .bg-scan { position: absolute; inset: 0; background: repeating-linear-gradient(to bottom, rgba(255,255,255,.018) 0 1px, transparent 1px 3px); mix-blend-mode: overlay; }
 
 /* ---------- header ---------- */
-.top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  padding: 14px clamp(16px, 3vw, 40px); background: linear-gradient(to bottom, rgba(3,6,11,.92), rgba(3,6,11,.6)); backdrop-filter: blur(10px);
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding-block: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: linear-gradient(to bottom, rgba(3,6,11,.92), rgba(3,6,11,.6)); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-mark { width: 42px; height: 42px; flex: none; }
@@ -52,7 +55,7 @@ html[data-lang="zh"] .lang .knob { transform: translateX(38px); }
 html[data-lang="en"] .lang .opt[data-l="en"], html[data-lang="zh"] .lang .opt[data-l="zh"] { color: #fff; }
 
 /* ---------- intro ---------- */
-main { position: relative; z-index: 1; padding: 0 clamp(16px, 3vw, 40px) 40px; max-width: 1680px; margin: 0 auto; }
+main { position: relative; z-index: 1; padding-block: 0 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1680px; margin: 0 auto; }
 .intro { padding: 42px 0 26px; max-width: 900px; }
 .kicker { display: flex; align-items: center; gap: 12px; font: 12px var(--f-mono); letter-spacing: .3em; color: var(--cyan); text-transform: uppercase; }
 .kicker-line { width: 40px; height: 1px; background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
@@ -193,3 +196,4 @@ main { position: relative; z-index: 1; padding: 0 clamp(16px, 3vw, 40px) 40px; m
   .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media (max-width: 600px) { .status { display: none; } .subtitle { flex-wrap: wrap; gap: 4px 10px; letter-spacing: .14em; } .title { font-size: 20px; } .desig { font-size: 28px; } }

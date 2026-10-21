@@ -29,7 +29,8 @@ const T = {
     rank: (r, n) => `产量第 ${r} / ${n}`
   }
 };
-let lang = localStorage.getItem('wtt-lang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } } };
+let lang = store.get('wtt-lang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
 const t = (k, ...a) => { const v = T[lang][k]; return typeof v === 'function' ? v(...a) : v; };
 const L = (o) => (o ? o[lang] || o.en : '');
 const $ = (s, r = document) => r.querySelector(s);
@@ -56,7 +57,7 @@ function applyLang() {
   $('#srcNote').textContent = SOURCE ? t('src_' + SOURCE) : '';
   if (DATA) { renderCards(true); if (state.current) renderPanel(); }
 }
-$('#langBtn').addEventListener('click', () => { lang = lang === 'zh' ? 'en' : 'zh'; localStorage.setItem('wtt-lang', lang); applyLang(); });
+$('#langBtn').addEventListener('click', () => { lang = lang === 'zh' ? 'en' : 'zh'; store.set('wtt-lang', lang); applyLang(); });
 
 /* ---------------- cards ---------------- */
 function swatch(lv) { const s = lv.scheme; return s.type === 'solid' ? s.color : s.type === 'two' ? `linear-gradient(${s.top} 50%, ${s.low} 50%)` : `linear-gradient(${s.top} 33%, ${s.mid} 33% 66%, ${s.low} 66%)`; }
@@ -216,6 +217,5 @@ document.addEventListener('keydown', (e) => {
   applyLang();
   renderCards(false);
   for (const { aircraft: a } of DATA.items) await showThumb(a.id);   // sequential: one GPU context
-  document.title = document.title.replace(/^/, '');
   window.__WTT_READY__ = true;
 })();
